@@ -1,0 +1,2 @@
+# HerculesST
+Some magic
