@@ -1,0 +1,2747 @@
+A * MainPower Off !
+A Any Servo Moves
+A Test Lamps C
+A 840D sl = Ready C
+A EmergyStop_fromPLC C
+A LED Machine = On MP1
+A 0.6
+A 0.7
+A ALM AUS1
+A 1.1
+A 1.2
+A 1.3
+A 1.4
+A 1.5
+A 1.6
+A 1.7
+A C1 JOG
+A Z1 JOG
+A X1 JOG
+A MAGN Enable Door 1 C1
+A MAGN Enable Door 1 HS
+A MAGN Enable Door 2 HS
+A MAGN Enable Door 1 PW
+A MAGN Enable Door 2 PW
+A CON Motorblower HS
+A CON Lube Pump HS
+A BedLub X/Z C1
+A MainCon MOVIMOT TS
+A MainCon MOVIMOT Q-TS
+A CON Bed+Quill Lube TS
+A Quill Lube Pmp Q-TS
+A Hydraulic Pump TS
+A LED Panel Active FrHS
+A LED Panel Active ReHS
+A 34.2
+A LED Gear 1 engag FrHS
+A LED Gear 2 engag FrHS
+A LED Gear 3 engag FrHS
+A 34.6
+A LED Spec.Mode MP1
+A LED Enable Door 1 WP
+A LED Enable Door 2 WP
+A LED Enable Door 3 WP
+A 35.3
+A 35.4
+A MAGN Enable Door 1 WP
+A MAGN Enable Door 2 WP
+A MAGN Enable Door 3 WP
+A Lock Renishaw Probe C
+A Renishaw Arm Up C
+A Renishaw Arm down C
+A 46.3
+A LED Enable Door 1 C1
+A LED Enable Door 2 C1
+A MAGN Enable Door 2 C1
+A 46.7
+A 47.0
+A 47.1
+A 47.2
+A 47.3
+A 47.4
+A 47.5
+A 47.6
+A 47.7
+A LED Auto MCP1
+A LED MDA MCP1
+A LED TEACH-IN MCP1
+A LED JOG MCP1
+A LED 1 INC MCP1
+A LED 10 INC MCP1
+A LED 100 INC MCP1
+A LED 1.000 INC MCP1
+A LED 10.000 INC MCP1
+A LED VAR-INC MCP1
+A LED REF MCP1
+A LED REPOS MCP1
+A LED NC-STOP MCP1
+A LED NC-START MCP1
+A LED Feed-STOP MCP1
+A LED Feed-START MCP1
+A LED Spi. STOP MCP1
+A LED Spi. START MCP1
+A LED Single Bloc MCP1
+A LED R10 DeleteDTG MCP1
+A LED R7 Spi. CW MCP1
+A LED R4 Z (-) MCP1
+A LED R1 Spi.CCW MCP1
+A LED R13 MCP1
+A LED R15 MCP1
+A LED R6 Z (+) MCP1
+A LED R8 X (+) MCP1
+A LED R9 MCP1
+A LED R11 MCP1
+A LED R12 MKS / WKS MCP1
+A LED R5 Rapid MCP1
+A LED R3 MCP1
+A LED R2 X (-) MCP1
+A LED T15 S.Interv MCP1
+A LED T14 S30 MCP1
+A LED T13 HWHT2 On MCP1
+A LED T12 HS Gear 3 MCP1
+A LED T11 HS Gear 2 MCP1
+A LED T10 HS Gear 1 MCP1
+A LED T9 RevTurn MCP1
+A LED T8 MCP1
+A LED T7 MCP1
+A LED T6 ChipC bwd MCP1
+A LED T5 ChipConvOn MCP1
+A LED T4
+A LED T3 ScreenOff MCP1
+A LED T2 LampTest MCP1
+A LED T1 AutoRef MCP1
+A LED R14 X++ MCP1
+A LED Reset MCP1
+A LED Panel Active TS
+A LED Unclamped TS
+A LED clamped TS
+A LED End (-) Q-TS
+A LED End (+) Q-TS
+A 164.5
+A 164.6
+A 164.7
+A VALV Unclamp TS
+A MOVIMOT minus TS
+A MOVIMOT plus TS
+A MOVIMOT f1/f2 TS
+A MOVIMOT minus Q-TS
+A MOVIMOT plus Q-TS
+A MOVIMOT f1/f2 Q-TS
+A 165.7
+DB PLC-Flt/Msg DB 2
+DB PLC-MELD1
+DB PLC-MELD2
+DB 7 GP Par
+DB GP
+DB 10 Signale <-> NC DB 10
+DB BAG DB 11
+DB 13
+DB GP2
+DB PI
+DB 18 SPL DB 18
+DB 19 MMC DB 19
+DB 20 UserData DB 20
+DB NC Channel 1 DB 21
+DB NC Channel 2 DB 22
+DB Axis X1 DB 31
+DB Axis Z1 DB 32
+DB MainSpindle DB 33
+CTM_INIT_VAR_SELECTOR
+TMLoadIF DB 71
+TMSpindleIF DB 72
+TMRevIF DB 73
+CTM_MMC
+CTM_PLC
+CTM_LOCAL
+CTM1_DATA
+CTM2_DATA
+CTM3_DATA
+CTM4_DATA
+MULTI_INST_DB
+DB PI_INST
+DB OEM DB 90
+DB PUT_INST
+NCVAR
+DB General Data
+STR
+DB Screen Meas M/S
+DB 120 Safety
+DB Instanz FB Teststop
+DB KollSchutz
+DB Service OEM DB 125
+NC_MD_GeschwBegr_1 DB 161 DB 161 NC
+DB DP deaktivieren DB 180 DB 180
+DB DP Addressen
+DB 190-FB3_C1
+DB Sup1/2
+DB GRAY
+DB HT2
+DB MCP1 Stack
+DB MCP2 Stack
+DB Headstock
+DB Spi Interval
+DB Carriage
+DB Basis ZO
+DB LeTCar C1 DB 531
+DB LeInTCar C1 DB 532
+DB RiTCar C1 DB 533
+DB Basis NPV C2
+DB LeTCar C2 DB 581
+DB LeInTCar C2 DB 582
+DB RiTCar C2 DB 583
+DB Tailstock
+DB HT2 AxPos
+DB NC
+DB DPR
+DB ASUP
+DB Vorschub Last Lesen
+DB NC
+DB H-Fct Channel 1
+DB BZO Write Ch.1
+DB AxPos Ch.1
+RECORD FC851
+IDB LeTH Car1
+IDB RiTH Car1
+IDB BNPV write
+IDB AxPos_HT2
+IDB FB3 LimitSpeed
+IDB FB4 Limit NewConf
+IDB Asup 0
+IDB BNPV write Ch1
+IDB AxPos Ch.1
+IDB BZO SETUFR Ch1
+IDB Asup 1
+IDB AxPos Ch.2
+IDB Asup 2
+IDB BNPV write C2
+IDB BNPV SETUFR C2
+E E-Stop-Key active C
+E Machine (MainPow) = On
+E Main switch Power = On
+E CB AC Blower C
+E CB AC SupplyCont C
+E CB AC AirCond C
+E CB FaultAirCond
+E CB Blower Panel C1
+E FU 24V Monitor Sply C
+E FU 24V E-Stop
+E FU 24V Sinamics 1 C
+E FU 24V Repeater C
+E FU 24V Sinamics 2 C
+E FU 24V Sinamics 3 C
+E FU 24V S7 Outp-C C
+E 1.7
+E FU 24V NCU 840Dsl
+E FU 24V Sply OP15 C1 C
+E FU 24V Sply MCP 1 C
+E FU 24V S7 Inputs 1#2C
+E FU 24V S7 Inputs 2#2C
+E FU 24V Profibus C
+E FU 24V CntrVolt
+E FU* 24V S7 Outp-HS C
+E FU 24V S7 Outp-Car. C
+E FU 24V S7 Outp-TS C
+E FU Roll measuringC1 C
+E FU 24V PresDisplay
+E FU 24V MOVIMOT C
+E CB Sply Valve Brake C
+E FU 24V Valve++ TS C
+E FU 24V Valve++ Car C
+E DINA ready C
+E E-Stop
+E Req BA II
+E Req BA I
+E Req BA III
+E Req SBA
+E DINA BA I act
+E DINA BA II act
+E DINA BA III act
+E DINA SBA act
+E DINA C1 n=0
+E DINA C1 n>max
+E DINA Z n=0
+E DINA Z n>max
+E DINA X n=0
+E DINA X n>max
+E NoEmergencyLimitSW
+E LimitSW bridged
+E DINA HS door1 closed
+E DINA HS door2 closed
+E DINA Car door1 closed
+E DINA Car door2 closed
+E AgreementBotton 2
+E AgreementButton
+E ALM is On
+E SH activ Axis
+E ALM ready turnON
+E SH activ Spindle
+E 9.4
+E DINA WP1 door1 closed
+E DINA WP1 door2 closed
+E E-Stop-Key act Panel
+E CB Motor Blower HS
+E 10.1
+E CB Lube HS
+E 10.3
+E CB BedLub X/Z
+E 10.5
+E CB Adjustm. TS
+E 10.7
+E CB Centr. Lube TS
+E CB Quill Lube TS
+E CB Hydraulic Pump TS
+E 11.3
+E 11.4
+E CB Adjustm. Q-TS
+E 11.6
+E 11.7
+E E-Stop-Key active FrHS
+E KYSW PanelAct FrPa HS
+E PB* Spi Stop FrPaHS
+E PB Spi.Jog CCW FrPaHS
+E PB Spi.Jog CW FrPaHS
+E PB Spi Osci FrPaHS
+E 34.6
+E LEVL GearLub HS
+E E-Stop-Key active ReHS
+E KYSW PanelAct RePa HS
+E PB* Spi Stop RePaHS
+E PB Spi.Jog CCW RePaHS
+E PB Spi.Jog CW RePaHS
+E E-Stop-Key active WPD1
+E E-Stop-Key active WPD2
+E TEMP* GearOil >70°C HS
+E PROX Freecutting HS
+E FLSW Oil Lube HS
+E LSW GearStep 1 HS
+E LSW GearStep 2 HS
+E LSW GearStep 3 HS
+E LSW Reserve HS
+E LSW door closed FrHS
+E LSW door closed ReHS
+E KYSW reqest Door1 HS
+E KYSW reqest Door2 HS
+E KYSW reqest Door 1 WP
+E KYSW reqest Door 2 WP
+E KYSW reqest Door 3 WP
+E 37.5
+E 37.6
+E 37.7
+E LSW E-End Pos. (-) Z1
+E LSW E-End Pos. (+) Z1
+E LSW Ref.Pos. Z1
+E 44.3
+E LSW E-End Pos. (-) X1
+E LSW E-End Pos. (+) X1
+E LSW Ref.Pos. X1
+E LSW Park pos X1
+E LEVL BedLub X/Z C1
+E PSW BedLub >12B C1
+E LSW Tool Pos 1 C1
+E LSW Tool Pos 2 C1
+E LSW Tool Pos 3 C1
+E LSW Tool Pos 4 C1
+E KYSW reqest Door1 C1
+E KYSW reqest Door2 C1
+E Renishaw Arm down C
+E Renishaw Arm up C
+E 46.2
+E 46.3
+E 46.4
+E 46.5
+E 46.6
+E PB FastRetract X1MP1
+E 47.0
+E 47.1
+E 47.2
+E 47.3
+E 47.4
+E 47.5
+E 47.6
+E 47.7
+E Key AUTO MCP1
+E Key MDA MCP1
+E Key TEACH IN MCP1
+E Key JOG MCP1
+E SSO% Code
+E SSO% Code B MCP1
+E SSO% Code C MCP1
+E SSO% Code D MCP1
+E Key 1 INC MCP1
+E Key 10 INC MCP1
+E Key 100 INC MCP1
+E Key 1.000 INC MCP1
+E Key 10.000 INC MCP1
+E Key var INC MCP1
+E Key REF MCP1
+E Key REPOS MCP1
+E Key* NC Stop MCP1
+E Key NC Start MCP1
+E Key* Feed Stop MCP1
+E Key Feed Start MCP1
+E Key* Spi. Stop MCP1
+E Key Spi.Start MCP1
+E KeySwitch Pos.2 MCP1
+E KeySwitch Pos.0 MCP1
+E Feed Overr.CodeA MCP1
+E Feed Overr.CodeB MCP1
+E Feed Overr.CodeC MCP1
+E Feed Overr.CodeD MCP1
+E Feed Overr.CodeE MCP1
+E Key SingleBlock MCP1
+E Key Switch Pos1 MCP1
+E Reset Key MCP1
+E Key R10 Clear DTG MCP1
+E Key R7 Spi. CW MCP1
+E Key R4 Z (-) MCP1
+E Key R1 Spi. CCW MCP1
+E Key Switch Pos3 MCP1
+E Key R14 X++ MCP1
+E Key R13 MCP1
+E Key R15 MCP1
+E Key R6 Z (+) MCP1
+E Key R8 X (+) MCP1
+E Key R9 MCP1
+E Key R11 MCP1
+E Key R12 MCS/WCS MCP1
+E Key R5 Rapid MCP1
+E Key R3 MCP1
+E Key R2 X (-) MCP1
+E Not used MCP1
+E Key T15 IntervI/O MCP1
+E Key T14 S30 MCP1
+E Key T13 HT2 MCP1
+E Key T12 Spi.Gear3 MCP1
+E Key T11 Spi.Gear2 MCP1
+E Key T10 Spi.Gear1 MCP1
+E Key T9 RevTurn MCP1
+E KEY T8 MCP1
+E KEY T7 MeasArmUpD MCP1
+E Key T6 CC JogBwd MCP1
+E Key T5 ChipConI/O MCP1
+E Key T4 MCP1
+E Key T3 SreenOnOff MCP1
+E Key T2 LampTest MCP1
+E KEY T1 autoRef MCP1
+E E-Stop-Key act TS
+E KYSW PanelAct TS
+E PBIL Unclamp TS
+E PB Clamp TS
+E PB Rapid FWD (Z-) TS
+E PB Rapid BWD (+) TS
+E PB Slow FWD (Z-) TS
+E PB Slow BWD (+) TS
+E PBIL FWD (Z-) Q-TS
+E PBIL BWD (Z+) Q-TS
+E SEL Rapid (slow) Q-TS
+E PSW unclamp TS
+E LEVL* Lube Oil Q-TS
+E FLSW Oil Lube Q-TS
+E Ready MOVIMOT TS
+E Ready MOVIMOT Q-TS
+E LSW clamp TS
+E LSW* End (Z+) TS
+E PSW* Stop Workpice TS
+E LSW* Quill Pres>Max TS
+E LSW* End (Z-) Q-TS
+E LSW* End (Z+) Q-TS
+E PSW BedLube >12B TS
+E LEVL* Lube Oil TS
+E 167.0
+E 167.1
+E 167.2
+E 167.3
+E 167.4
+E 167.5
+E 167.6
+E 167.7
+EB Start Adresse MCP1
+EB Feed-OVR MCP1
+FB 1: Run up
+FB 2: Get NC-lesen
+FB 3: Put NC-schreiben
+FB 4: PI_SERV
+FB 5: GET GUD
+FB 6: Kommunikation
+FB 7: PI_SERV2
+M2N
+SI_Relais
+SI_BrakeTest
+FB 12: P RCV CP340
+FB 13: P SEND CP340
+FB 14: GP
+FB 15: GP
+FB 16: GP
+FB 17: GP
+HiGraphErrEmitterFB
+MULTI_INST_FUNCTION
+Diagnose
+FB SPL Teststop
+CTM_INIT
+FC 1: GP
+FC 2: GP HP
+FC 3: GP PRAL
+FC 4: GP
+FC 5: GP DIAG
+FC 6: GP
+FC 7: TM REV
+FC 8: TM TRANS
+FC 9: ASUP
+FC 10: AL MSG
+FC 11: GP
+FC 12: GP
+FC 13: BHGDisp
+FC 14: GP
+FC 15: POS AX
+FC 16: PART AX
+FC 17: YDelta
+FC 18: SpinCtrl
+FC 19: MCP IFM
+FC20: WRITE_MESSAGE
+FC21: Transfer
+FC22: TM_DIR
+FC24: MCP_IFMs
+FC 25: MCP IFT
+FC26:HPU_MCP
+FC 28: V24 STAT CP340
+FC 29: V24 SET CP340
+CTM3
+CTM1
+CTM2
+CTM4
+CTM_MONIT
+FUNCTIONS
+FC 40
+FC 49
+FC 50
+FC 59
+FC 60
+FC 69
+FC 70
+FC 79
+FC 80
+FC 81
+FC 82
+FC 83
+FC 84
+FC OEM_Time
+FC 86
+FC 87
+FC 88
+FC 89
+FC 90 Clear Byte
+FC 91 Byte <> 0 ?
+FC DBD --> DBD
+FC DBB --> DBB
+FC 94 Test Abschaltpfade
+FC 95 Test ext Stops
+FC 97 SPL_FC_ZD
+FC 98 Dina
+FC Machine General
+FC General Machine On
+FC E-Stop Locate
+FC Clock
+FC HelpDrives
+FC Dina BA select
+FC WorkingCounter
+FC Doors Fence
+FC Scree Meassys
+FC Gen.Machine On C1
+FC 120
+FC Gen.Machine On C2
+FC ALM / Axis general
+FC DP deaktivieren
+FC MainPanel Master
+FC Switch MainPanel C1/2
+FC Handweel HT2
+FC Handwheel Switch
+FC Key-Simulation Gen.
+FC GRAY
+FC HT2 Displayanwahl
+FC HT2 Display
+FC HT2 Key Simulation
+FC Fast retract C1
+FC Key Simulation C1
+FC Key Simulation 2 C1
+FC HT2 Display C2
+FC HT2 Key Simulation C2
+FC Fast retract C2
+FC Key Simulation C2
+FC Key Simulation 2 C2
+FC General Drives
+FC Chipconveyor C
+FC Headstock HS
+FC GetrSchmierung
+FC Hydr + Lube HS
+FC Lube HS
+FC GearstepSelect HS
+FC GearDecoder HS
+FC Valve after 48h HS
+FC Doors Cover HS
+FC Main Drive HS
+FC Load readout HS
+FC Spindel Intervall HS
+FC Spindel IntervTime HS
+FC Gear ChangeMan HS
+FC Gear Change HS
+FC Gear Change2 HS
+FC Gear Change3 HS
+FC Gear Change4 HS
+FC Gear Change5 HS
+FC Gear Change6 HS
+FC Freecut HS
+FC Carriage 1 C1
+FC Hydrostatic Car.1
+FC Aux. Drive Car.1
+FC VibrationContr. Car.1
+FC Collision Car.1
+FC Doors C1
+FC X-Axis Car.1
+FC Z-Axis Car.1
+FC 520
+FC Lub_X/Z Car.1
+FC Tool Revolver Car.1
+FC General TCar-C1
+FC Hydraulic TCar-C1
+FC Lube TCar-C1
+FC Left Tool Carrier C1
+FC Man.Posi.sel. LeTC-C1
+FC Posi.Cycle LeTC-C1
+FC Unclmp Cycle LeTC-C1
+FC T-Holder+Tool LeTC-C1
+FC Left InnerTool Car C1
+FC Man.Posi.sel.LeITC-C1
+FC Posi.Cycle LeInTC-C1
+FC UnclmpCycle LeInTC-C1
+FC T-Hold+Tool LeInTC-C1
+FC Man.Posi.sel. RiTC-C1
+FC Posi.Cycle RiTC-C1
+FC Unclmp Cycle RiTC-C1
+FC T-Holder-Tool RiTC-C1
+FC Manual Tool Change C1
+FC Carriage 2 C2
+FC Hydrostatic Car.2
+FC Aux. Drive Car.2
+FC VibrationContr. Car.2
+FC Collision Car.2
+FC Doors Car.2
+FC X2-Axis Car.2
+FC Z2-Axis Car.2
+FC 570
+FC General TCar-C2
+FC Hydraulic TCar-C2
+FC Lube TCar-C2
+FC Left Tool Carrier C2
+FC Man.Posi.sel. LeTC-C2
+FC Posi.Cycle LeTC-C2
+FC Unclmp Cycle LeTC-C2
+FC T-Holder+Tool LeTC-C2
+FC Left InnerTool Car C2
+FC Man.Posi.sel.LeITC-C2
+FC Posi.Cycle LeInTC-C2
+FC UnclmpCycle LeInTC-C2
+FC T-Hold+Tool LeInTC-C2
+FC Right Tool Carrier C2
+FC Man.Posi.sel. RiTC-C2
+FC Posi.Cycle RiTC-C2
+FC Unclmp Cycle RiTC-C2
+FC T-Holder-Tool RiTC-C2
+FC Manual Tool Change C2
+FC Tailstock TS
+FC Tst Encoder TS
+FC Doors TS
+FC Tst ClampHandHydr TS
+FC Tst Clamp TS
+FC Quill Clamp TSQ
+FC Faceplate Clamp TS
+FC Tst CentrLub TS
+FC Tst Lub TS
+FC Quill Lub TSQ
+FC Tst Move1 TS
+FC Tst Move2 TS
+FC Tst Move3 TS
+FC Tst Move4 TS
+FC Tst Move5 TS
+FC Quill Move1 TSQ
+FC Quill Move2 TSQ
+FC Quill Move3 TSQ
+FC Quill Move4 TSQ
+FC Quill Move5 TSQ
+FC Quill PressDispl TSQ
+FC 96 KollSchutz
+FC MeasureTool HS
+FC MeasureTool TS
+FC MeasureWorkpiece C1
+FC MeasureWorkpiece C2
+FC BNPV Display C1
+FC BNPV Display C2
+FC 800
+FC 803
+FC Read Pos for HT2
+FC NC_MD_Write_Spindel
+FC H-Decode
+FC DualPortRam
+FC Install ASUP0
+FC 810 NC_MD_Write_Axis
+FC H-/M-/G-Decod. Ch.1
+FC BZO Calc Ch.1
+FC BZO Write Ch.1
+FC act AxValue read Ch.1
+FC NC-Interface Ch.1
+FC 816
+FC 817
+FC Install ASUP1 Ch.1
+FC 819
+FC 820
+FC 821
+FC BZO Calc Ch.2
+FC BZO Write Ch.2
+FC act AxValue read Ch.2
+FC 826
+FC 827
+FC 829
+FC CHECK PROFIBUS
+FC GLOBAL_DP_DIAG
+IBN allways 0
+IBN allways 1
+M Clock 10Hz
+M Clock 5Hz
+M Clock 2,5Hz
+M Clock 2Hz
+M Clock 1,25Hz
+M Clock 1Hz
+M Clock 0,625Hz
+M Clock 0,5Hz
+M first run SIRELAY
+M first SPL run
+M_10.0
+M 10.1
+M 10.2
+M 15.0
+M 48.3
+M 20.1
+M 21.2
+M 21.3
+M_22.0
+M_22.1
+M 48.0
+M 48.1
+M 48.2
+M 48.4
+M 48.5
+M 48.6
+M 48.7
+M 49.0
+M 49.1
+M 49.3
+M 49.4
+M 49.5
+M_60.0
+M_60.1
+M_60.2
+M_60.3
+M_60.4
+M_60.5
+M_60.6
+M_60.7
+M_61.0
+M_61.1
+M_61.2
+M_61.3
+M_61.4
+M_61.5
+M 61.6
+M 61.7
+M_62.0
+M_62.1
+M_62.2
+M_62.3
+M_62.4
+M 62.5
+M 62.6
+M 62.7
+M_65.0
+M-65.1
+M-65.2
+M_65.3
+M_65.4
+M_67.0
+M-67.1
+M-67.2
+M-67.3
+M_75.5
+M_84.6
+M_85.0
+M_85.1
+M_85.2
+M_85.3
+M_85.4
+M 88.0
+M 88.1
+M 88.2
+M 88.3
+M 88.4
+M 88.5
+M 88.6
+M 88.7
+M 89.0
+M 89.1
+M 89.2
+M 89.3
+M 89.4
+M 89.5
+M 89.6
+M 89.7
+M 90.0
+M 90.1
+M 90.2
+M 90.3
+M 91.2
+M 91.5
+M 93.0
+M 93.1
+M 93.2
+M 93.3
+M 93.4
+M 93.5
+M 93.6
+M 93.7
+M_94.1
+M Reset Key act.Panel
+M Acknowledge Reset Flt
+M Fault AchnowKey actPan
+M Fault acknowledge
+M 98.3
+M 98.4
+M 98.5
+M 98.6
+M 98.7
+M Parken Flanke Sup. 1
+M Parken Impuls Sup. 1
+M Parken Flanke Sup. 2
+M Parken Impuls Sup. 2
+M 99.5
+M 99.6
+M 99.7
+M E-Stop Fault active
+M No-E-Stop-Stored
+M Vorber. Maschine Ein
+M Vorber. Maschine Aus
+M Maschine Aus Impuls
+M Lastspg. (Ma.) ist Ein
+M Enable Aux.DrivesMa On
+M Enable Drives aft MaOn
+M Enable Drives edge
+M Enable Drives Pulse On
+M Main Power Off pulse
+M Support 1 Ein Befehl
+M Support 1 ist Ein
+M Support 1 = Ein Flanke
+M Support 1 = Ein Impuls
+M Ein 611D Antr.Läuft S1
+M Support 2 Ein Befehl
+M Support 2 ist Ein
+M Support 2 = Ein Flanke
+M Support 2 = Ein Impuls
+M Ein 611D Antr.Läuft S2
+M Support 1 Abwahl
+M Support 2 Abwahl
+M 102.7
+M HoldAllMotion Edge MP1
+M HoldAllMotion Edge MP2
+M HoldAllMotion Edge Res
+M Hold All Motion Active
+M 103.4
+M 103.5
+M Support 1 Speicher
+M Support 2 Speicher
+M PLC-Acknowl-Flt active
+M PLC-Quit-Msg. active
+M PLC-R-Flt/Msg. active
+M 104.3
+M MSG Safe Quitt Edge
+M MSG Safe Quitt Puls
+M 104.6
+M 104.7
+M AnfZauntuer1Gesp
+M AnfZauntuer2Gesp
+M AnfZauntuer3Gesp
+M 105.3
+M 105.4
+M 105.5
+M 105.6
+M 105.7
+M Chipconveyor On Edge
+M Chipconveyor On Store
+M Chipconveyor del Off
+M 106.3
+M Chipconveyor Off Edge
+M 106.5
+M 106.6
+M 106.7
+M Lastspg. Ein Impuls
+M Lastspg. Aus Impuls
+M Lastspg. Flanke
+M Mainswtch On Puls
+M Mainswtch Off Puls
+M Mainswtch On Edge
+M 107.6
+M FistRun Store
+M One_Support
+M 108.1
+M 108.2
+M 108.3
+M 108.6
+M 108.7
+M 109.0
+M Renishaw_On_store_C1
+M Renishaw_Off_store_C1
+M 110.2
+M 110.3
+M 110.4
+M 110.5
+M 110.6
+M 110.7
+M Renishaw_On_edge_C2
+M Renishaw_On_pulse_C2
+M Renishaw_On_store_C2
+M Renishaw_Off_edge_C2
+M Renishaw_Off_pulse_C2
+M Renishaw_Off_store_C2
+M 112.2
+M 112.3
+M 113.0
+M IBN LubFill HS
+M IBN LubFill Car
+M IBN LubFill TS
+M IBN LubFill Q-TS
+M IBN LubFill T-Car
+M IBN LubFill Stdy
+M IBN GS
+M IBN Pendeln
+M IBN T-Car
+M IBN MeasCar
+M IBN Clamp TS
+M IBN Clamp Q-TS
+M IBN Clamp T-Car
+M IBN Clamp Stdy
+M IBN MessX
+M IBN MessZ
+M IBN MessC
+M IBN HourCount
+M IBN Screensaver
+M 117.0
+M 117.1
+M 117.2
+M 117.3
+M 118.2
+M 118.5
+M 118.6
+M 118.7
+M_ 119.2
+M 121.0
+M 121.1
+M 121.2
+M 121.3
+M 121.4
+M 121.5
+M 121.6
+M 121.7
+M 122.0
+M 122.1
+M 122.2
+M 122.3
+M 122.4
+M 122.5
+M 122.6
+M 122.7
+M 123.0
+M 123.1
+M 123.2
+M 123.3
+M 123.4
+M 123.5
+M 123.6
+M 123.7
+M 124.0
+M 124.1
+M 124.2
+M 124.3
+M 124.4
+M 124.5
+M 124.6
+M 124.7
+M 125.0
+M 125.1
+M 125.2
+M 125.3
+M 125.4
+M 125.5
+M 125.6
+M 125.7
+M 126.0
+M 126.1
+M 126.2
+M 126.3
+M 126.4
+M 126.5
+M 126.6
+M 126.7
+M 127.0
+M 127.1
+M 127.2
+M 127.3
+M 127.4
+M 127.5
+M 127.6
+M 127.7
+M 128.0
+M 128.1
+M 128.2
+M 128.3
+M 128.4
+M 128.5
+M 128.6
+M 128.7
+M SicherhKuppl Aktiv X1
+M SiKuppl Freifahren X1
+M SicherhKuppl Aktiv Z1
+M SiKuppl Freifahren Z1
+M SicherhKuppl Aktiv X2
+M SiKuppl Freifahren X2
+M SicherhKuppl Aktiv Z2
+M SiKuppl Freifahren Z2
+M 130.0
+M 130.1
+M 130.2
+M 130.3
+M 130.4
+M 130.5
+M 130.6
+M 130.7
+M 131.0
+M 131.1
+M 131.2
+M 131.3
+M 131.4
+M 131.5
+M 131.6
+M 131.7
+M 132.0
+M 132.1
+M 132.2
+M 132.3
+M 132.4
+M 132.5
+M 132.6
+M 132.7
+M 133.0
+M 133.1
+M 133.2
+M 133.3
+M 133.4
+M 133.5
+M 133.6
+M 133.7
+M 134.0
+M 134.1
+M 134.2
+M 134.3
+M 134.4
+M 134.5
+M 134.6
+M 134.7
+M 135.0
+M 135.1
+M 135.2
+M 135.3
+M 135.4
+M 135.5
+M 135.6
+M 135.7
+M M06 Stored C1
+M M06 Stored Edge C1
+M M06 Stored & Acknow C1
+M 136.3
+M 136.4
+M 136.5
+M 136.6
+M 136.7
+M M06 Stored C2
+M M06 Stored Edge C2
+M M06 Stored & Acknow C2
+M 137.3
+M 137.4
+M 137.5
+M 137.6
+M 137.7
+M 138.0
+M 138.1
+M 138.2
+M 138.3
+M 138.4
+M 138.5
+M 138.6
+M 138.7
+M 139.0
+M 139.1
+M 139.2
+M 139.3
+M 139.4
+M 139.5
+M 139.6
+M 139.7
+M 140.0
+M 140.1
+M 140.2
+M 140.3
+M 140.4
+M 140.5
+M 140.6
+M 140.7
+M 141.0
+M 141.1
+M 141.2
+M 141.3
+M 141.4
+M 141.5
+M 141.6
+M 141.7
+M 142.0
+M 142.1
+M 142.2
+M 142.3
+M 142.4
+M 142.5
+M 142.6
+M 142.7
+M 143.0
+M 143.1
+M 143.2
+M 143.3
+M 143.4
+M 143.5
+M 143.6
+M 143.7
+M 144.0
+M 144.1
+M 144.2
+M 144.3
+M 144.4
+M 144.5
+M 144.6
+M 144.7
+M 145.0
+M 145.1
+M 145.2
+M 145.3
+M 145.4
+M 145.5
+M 146.0
+M 146.1
+M 146.2
+M 146.3
+M 146.4
+M 146.5
+M 146.6
+M 146.7
+M 147.0
+M 147.1
+M 147.2
+M 147.3
+M 147.4
+M 147.5
+M 147.6
+M 147.7
+M 148.0
+M 148.1
+M 148.2
+M 148.3
+M 148.4
+M 148.5
+M 148.6
+M 148.7
+M 149.0
+M 149.1
+M 149.2
+M 149.3
+M 149.4
+M 149.5
+M 149.6
+M 149.7
+M Line-Modul Off Aktiv
+M LIne-Modul EnableDrive
+M 150.2
+M 150.3
+M 150.4
+M 150.5
+M 150.6
+M 150.7
+M 151.0
+M 151.1
+M 151.2
+M 151.3
+M 151.4
+M 151.5
+M 151.6
+M 151.7
+M 152.0
+M 152.1
+M 152.2
+M 152.3
+M 152.4
+M 152.5
+M 152.6
+M 152.7
+M 153.0
+M 153.1
+M 153.2
+M 153.3
+M 153.4
+M 153.5
+M 153.6
+M 153.7
+M 154.0
+M 154.1
+M 154.2
+M 154.3
+M 154.4
+M 154.5
+M 154.6
+M 154.7
+M 155.0
+M 155.1
+M 155.2
+M 155.3
+M 155.4
+M 155.5
+M 155.6
+M 155.7
+M 156.0
+M 156.1
+M 156.2
+M 156.3
+M 156.4
+M 156.5
+M 156.6
+M 156.7
+M 157.0
+M 157.1
+M 157.2
+M 157.3
+M 157.4
+M 157.5
+M 157.6
+M 157.7
+M 158.0
+M 158.1
+M 158.2
+M 158.3
+M 158.4
+M 158.5
+M 158.6
+M 158.7
+M 159.0
+M 159.1
+M 159.2
+M 159.3
+M 159.4
+M 159.5
+M 159.6
+M 159.7
+M 160.0
+M 160.1
+M 160.2
+M Set SpiStStatus48h Imp
+M Set SpiStStatus48h Flk
+M 160.5
+M 160.6
+M 160.7
+M 161.0
+M 161.1
+M 161.2
+M 161.3
+M 161.4
+M 161.5
+M 161.6
+M 161.7
+M 162.0
+M 162.1
+M 162.2
+M_164.7
+M_165.7
+M 170.0
+M 170.1
+M 170.2
+M 170.3
+M 170.4
+M 170.5
+M 170.6
+M 170.7
+M 171.0
+M 171.1
+M 171.2
+M 171.3
+M 171.4
+M 171.5
+M 171.6
+M 171.7
+M 172.0
+M 172.1
+M 172.2
+M 172.3
+M 172.4
+M 172.5
+M 172.6
+M 172.7
+M 173.0
+M 173.1
+M 173.2
+M 173.3
+M 173.4
+M 173.5
+M 173.6
+M 173.7
+M 174.0
+M 174.1
+M 174.2
+M 174.3
+M 174.4
+M 174.5
+M 174.6
+M 174.7
+M 175.0
+M 175.1
+M 175.2
+M_175.3
+M_175.4
+M 175.5
+M 175.6
+M 175.7
+M_178.0
+M_178.1
+M_178.2
+M_178.3
+M_178.4
+M_178.5
+M_178.6
+M_178.7
+M_179.0
+M_179.1
+M_179.2
+M_179.3
+M_179.4
+M_179.5
+M_179.6
+M_179.7
+M_180.0
+M_180.1
+M_180.2
+M_180.3
+M_180.4
+M_180.5
+M_180.6
+M_180.7
+M 184.5
+M 184.6
+M 184.7
+M 185.0
+M 185.1
+M 185.2
+M 185.3
+M 185.4
+M 185.5
+M 185.6
+M 185.7
+M 186.0
+M 186.1
+M 186.2
+M 186.3
+M 186.4
+M 186.5
+M 186.6
+M 186.7
+M 187.0
+M 187.1
+M 187.2
+M 187.3
+M 187.4
+M 187.5
+M 187.6
+M 187.7
+M 188.0
+M 188.1
+M 188.2
+M 188.3
+M 188.4
+M 188.5
+M 188.6
+M 188.7
+M M98PSSAufGespBisQuitt
+M M99PSSZuGespBisQuitt
+M SchutzhAufGespeich PS
+M SchutzhZuGespeich PS
+M 189.4
+M Anf_Schutz Tür Gesp TS
+M 189.6
+M 189.7
+M_190.0
+M_190.1
+M_190.2
+M_190.3
+M_190.4
+M_190.5
+M_190.6
+M_190.7
+M_191.0
+M_191.1
+M 191.2
+M 191.3
+M 191.4
+M 191.5
+M 191.6
+M 191.7
+M 192.0
+M 192.1
+M 192.2
+M 192.3
+M 192.4
+M 192.5
+M 192.6
+M 192.7
+M 193.0
+M 193.1
+M 193.2
+M 193.3
+M 193.4
+M 193.5
+M 193.6
+M 193.7
+M 194.0
+M 194.1
+M 194.2
+M 194.3
+M 194.4
+M 194.5
+M 194.6
+M 194.7
+M 195.0
+M 195.1
+M 195.2
+M 195.3
+M 195.4
+M 195.5
+M 195.6
+M 195.7
+M 196.0
+M 196.1
+M 196.2
+M 196.3
+M 196.4
+M 196.5
+M 196.6
+M 196.7
+M 197.0
+M 197.1
+M 197.2
+M 197.3
+M 197.4
+M 197.5
+M 197.6
+M 197.7
+M 198.0
+M 198.1
+M 198.2
+M 198.3
+M 198.4
+M 198.5
+M 198.6
+M 198.7
+M 199.0
+M 199.1
+M 199.2
+M 199.3
+M 199.4
+M 199.5
+M 199.6
+M 199.7
+M Spi<>Kanal 2.Umlauf
+M 202.1
+M 202.2
+M 202.3
+M 202.4
+M 202.5
+M 202.6
+M 202.7
+M Act.FeedOverride=0 HP1
+M Rapid-Ovr=0 C1
+M Feed OVR = 0 C1
+M 201.3
+M 201.4
+M 201.5
+M 201.6
+M 201.7
+M SBL off Auto select C1
+M SBL off ManE select C1
+M MT-Abwahl Richt.Flanke
+M 202.3
+M MCS/WCS f. MMC Edge C1
+M MCS/WCS f. MMC Puls C1
+M 202.6
+M 202.7
+M BA Einr Puls
+M Setup Edge C1
+M Agree switch Edge C1
+M Agree switch Puls C1
+M 203.4
+M Auto->Jog Edge C1
+M Auto->Jog Store C1
+M Auto->Jog Jog C1
+M Act.FeedOverride=0 HP2
+M Rapid-Ovr=0 C2
+M Feed OVR = 0 C2
+M 204.3
+M 204.4
+M 204.5
+M 204.6
+M 204.7
+M SBL off Auto select C2
+M SBL off Eing select C2
+M 205.2
+M 205.3
+M MCS/WCS f. MMC Edge C2
+M MCS/WCS f. MMC Puls C2
+M 205.6
+M 205.7
+M 206.0
+M Setup Edge C2
+M Agree switch Edge C2
+M Agree switch Puls C2
+M Store Feed Stop Axis
+M Auto->Jog Edge C2
+M Auto->Jog Store C2
+M Auto->Jog Jog C2
+M_ 207.0
+M_ 207.1
+M_ 207.2
+M_ 207.3
+M_ 207.4
+M_ 207.5
+M 207.6
+M 207.7
+M_ 208.0
+M_ 208.1
+M 208.2
+M 208.3
+M 208.4
+M 208.5
+M 208.6
+M 208.7
+M 209.0
+M 209.1
+M 209.2
+M 209.3
+M 209.4
+M 209.5
+M 209.6
+M 209.7
+M 210.0
+M 210.1
+M 210.2
+M 210.3
+M 210.4
+M 210.5
+M 210.6
+M 210.7
+M 211.0
+M 211.1
+M 211.2
+M 211.3
+M 211.4
+M 211.5
+M 211.6
+M 211.7
+M 212.0
+M 212.1
+M 212.2
+M 212.3
+M 212.4
+M 212.5
+M 212.6
+M 212.7
+M_213.0
+M 213.1
+M 213.2
+M 213.3
+M 213.4
+M 213.5
+M 213.6
+M 213.7
+M 214.0
+M 214.1
+M 214.2
+M 214.3
+M 214.4
+M 214.5
+M 214.6
+M 214.7
+M 215.0
+M 215.1
+M 215.2
+M 215.3
+M 215.4
+M 215.5
+M 215.6
+M 215.7
+M 216.0
+M 216.1
+M 216.2
+M 216.3
+M 216.4
+M 216.5
+M 216.6
+M 216.7
+M 217.0
+M 217.1
+M 217.2
+M 217.3
+M 217.4
+M 217.5
+M 217.6
+M 217.7
+M 218.0
+M 218.1
+M 218.2
+M 218.3
+M 218.4
+M 218.5
+M 218.6
+M 218.7
+M 219.0
+M 219.1
+M 219.2
+M 219.3
+M 219.4
+M 219.5
+M 219.6
+M 219.7
+M 220.0 H.M.
+M 220.1 H.M.
+M 220.2 H.M.
+M 220.3 H.M.
+M 220.4 H.M.
+M 220.5 H.M.
+M 220.6 H.M.
+M 220.7 H.M.
+M 221.0 H.M.
+M 221.1 H.M.
+M 221.2 H.M.
+M 221.3 H.M.
+M 221.4 H.M.
+M 221.5 H.M.
+M 221.6 H.M.
+M 221.7 H.M.
+M 222.0 H.M.
+M 222.1 H.M.
+M 222.2 H.M.
+M 222.3 H.M.
+M 222.4 H.M.
+M 222.5 H.M.
+M 222.6 H.M.
+M 222.7 H.M.
+M 223.0 H.M.
+M 223.1 H.M.
+M 223.2 H.M.
+M 223.3 H.M.
+M 223.4 H.M.
+M 223.5 H.M.
+M 223.6 H.M.
+M 223.7 H.M.
+M 224.0 H.M.
+M 224.1 H.M.
+M 224.2 H.M.
+M 224.3 H.M.
+M 224.4 H.M.
+M 224.5 H.M.
+M 224.6 H.M.
+M 224.7 H.M.
+M 225.0 H.M.
+M 225.1 H.M.
+M 225.2 H.M.
+M 225.3 H.M.
+M 225.4 H.M.
+M 225.5 H.M.
+M 225.6 H.M.
+M 225.7 H.M.
+M_240.0
+M_241.0
+M_241.1
+M_241.2
+M_241.3
+M_ 255.0
+M_ 255.1
+M_ 255.2
+M_ 255.3
+M_ 255.4
+M_ 255.5
+M_ 255.6
+M_ 255.7
+Manual Turn aktiv
+Manual Turn verl Flanke
+Manual Turn verl Impuls
+M282.3 MT Spi Jog Flanke
+M282.4 MT Spi. Jog
+M282.5 MT Spi. CW Taste
+M282.6 MT Spi. CCW Taste
+M282.7 MT Spi. CW/CCW
+MT Handrad X aktiv
+MT Handrad Z aktiv
+M 284.0
+M 284.1
+M 1sec Clock Edge
+M 1sec Clock Pulse
+M 1min Clock Pulse
+M 0,1sec Clock Edge
+M 0,11sec Clock Pulse
+M MainBearLubPmpPulse HS
+M MainBearLubPresReachHS
+M AnfTuer1SpiGesp
+M AnfTuer2SpiGesp
+M 403.2
+M NC-Stop stored
+M 403.7
+M M41 stored Until Reset
+M M42 stored Until Reset
+M 404.2
+M M41 Gear 1 stored MSpi
+M M42 Gear 2 stored MSpi
+M Spi. Gear 1 stored
+M Spi. Gear 2 stored
+M Spi. Stop Gear Change
+M IBN GSW
+M SollGS1 NC set
+M SollGS2 NC set
+M Gear 1 not reached HS
+M Gear 2 not reached HS
+M 405.5
+M Gear Change activ MSpi
+M Gear Step reached MSpi
+M Jog From GearChg. MSpi
+M Gear 1 is engaged MSpi
+M Gear 2 is engaged MSpi
+M 406.3
+M SpiJogGearChgWithoutGear
+M Spi GearChg Edge HS
+M Gear was engaged HS
+M 406.7
+M 407.0
+M M96 stored Until Reset
+M M97 stored Until Reset
+M Enga actUntilReset C10
+M DisengactUntilResetC10
+M En-/DisengageF.CNC C10
+M Spi.Stop shift C10
+M Engage Stored C10
+M Disengage Stored C10
+M not Engaged inTime C10
+M 409.1
+M En-Disengage activ C10
+M Ref.-StatusReached C10
+M C10 Jog for engage C10
+M Is Engaged C10
+M Is Disengaged C10
+M Meas.Sys 1 for jog C10
+M Shift Edge C10
+M has been shifted C10
+M Shift active C10
+M 411.1
+M M94 untilReset,clmpC10
+M M95 untilReset,unclC10
+M Unclamp stored FaPl
+M Clamp stored FaPl
+M Clamp Faceplate !
+M Is clamped FaPl
+M Is unclamped FaPl
+M 412.7
+M 418.0
+M 418.1
+M Spindle Override=0 MCP
+M Spi OVR Change Signal
+M 418.4
+M Spi CW Store
+M Spi CCW Store
+M 418.7
+M 419.0
+M I 200% Edge Spi
+M I 200% Pulse Spi
+M 419.3
+M 419.4
+M Measure Sys 1 MSpi
+M Measure Sys 2 MSpi
+M 419.7
+M Spindle RPM=0 MSpi
+M Spindle RPM>0 MSpi
+M 420.2
+M SollGS1 NC set
+M SollGS2 NC set
+M Gear 1 not reached HS
+M Gear 2 not reached HS
+M 405.5
+M Gear Change activ MSpi
+M Gear Step reached MSpi
+M Jog From GearChg. MSpi
+M Gear 1 is engaged MSpi
+M Gear 2 is engaged MSpi
+M 406.3
+M SpiJogGearChgWithoutGear
+M Spi GearChg Edge HS
+M Gear was engaged HS
+M 406.7
+M 407.0
+M M96 stored Until Reset
+M M97 stored Until Reset
+M Enga actUntilReset C10
+M DisengactUntilResetC10
+M En-/DisengageF.CNC C10
+M Spi.Stop shift C10
+M Engage Stored C10
+M Disengage Stored C10
+M not Engaged inTime C10
+M 409.1
+M En-Disengage activ C10
+M Ref.-StatusReached C10
+M C10 Jog for engage C10
+M Is Engaged C10
+M Is Disengaged C10
+M Meas.Sys 1 for jog C10
+M Shift Edge C10
+M has been shifted C10
+M Shift active C10
+M 411.1
+M M94 untilReset,clmpC10
+M M95 untilReset,unclC10
+M Unclamp stored FaPl
+M Clamp stored FaPl
+M Clamp Faceplate !
+M Is clamped FaPl
+M Is unclamped FaPl
+M 412.7
+M 418.0
+M 418.1
+M Spindle Override=0 MCP
+M Spi OVR Change Signal
+M 418.4
+M Spi CW Store
+M Spi CCW Store
+M 418.7
+M 419.0
+M I 200% Edge Spi
+M I 200% Pulse Spi
+M 419.3
+M 419.4
+M Measure Sys 1 MSpi
+M Measure Sys 2 MSpi
+M 419.7
+M Spindle RPM=0 MSpi
+M Spindle RPM>0 MSpi
+M 420.2
+M KuehlmittelNebelGespS1
+M Kuehlm Ein Flanke S1
+M Kuehlm Ein Gesp S1
+M 512.4
+M 512.5
+M 512.6
+M Feed Enable fr Cool C1
+M Carriage Light edge C1
+M 513.1
+M 513.2
+M 515.0
+M Anf_Schutz Tür1Gesp S1
+M Anf_Schutz Tür2Gesp S1
+M 515.4
+M 515.5
+M RequestCoverSto TCarC1
+M 515.7
+M 516.0
+M FastRetract Fla X1
+M FastRetract Akt X1
+M FastRetract Start X1
+M FastRetract Key X+ X1
+M FastRetract n.enabl X1
+M FastRetrac Jog X1
+M FastRetract offEdge X1
+M FastRetract offPuls X1
+M Schnell-Rückz Fla K1X2
+M Schnell-Rückz Akt K1X2
+M Schnell-Rückz Inc K1X2
+M Schnell-Rückz T+ K1X2
+M 521.4
+M 521.5
+M 521.6
+M Vib Schlichten S1
+M Vib Schruppen S1
+M 530.2
+M FltFeedInh Stoped X1
+M Fault->FeedStop X1
+M Flt>Contr. Inhibit X1
+M Measure Sys 1 X1
+M Measure Sys 2 X1
+M Handwheel MP Edge X1
+M Handwheel MP On X1
+M Handwheel HT2 On X1
+M Feed On - store X1
+M Feed On + store X1
+M M46 stored untill Quit
+M Frg Fahr hinPlansch X1
+M 541.4
+M 541.5
+M Flanke Handrad HP2r X1
+M Handrad HptP2r Ein X1
+M 542.0
+M 542.7
+M FltFeedInh Stoped Z1
+M Fault->FeedStop Z1
+M Flt>Contr. Inhibit Z1
+M Measure Sys 1 Z1
+M Measure Sys 2 Z1
+M Handwheel MP Edge Z1
+M Handwheel MP On Z1
+M Handwheel HT2 On Z1
+M Feed On - store Z1
+M Feed On + store Z1
+M 543.2
+M Freigabe 2. SW-ES Z1
+M Master-only Z1
+M Slave-only Z1
+M Flanke Handrad HP2r Z1
+M Handrad HptP2r Ein Z1
+M 545.0
+M 545.7
+M 549.7
+M Key (-) Pulse X1
+M Key (-) Store X1
+M Key (+) Pulse X1
+M Key (+) Store X1
+M Key (-) Pulse Z1
+M Key (-) Store Z1
+M Key (+) Pulse Z1
+M Key (+) Store Z1
+M Hydrost-Freigabe -> X2
+M Hydrost-Freigabe -> Z2
+M Kuehlmittel NebFlan S2
+M KuehlmittelNebelGespS2
+M Kuehlm Ein Flanke S2
+M Kuehlm Ein Gesp S2
+M 562.4
+M 562.5
+M 562.6
+M Feed Enable fr Cool C2
+M Carriage Light edge C2
+M 563.1
+M 563.2
+M 565.0
+M Anf_Schutz Tür1Gesp S2
+M Anf_Schutz Tür2Gesp S2
+M 565.4
+M 565.5
+M RequestCoverSto TCarC2
+M 565.7
+M 566.0
+M 566.1
+M Schnell-Rückzug Fla X2
+M Schnell-Rückzug Akt X2
+M Schnell-Rückzug Inc X2
+M Schnell-Rückzug T+ X2
+M Schnell-Rückz 0-MFktX2
+M Schnell-Rückzug Jog X2
+M 570.6
+M Schnell-RückzK1 Imp X2
+M Schnell-Rückz Fla K2X1
+M Schnell-Rückz Akt K2X1
+M Schnell-Rückz Inc K2X1
+M Schnell-Rückz T+ K2X1
+M Vib Schlichten S2
+M Vib Schruppen S2
+M FltFeedInh Stoped X2
+M Fault->FeedStop X2
+M Flt>Contr. Inhibit X2
+M Measure Sys 1 X2
+M Measure Sys 2 X2
+M Handwheel MP Edge X2
+M Handwheel MP On X2
+M Handwheel Aux.PaOn X2
+M Feed On - store X2
+M Feed On + store X2
+M M46 stored untill Q C2
+M Frg Fahr hinPlansch X2
+M 591.4
+M 591.5
+M Flanke Handrad HP1r X2
+M Handrad HptP1r Ein X2
+M 592.0
+M 592.7
+M FltFeedInh Stoped Z2
+M Fault->FeedStop Z2
+M Flt>Contr. Inhibit Z2
+M Measure Sys 1 Z2
+M Measure Sys 2 Z2
+M Handwheel MP Edge Z2
+M Handwheel MP On Z2
+M Handwheel Aux.PaOn Z2
+M Feed On - store Z2
+M Feed On + store Z2
+M 594.2
+M Freigabe 2. SW-ES Z2
+M Master-only Z2
+M Slave-only Z2
+M Flanke Handrad HP1r Z2
+M Handrad HptP1r Ein Z2
+M Key (-) Pulse X2
+M Key (-) Store X2
+M Key (+) Pulse X2
+M Key (+) Store X2
+M Key (-) Pulse Z2
+M Key (-) Store Z2
+M Key (+) Pulse Z2
+M Key (+) Store Z2
+M Spindle_hold from TS
+M Enable_Spindle from TS
+M Pin vorn
+M Pin hinten
+M Pin in Mitte
+M AnfTuerRtstckGesp
+M 610.0
+M MainSpi. M40 Pulse HS
+M MainSpi. M41 Pulse HS
+M MainSpi. M42 Pulse HS
+M MainSpi. M43 Pulse HS
+M 800.4
+M MainSpi M03 static HS
+M MainSpi M04 static HS
+M MainSpi M05 static HS
+M MainSpi M03 Edge HS
+M MainSpi M03 Pulse HS
+M MainSpi M04 Edge HS
+M MainSpi M04 Pulse HS
+M MainSpi M05 Edge HS
+M MainSpi M05 Pulse HS
+M 802.1
+M M70 statisch HauptSpi
+M MainSpi M70 Edge HS
+M MainSpi M70 Pulse HS
+M 803.3
+M G0 active Channel 1
+M G33 active Channel 1
+M G75 active Channel 1
+M 804.3
+M 804.4
+M 804.5
+M G96 Aktiv Channel 1
+M 804.7
+M M00/M01 Edge
+M M00/M01 Pulse
+M M02/M30 Edge
+M M02/M30 Pulse
+M 805.4
+M 805.5
+M 805.6
+M 805.7
+M M2=03 Pulse Channel 1
+M M2=04 Pulse Channel 1
+M M2=05 Pulse Channel 1
+M M2=31 Pulse Channel 1
+M M3=03 Pulse Channel 1
+M M3=04 Pulse Channel 1
+M M3=05 Pulse Channel 1
+M M3=31 Pulse Channel 1
+M Fahrtenschr Flanke S1
+M 807.1
+M Interrupt_Lock_C1
+M S_OVR_to_C_OVR C1
+M Axis-OVR 100 C1
+M DRF off Edge C1
+M DRF on Edge C1
+M WKS/MKS Edge C1
+M DRF WKS aktiv C1
+M DRF Edge C1
+M DRF activ C1
+M M01 Edge C1
+M M01 activ C1
+M SKP Edge C1
+M SKP active C1
+M Feed-Stop-SBL Edge C1
+M Feed-Stop-SBL aktiv C1
+M 809.4
+M Feed Start(Stop) C1
+M Feed-Inhibit gen. C1
+M_809.7
+M 67.2
+M 67.3
+M 67.1
+M MainSpi. M40 Pulse C2
+M MainSpi. M41 Pulse C2
+M MainSpi. M42 Pulse C2
+M MBy 1 Spindel Chanal 2
+M MBy 2 Spindel Chanal 2
+M MBy 3 Spindel Chanal 2
+M G0 active Channel 2
+M G33 active Channel 2
+M G75 active Channel 2
+M G96 Aktiv Channel 2
+M Fahrtenschr Flanke S2
+M DRF Edge C2
+M DRF activ C2
+M M01 Edge C2
+M M01 activ C2
+M SKP Edge C2
+M SKP active C2
+M Feed-Stop-SBL Edge C2
+M Feed-Stop-SBL aktiv C2
+M Feed Start(Stop) C2
+M Feed-Inhibit gen. C2
+M MCP1_Status_Send_Ob100
+M MCP1_Status_Rec_Ob100
+M MCP2_Status_Send_Ob100
+M MCP2_Status_Rec_Ob100
+M Enable_Spindle from St
+M IBN_0
+M IBN_1
+MB MT-Signale
+MB 121
+MB 122
+MB 123
+MB 128
+MB 160
+MB 161
+MB 162
+M M40-42 Imp Ch.1 HS
+M M40-42 Imp Ch.2 HS
+MD Teststop Gr.1 Intern
+MD Teststop Gr.2 Intern
+MW MaxBAG
+MW MaxKanäle
+MW MaxAchsen
+MW FB120 MT Status
+MW Hilfsmerker Word
+OB 1 Zyklische Bearb
+OB 35 TimeInterr 100ms
+OB 40 Prozeßalarm
+DP_Koppler
+OB NOT LOADED FAULT
+DP_DP
+OB 100 Anlauf
+OB I/O-MONITORING
+Cntr word 1 to MainSpi
+Cntr word 2 to MainSpi
+Spi. Drive Statusword 1
+Spi. Drive Statusword 2
+Spi. Drive act.Spindle n
+Spi. Drive act.Spindle I
+Spi. Drive actSpindle Md
+Spi. Statusword freePrg.
+CTU
+TON
+TOF
+SET_RTM
+CTRL_RTM
+READ_RTM
+D_ACT_DP
+ALARM_SQ
+BLKMOV
+FILL
+CREAT_DB
+DIS_AIRT
+EN_AIRT
+STP
+WAIT
+RDSYSST
+WR_USMSG
+TIME_TCK
+RTM
+T 0
+T 1
+T 2
+T 3
+T 4
+T 5
+T 6
+T 7
+T 8
+T 9
+T Del Loadvoltage = On
+T Verz Klimag Grp 1 Ein
+T Verz Klimag Grp 2 Ein
+T Verz Klimag Überw
+T Del MainSwitch = ON
+T NC ready del
+T Del Loadvoltage = Off
+T Verl_Puls_First_run
+T Del all drive stop
+T Del Sinamics Off
+T Spänef. Umschalt Zeit
+T Mldg SpiEinOhneSpänefö
+T CipConv off to clear
+T 23
+T 24
+T 25
+T 26
+T 27
+T 28
+T Screensaver
+T M_T_H_S_ÄnderImpuls K1
+T MasterUmsch_verz_C1
+T 32
+T 33
+T 34
+T M_T_H_S_ÄnderImpuls K2
+T MasterUmsch_verz_C2
+T 37
+T 38
+T 39
+T 40
+T 41
+T 42
+T 43
+T KeyLock from HT2 MCP1
+T 45
+T 46
+T 47
+T 48
+T MiniHHUman.PulserOn C2
+T DEL HW AuxPan swOverC2
+T Del.Master Aux.Pan C2
+T Del.HWheelOff AuxP C2
+T KeyLock from HT2 MCP2
+T 55
+T 56
+T 57
+T 58
+T 59
+T 60
+T Time Gear Neutral HS
+T Time for Gearchange HS
+T TurnWhile gearchang HS
+T 64
+T Verz.HydrAus
+T Hilfszeit_Override_S2
+T 67
+T 68
+T Hilfszeit_Override_Spi
+T SpiSt Öl Min Verzögert
+T MonitorFlowSwCooler HS
+T SpiSt Ölküher Überwach
+T SpiSt Schmierung DS 1
+T SpiSt Schmierung DS 0
+T SpiSt HptLg Schm Aus
+T SpiSt HptLg Pmax Mon
+T SpiSt HptLg Pmin Mon
+T SpiSt HptLg min Pause
+T SpiSt HptLg beendet
+T Moitor GearChg 2->1
+T Moitor GearChg 1->2
+T Bwd GearChg 2->1
+T Bwd GearChg 1->2
+T GearChg done
+T Impuls GSW Error
+T verz GS raus
+T GSW Überwachung
+T VentSpiStnach 48h Impu
+T FanMot off 89
+T Time for shift C10
+T Jog while shift C10
+T Delayed shifted C10
+T Monitor Shift Fct. C10
+T Del jog cmd shift C10
+T 95
+T Del exactly at Pos.C10
+T Clamped C10
+T Unlamped C10
+T 99
+T Spi Ovr Change HS
+T Reset-Key to Spi. HS
+T MainContacOn CMD HS
+T Delayed Ia > Ix Spi.HS
+T Time for open Brake HS
+T Spi Stoped del HS
+T Off in 1min HS
+T Off in 10min HS
+T Spi.max. freecut time
+T SPI DrivEnab Until n=0
+T HptSpi. RSPinDruck
+T HptSpi. MotorAnwVerz
+T Del up to speed MSpi
+T HptSpi. Verz Ia G96
+T Spi I=200% verz.aus
+T Hilfszeit_SpiMaster
+T Del Brake in Jog MSpi
+T Del Brake E-Stop MSpi
+T Del I-Limit HS
+T Del Dina
+T Del. Feed Inhibit C10
+T DelayServoEnableOf C10
+T DelServoEnableOfSh C10
+T 123
+T 124
+T DelayMashineOn
+T Delay Contactor On
+T 127
+T 128
+T 129
+T DP aktivieren
+T 131
+T 132
+T 133
+T 134
+T 135
+T 136
+T 137
+T 138
+T Rückförd.Pumpe
+T 140
+T 141
+T 142
+T 143
+T 144
+T 145
+T 146
+T 147
+T 148
+T 149
+T 150
+T 151
+T 152
+T 153
+T 154
+T 155
+T 156
+T 157
+T 158
+T 159
+T 160
+T 161
+T 162
+T 163
+T 164
+T 165
+T 166
+T 167
+T 168
+T 169
+T 170
+T 171
+T 172
+T 173
+T 174
+T 175
+T 176
+T 177
+T 178
+T 179
+T 180
+T 181
+T 182
+T 184
+T 188
+T 192
+T 196
+T 197
+T 198
+T 199
+T Verz Öl Min Sup1
+T 201
+T Del all PSW=1 HydroC1
+T WaitForAll PSW HydroC1
+T Monitor PSW 1 HydroC1
+T Monitor PSW 0 HydroC1
+T Worm P>70 Bar HydroC1
+T Del PmpOff PSWmis HyC1
+T 208
+T 209
+T Verz_Z1+_aus
+T Verz_Z1-_aus
+T Verz DS1 Z1
+T Verz DS2 Z1
+T Vibration C1
+T Del Axis stopped off
+T del no def Pos TC-C1
+T FastRetr Key+Pulse X1
+T Del.FastRetract X1
+T 219
+T Del. Feed-Inhibit X1
+T Del. Servo-Inhibit X1
+T Del. Brake X1
+T Del. Load Warn. X1
+T Del. Overload X1
+T 225
+T 226
+T Del. Feed-Inhibit Z1
+T Del. Servo-Inhibit Z1
+T Del. Brake Z1
+T Del. Load Warn. Z1
+T Del. Overload Z1
+T 232
+T 233
+T 234
+T 235
+T 236
+T 237
+T 238
+T 239
+T 240
+T 241
+T 242
+T 243
+T 244
+T 245
+T 246
+T 247
+T 248
+T 249
+T Del OilLowPmpOff TC-C1
+T Del LowPresOff TC-C1
+T HydrPDelOf LowP TC-C1
+T HydrP Runtime TC-C1
+T Unclamp Monitor TC-C1
+T Clamp Monitor TC-C1
+T Mon.PSW PmpOff 0 TC-C1
+T Mon.PSW PmpOff 1 TC-C1
+T 258
+T 259
+T Del Unclamped LeTC-C1
+T Del Clamped LeTC-C1
+T Posi cyc. Del LeTC-C1
+T Posi cyc. End LeTC-C1
+T UnclmpCyc.End LeTC-C1
+T Del PosSelOff LeTC-C1
+T Del Unclamped RiTC-C1
+T Del Clamped RiTC-C1
+T Posi cyc. Del RiTC-C1
+T Posi cyc. End RiTC-C1
+T UnclmpCyc.End RiTC-C1
+T Del PosSelOff RiTC-C1
+T Del Unclamped LeITC-C1
+T Del Clamped LeITC-C1
+T Posi cyc. Del LeITC-C1
+T Posi cyc. End LeITC-C1
+T UnclmpCyc.End LeITC-C1
+T Del PosSelOff LeITC-C1
+T PulsLub finish LeTC-C1
+T PulsLub finish ReTC-C1
+T Del LSW Clmp LeTH-C1
+T Del not Clmp LeTH-C1
+T Del clmp Flt LeTH-C1
+T Del clamped LeTo-C1
+T Del unclamped LeTo-C1
+T Del LSW Clmp RiTH-C1
+T Del not Clmp RiTH-C1
+T Del clmp Flt RiTH-C1
+T Del clamped RiTo-C1
+T Del unclamped RiTo-C1
+T Del LSW Clmp 3.TH-C1
+T Del not Clmp 3.TH-C1
+T Del clmp Flt 3.TH-C1
+T Del clamped 3.To-C1
+T Del unclamped 3.To-C1
+T 295
+T 296
+T Mldg Unterdr Sup1 Ein
+T 298
+T 299
+T Del OilLowPmpOff C2
+T 301
+T Del all PSW=1 HydroC2
+T WaitForAll PSW HydroC2
+T Monitor PSW 1 HydroC2
+T Monitor PSW 0 HydroC2
+T Worm P>70 Bar HydroC2
+T Del PmpOff PSWmis HyC2
+T 308
+T 309
+T Verz_Z2+_aus
+T Verz_Z2-_aus
+T Verz DS1 Z2
+T Verz DS2 Z2
+T 314
+T Vibration C2
+T 316
+T FastRetr Key+Pulse X2
+T Del.FastRetract X2
+T 319
+T Del. Feed-Inhibit X2
+T Del. Servo-Inhibit X2
+T Del. Brake X2
+T Del. Load Warn. X2
+T Del. Overload X2
+T 325
+T Verz.VS-Sperre Z1
+T Del. Feed-Inhibit Z2
+T Del. Servo-Inhibit Z2
+T Del. Brake Z2
+T Del. Load Warn. Z2
+T Del. Overload Z2
+T 332
+T 333
+T 334
+T 335
+T 336
+T 337
+T 338
+T 339
+T 340
+T 341
+T 342
+T 343
+T 344
+T 345
+T 346
+T 347
+T 348
+T 349
+T Del OilLowPmpOff TC-C2
+T Del LowPresOff TC-C2
+T HydrPDelOf LowP TC-C2
+T HydrP Runtime TC-C2
+T Unclamp Monitor TC-C2
+T Clamp Monitor TC-C2
+T Mon.PSW PmpOff 0 TC-C2
+T Mon.PSW PmpOff 1 TC-C2
+T 358
+T 359
+T Del Unclamped LeTC-C2
+T Del Clamped LeTC-C2
+T Posi cyc. Del LeTC-C2
+T Posi cyc. End LeTC-C2
+T UnclmpCyc.End LeTC-C2
+T Del PosSelOff LeTC-C2
+T Del Unclamped RiTC-C2
+T Del Clamped RiTC-C2
+T Posi cyc. Del RiTC-C2
+T Posi cyc. End RiTC-C2
+T UnclmpCyc.End RiTC-C2
+T Del PosSelOff RiTC-C2
+T Del Unclamped LeITC-C2
+T Del Clamped LeITC-C2
+T Posi cyc. Del LeITC-C2
+T Posi cyc. End LeITC-C2
+T UnclmpCyc.End LeITC-C2
+T Del PosSelOff LeITC-C2
+T 378
+T 379
+T Del LSW Clmp LeTH-C2
+T Del not Clmp LeTH-C2
+T Del clmp Flt LeTH-C2
+T Del clamped LeTo-C2
+T Del unclamped LeTo-C2
+T Del LSW Clmp RiTH-C2
+T Del not Clmp RiTH-C2
+T Del clmp Flt RiTH-C2
+T Del clamped RiTo-C2
+T Del unclamped RiTo-C2
+T Del LSW Clmp 3.TH-C2
+T Del not Clmp 3.TH-C2
+T Del clmp Flt 3.TH-C2
+T Del clamped 3.To-C2
+T Del unclamped 3.To-C2
+T 395
+T 396
+T Mldg Unterdr Sup2 Ein
+T 398
+T 399
+T Del Unclamp PS not1 TS
+T Del Clamp PS not0 TS
+T Del Clamp LS not1 TS
+T LDel noMov TS
+T Del TouchRoll TS
+T CentralLub Pause TS
+T DelOff BedLub TS
+T Contr BedLubPmax TS
+T Contr BedLubPmin TS
+T CirculLub Pause Q-TS
+T DelOff BedLub Q-TS
+T Contr PathLubPmax Q-TS
+T Contr PathLubPmin Q-TS
+T CirculLub FS not0 Q-TS
+T CirculLub FS not1 Q-TS
+T Del QuilPress>> Q-TS
+T Flollow Unclamp TS
+T Flollow Unclamp Q-TS
+T Del UnclampPS not1 QTS
+T Del Clamp PS not0 Q-TS
+T Del no QillMov Q-TS
+T Del SikoSt FaQMov Q-TS
+T Del SikoSt FastMov TS
+T DirChang Bettv. TS
+T Del SikoSt SlQMov Q-TS
+T DirChang QuillMov Q-TS
+T DelOff Lock FP TS
+T DelOff Unlock FP TS
+T DelMotEnable Q-TS
+T Del BrakeQuillMov Q-TS
+T DelMovimotBB TS
+T DelMovimotBB Q -TS
+T HydrP Runtime TS
+T UnclampTime>30s TS
+T 434
+T 435
+T 436
+T 437
+T 438
+T 439
+T 440
+T 441
+T 442
+T 443
+T 444
+T 445
+T 446
+T 447
+T 448
+T 449
+T 450
+T 451
+T 452
+T 453
+T 454
+T 455
+T 456
+T 457
+T 458
+T 459
+T Del Renishaw fault C1
+T 461
+T 462
+T 468
+T 469
+T 463
+T 465
+T Del Renishaw fault C2
+T 460
+T 470
+T 473
+T 474
+T 475
+T 476
+T 477
+T 478
+T 479
+T Manual Turn
+T 481
+T 482
+T 483
+T 484
+T 485
+T 486
+T 487
+T 488
+T 489
+T Imp UmschrVon Tür T 490 TIMER
+T SonBA WechselVerzögert
+T Einrichten
+T JogingSpindle 1
+T JogingAxis Car1
+T JogingAxis Car2
+T Verz Umschaltung
+T 497
+T Verz AUTO->JOG
+T Verz Reset 5Umin
+T Verlängert TestStop ak
+T Verz SPL Ende
+T Verz NC-Sperre Ch1
+T Verz VS-Sperre X1
+T Verz VS-Sperre Z1
+T 505
+T 506
+T Verz VS-Sperre X2
+T Verz VS-Sperre Z2
+T 509
+T Mldg UnterdrVTeststop
+T Mldg UnterdVMaschImp
+T 512
+UDT 2 PLC-Flt/Msg
+UDT 10 Signale <-> NC
+UDT 11 BAG
+UDT 18 SPL
+UDT 19 PCU50
+UDT UserValues
+UDT NC Channel
+UDT Axis
+UDT OEM
+UDT Serviceanzeigen OEM
+Werkzeugträger
+UDT BNPV
+UDT Revolver
+UDT MM440
+UDT Stdy_gen
+UDT Steadies
+FB2_NC_Read_Load
+FB3_NC_write
+UDT Meassys M/S
+FB4_PI_select_compl
+Klemmung_Schmier_MM440
+SETUFR
+ASUP
+NC_MD_Schreiben
+ZTW_1_Nref_Mode_MM440
+STW_1_Nref_Mode_MM440
+Lub
+Gear_Change
+6RA70 Inputs
+6RA70 Outputs
+TCarManScreen
+Value
+FB2_3_NC_Var_Read_Write
+MM440
+ht2-string VAT 1
+LOAD VAT 2
+Sup 1 Hydraulik VAT 3
+Spindel Antrieb VAT 4
+WzT-2 S1 VAT 5
+BNPV_Bild VAT 6
+Reitst Klem VAT 7
+Reitst ImpSchm VAT 8
+Reitst Q Verst VAT 9
+WzT-3 S1 VAT 10
+WzT-1 S1 VAT 11
+Spindel Signale VAT 12
+Istwertlesen VAT 13
+KollSchutz VAT 14
+Anzeige HT2 VAT 15
+BNPV_Schreiben VAT 16
+Lünettensteckplatz VAT 17
+Teststop VAT 18
+Spi Intervall VAT 19
+NCK VAT 20
+Sup 1 Hydrostatik VAT 21
+DP akt/deakt VAT 22
+KollSchutzSup1 VAT 23
+Taktgenerator VAT 24
+Umschaltung S1 -> S2 VAT 25
+WZ Traeger Schmier Sup 2 VAT 26
+Ein-/Rückspeiseeinh VAT 27
+Safety Teststopp VAT 28
+Spi Antrieb VAT 29
+SPI_Intervall VAT 30
+Spi Drehzahlgrenzen VAT 31
+Vibration VAT 32
+LMS Umschaltung VAT 33
+VAT82 MT DB82 VAT 82 Diagnostic DB82
+Z One minute interval
+Z 4 ZaehlerFreischneiden
+Z 5 Freecuting with Bero
+Z Lube MainBear HS
+Z Minuten Zähler
+Z Stunden Zähler
+Z 30 C1 Z_Li.WzH_loesen
+Z 31 S2 Z_Li.WzH_loesen
+Z 32 C1 Z_Re.WzH_loesen
+Z 33 S2 Z_Re.WzH_loesen
+Z 40
+Z45
+Z46
+Z47
+Z48
+Z 63
+Z Lub Fast Bed TS
+Z Lub Slow Bed TS
+Z Lub Fast Way Q-TS
+Z Lub Slow Way Q-TS

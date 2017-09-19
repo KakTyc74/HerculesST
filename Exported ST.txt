@@ -1,0 +1,2747 @@
+A * MainPower Off ! A 0.0 BOOL Hilfsschütz * Lastspannung Aus =M14-K0D
+A Any Servo Moves A 0.1 BOOL Hilfsschütz Ein Servoantrieb läuft =M14-K0F
+A Test Lamps C A 0.2 BOOL Hilfsschütz Lampentest extern =M14-K0H
+A 840D sl = Ready C A 0.3 BOOL Hilfsschütz 840D sl ist Betriebsbereit =M14-K0L
+A EmergyStop_fromPLC C A 0.4 BOOL Hilfschütz Not-Halt von PLC = M14-K0N
+A LED Machine = On MP1 A 0.5 BOOL MP1:LED Maschine Ein =M14-H0Q (+P1)
+A 0.6 A 0.6 BOOL
+A 0.7 A 0.7 BOOL
+A ALM AUS1 A 1.0 BOOL Freigabe ALM AUS1
+A 1.1 A 1.1 BOOL
+A 1.2 A 1.2 BOOL
+A 1.3 A 1.3 BOOL
+A 1.4 A 1.4 BOOL
+A 1.5 A 1.5 BOOL
+A 1.6 A 1.6 BOOL
+A 1.7 A 1.7 BOOL
+A C1 JOG A 6.0 BOOL Spindel JOG-Betrieb an DINA
+A Z1 JOG A 6.1 BOOL Support 1 Achsen JOG-Betrieb an DINA
+A X1 JOG A 6.2 BOOL Support 2 Achsen JOG-Betrieb an DINA (option)
+A MAGN Enable Door 1 C1 A 6.3 BOOL Magnet Freigabe (entriegeln) Support Tür 1
+A MAGN Enable Door 1 HS A 6.4 BOOL Magnet Freigabe (entriegeln) Spindelstock Tür 1 (Vorderseite)
+A MAGN Enable Door 2 HS A 6.5 BOOL Magnet Freigabe (entriegeln) Spindelstock Tür 2 (Rückseite)
+A MAGN Enable Door 1 PW A 6.6 BOOL Magnet Freigabe (entriegeln) Werkstückseite Zauntür 1 (Spindelstock)
+A MAGN Enable Door 2 PW A 6.7 BOOL Magnet Freigabe (entriegeln) Werkstückseite Zauntür 2 (Reitstock)
+A CON Motorblower HS A 7.0 BOOL Schütz Lüfter Haupt-Spindel Motor Ein =E2-Q1C
+A CON Lube Pump HS A 7.1 BOOL Schütz Spindelstock Pumpe Schmierung =E2-Q1K
+A BedLub X/Z C1 A 7.2 BOOL Schütz Bahnschmierung X/Z-Achse =E3-Q1C
+A MainCon MOVIMOT TS A 7.3 BOOL Schütz Reitstock-Bett Z-Verstellung MOVIMOT (Hauptschütz) =E6-Q1C
+A MainCon MOVIMOT Q-TS A 7.4 BOOL Schütz Reitstock-Pinole Z-Verstellung MOVIMOT (Hauptschütz) =E7-Q1C
+A CON Bed+Quill Lube TS A 7.5 BOOL Schütz Schmierung Reitstock-Bettbahn =E8-Q1C
+A Quill Lube Pmp Q-TS A 7.6 BOOL Schütz Schmierpumpe Körnerwelle =E8-Q1K
+A Hydraulic Pump TS A 7.7 BOOL Schütz Reitstock Hydraulik Pumpe =E8-Q1R
+A LED Panel Active FrHS A 34.0 BOOL LED Bedientafel (+P3.1) Spindelstock Vorderseite Aktiv =M14-P34D
+A LED Panel Active ReHS A 34.1 BOOL LED Bedientafel (+P3.2) Spindelstock Rückseiteeite Aktiv =M14-P34F
+A 34.2 A 34.2 BOOL
+A LED Gear 1 engag FrHS A 34.3 BOOL LED Getriebstufe 1 Bedientafel Spika hinten (Opt)
+A LED Gear 2 engag FrHS A 34.4 BOOL LED Getriebstufe 2 Bedientafel Spika vorn (Opt)
+A LED Gear 3 engag FrHS A 34.5 BOOL LED Getriebstufe 3 Bedientafel Spika vorn (Opt)
+A 34.6 A 34.6 BOOL
+A LED Spec.Mode MP1 A 34.7 BOOL ML Sonderbetrieb Aktiv =M14-P34U ( +T1 )
+A LED Enable Door 1 WP A 35.0 BOOL LED Freigabe Tür 1 Werkstückseite öffnen (Opt)
+A LED Enable Door 2 WP A 35.1 BOOL LED Freigabe Tür 2 Werkstückseite öffnen (Opt)
+A LED Enable Door 3 WP A 35.2 BOOL LED Freigabe Tür 3 Werkstückseite öffnen (Opt)
+A 35.3 A 35.3 BOOL
+A 35.4 A 35.4 BOOL
+A MAGN Enable Door 1 WP A 35.5 BOOL LED Freigabe Tür 1 Spindelstock Rueckseite öffnen (Opt)
+A MAGN Enable Door 2 WP A 35.6 BOOL LED Freigabe Tür 2 Spindelstock Vorderseite öffnen (Opt.)
+A MAGN Enable Door 3 WP A 35.7 BOOL Magnet Freigabe (entriegeln) Tür 3 Werkstückseite
+A Lock Renishaw Probe C A 46.0 BOOL Mestaster sperren
+A Renishaw Arm Up C A 46.1 BOOL Messarm hochschwenken
+A Renishaw Arm down C A 46.2 BOOL Messarm runterschwenken zum Messen
+A 46.3 A 46.3 BOOL
+A LED Enable Door 1 C1 A 46.4 BOOL LED Support 1 Freigabe Tür 1L öffnen =M14-H46D (+P1.1)
+A LED Enable Door 2 C1 A 46.5 BOOL LED Support 1 Freigabe Tür 2R öffnen =M14-H46G (+P1.2)
+A MAGN Enable Door 2 C1 A 46.6 BOOL Magnet Freigabe (entriegeln) Support 1 Tür 2R (ReitSt)
+A 46.7 A 46.7 BOOL
+A 47.0 A 47.0 BOOL
+A 47.1 A 47.1 BOOL
+A 47.2 A 47.2 BOOL
+A 47.3 A 47.3 BOOL
+A 47.4 A 47.4 BOOL
+A 47.5 A 47.5 BOOL
+A 47.6 A 47.6 BOOL
+A 47.7 A 47.7 BOOL
+A LED Auto MCP1 A 64.0 BOOL MSST1 LED AUTO
+A LED MDA MCP1 A 64.1 BOOL MSST1 LED MDA
+A LED TEACH-IN MCP1 A 64.2 BOOL MSST1 LED TEACH IN
+A LED JOG MCP1 A 64.3 BOOL MSST1 LED JOG
+A LED 1 INC MCP1 A 64.4 BOOL MSST1 LED 1 INC
+A LED 10 INC MCP1 A 64.5 BOOL MSST1 LED 10 INC
+A LED 100 INC MCP1 A 64.6 BOOL MSST1 LED 100 INC
+A LED 1.000 INC MCP1 A 64.7 BOOL MSST1 LED 1.000 INC
+A LED 10.000 INC MCP1 A 65.0 BOOL MSST1 LED 10.000 INC
+A LED VAR-INC MCP1 A 65.1 BOOL MSST1 LED VAR INC
+A LED REF MCP1 A 65.2 BOOL MSST1 LED REF
+A LED REPOS MCP1 A 65.3 BOOL MSST1 LED REPOS
+A LED NC-STOP MCP1 A 65.4 BOOL MSST1 LED *NC-STOP
+A LED NC-START MCP1 A 65.5 BOOL MSST1 LED NC-START
+A LED Feed-STOP MCP1 A 65.6 BOOL MSST1 LED *Vorschub HALT
+A LED Feed-START MCP1 A 65.7 BOOL MSST1 LED Vorschub START
+A LED Spi. STOP MCP1 A 66.0 BOOL MSST1 LED *Spindel HALT
+A LED Spi. START MCP1 A 66.1 BOOL MSST1 LED Spindel START
+A LED Single Bloc MCP1 A 66.2 BOOL MSST1 LED Einzelsatz
+A LED R10 DeleteDTG MCP1 A 66.3 BOOL MSST1 LED R10 Restweglöschen
+A LED R7 Spi. CW MCP1 A 66.4 BOOL MSST1 LED R7 Spindel Jog CW
+A LED R4 Z (-) MCP1 A 66.5 BOOL MSST1 LED R4 Z (-)
+A LED R1 Spi.CCW MCP1 A 66.6 BOOL MSST1 LED R1 Spindel Jog CCW
+A LED R13 MCP1 A 66.7 BOOL MSST1 LED R13
+A LED R15 MCP1 A 67.0 BOOL MSST1 LED R15
+A LED R6 Z (+) MCP1 A 67.1 BOOL MSST1 LED R6 Z (+)
+A LED R8 X (+) MCP1 A 67.2 BOOL MSST1 LED R8 X (+)
+A LED R9 MCP1 A 67.3 BOOL MSST1 LED R9
+A LED R11 MCP1 A 67.4 BOOL MSST1 LED R11
+A LED R12 MKS / WKS MCP1 A 67.5 BOOL MSST1 LED R12 Fahrbefehl MKS/WKS
+A LED R5 Rapid MCP1 A 67.6 BOOL MSST1 LED R5 Eilgangueberlagerung
+A LED R3 MCP1 A 67.7 BOOL MSST1 LED R3
+A LED R2 X (-) MCP1 A 68.0 BOOL MSST1 LED R2 X (-)
+A LED T15 S.Interv MCP1 A 68.1 BOOL MSST1 LED T15 Spindel Intervall Ein
+A LED T14 S30 MCP1 A 68.2 BOOL MSST1 LED T14 S1=30
+A LED T13 HWHT2 On MCP1 A 68.3 BOOL MSST1 LED T13 Handrad HT2 aktiv
+A LED T12 HS Gear 3 MCP1 A 68.4 BOOL MSST1 LED T12 Spindelstock Getriebestufe 3
+A LED T11 HS Gear 2 MCP1 A 68.5 BOOL MSST1 LED T11 Spindelstock Getriebestufe 2
+A LED T10 HS Gear 1 MCP1 A 68.6 BOOL MSST1 LED T10 Spindelstock Getriebestufe 1
+A LED T9 RevTurn MCP1 A 68.7 BOOL MSST1 LED T9 Revolver Drehen manuell %
+A LED T8 MCP1 A 69.0 BOOL MSST1 LED T8
+A LED T7 MCP1 A 69.1 BOOL MSST1 LED T7 Messarm Eingeschwenkt
+A LED T6 ChipC bwd MCP1 A 69.2 BOOL MSST1 LED T6
+A LED T5 ChipConvOn MCP1 A 69.3 BOOL MSST1 LED T5
+A LED T4 A 69.4 BOOL MSST1 LED T4
+A LED T3 ScreenOff MCP1 A 69.5 BOOL MSST1 LED T3 Bildschirm EIN/Aus
+A LED T2 LampTest MCP1 A 69.6 BOOL MSST1 LED T2 Lampentest Ein
+A LED T1 AutoRef MCP1 A 69.7 BOOL MSST1 LED T1 Referenzieren aller Achsen Ein
+A LED R14 X++ MCP1 A 70.0 BOOL MSST1 LED R14 Schnellrückzug X++ Option
+A LED Reset MCP1 A 70.1 BOOL MSST1 LED Reset
+A LED Panel Active TS A 164.0 BOOL LED Reitstock Pendeltafel (+P4) Aktiv =M14-P164D (*P4)
+A LED Unclamped TS A 164.1 BOOL LED Reitstock gelöst =M14-H164F (+P4)
+A LED clamped TS A 164.2 BOOL LED Reitstock geklemmt =M14-H164H (+P4)
+A LED End (-) Q-TS A 164.3 BOOL LED Reitstock Pinole raus Z (-) =M14-H130I (+P4)
+A LED End (+) Q-TS A 164.4 BOOL LED Reitstock Pinole zurück Z (+) =M14-H130K (+P4)
+A 164.5 A 164.5 BOOL
+A 164.6 A 164.6 BOOL
+A 164.7 A 164.7 BOOL
+A VALV Unclamp TS A 165.0 BOOL Ventil Reitstock Lösen =M14-Q165D
+A MOVIMOT minus TS A 165.1 BOOL ->Movimot Reitstock Z-Vertsellung minus
+A MOVIMOT plus TS A 165.2 BOOL ->Movimot Reitstock Z-Vertsellung plus
+A MOVIMOT f1/f2 TS A 165.3 BOOL ->Movimot Reitstock Z-Vertsellung MOVIMOT f1/f2
+A MOVIMOT minus Q-TS A 165.4 BOOL ->Movimot Pinole Z-Vertsellung MOVIMOT minus
+A MOVIMOT plus Q-TS A 165.5 BOOL ->Movimot Pinole Z-Vertsellung MOVIMOT plus
+A MOVIMOT f1/f2 Q-TS A 165.6 BOOL ->Movimot Pinole Z-Vertsellung MOVIMOT f1/f2
+A 165.7 A 165.7 BOOL
+DB PLC-Flt/Msg DB 2 UDT 2 DB PLC Fehler Meldungen Interface for Alarms & Mess load! ages !not
+DB PLC-MELD1 DB 4 DB 4 DB PLC GP Fehler Meldungen
+DB PLC-MELD2 DB 5 DB 5 DB PLC GP Fehler Meldungen
+DB 7 GP Par DB 7 FB 1 Grundprogramm Instanz DB
+DB GP DB 8 DB 8 DB PLC GP
+DB 10 Signale <-> NC DB 10 UDT 10 Signale an / von NC
+DB BAG DB 11 UDT 11 Signale an / von BAG
+DB 13 DB 13 DB 13 Signal DB WinMDE
+DB GP2 DB 15 DB 15 DB PLC GP
+DB PI DB 16 DB 16 Datainterface PI-Services
+DB 18 SPL DB 18 UDT 18 Nahtstelle Safety Indegradet
+DB 19 MMC DB 19 UDT 19 Interface MMC-Signals
+DB 20 UserData DB 20 UDT 20 User PLC Maschinendaten
+DB NC Channel 1 DB 21 UDT 21 Nahtstelle für NC-Kanal 1 (Support 1)
+DB NC Channel 2 DB 22 UDT 21 Nahtstelle für NC-Kanal 2 (Support 2)
+DB Axis X1 DB 31 UDT 31 Nahtstelle Achse 1 (X1)
+DB Axis Z1 DB 32 UDT 31 Nahtstelle Achse 2 (Z1)
+DB MainSpindle DB 33 UDT 31 Nahtstelle Spindel 1, Hauptspindel C
+CTM_INIT_VAR_SELECTOR DB 70 DB 70 Data from Variable-Selector; User defined number
+TMLoadIF DB 71 UDT 71 Interface for Loading Station (Toolmanag.)
+TMSpindleIF DB 72 UDT 72 Interface Spindle for Toolmanagment
+TMRevIF DB 73 UDT 73 Interface Revolver (Toolmanagment)
+CTM_MMC DB 81 DB 81 MMC-Interface for Jobshop
+CTM_PLC DB 82 DB 82 PLC-Interface
+CTM_LOCAL DB 83 DB 83 Local Data of CTM
+CTM1_DATA DB 84 DB 84 DB-Graph-Group CTM1
+CTM2_DATA DB 85 DB 85 DB-Graph-Group CTM2
+CTM3_DATA DB 86 DB 86 DB-Graph-Group CTM3
+CTM4_DATA DB 87 DB 87 DB-Graph-Group CTM4
+MULTI_INST_DB DB 88 FB 28 Multi-Inst DB
+DB PI_INST DB 89 FB 4 Instance data FB4
+DB OEM DB 90 UDT 90 Allgemeiner DB für Schnittstelle OEM
+DB PUT_INST DB 91 FB 3 Instanz-Data of FB3; User defined number
+NCVAR DB 96 DB 96 NC Variablen zum Lesen/Schreiben
+DB General Data DB 100 DB 100 Allgemeine Daten
+STR DB 106 DB 106 Parametrierung Aufruf Unterprogramme ASUP
+DB Screen Meas M/S DB 110 DB 110 DB Messystem + Master/Slave Anwahl
+DB 120 Safety DB 120 DB 120 Safety
+DB Instanz FB Teststop DB 121 FB 96 Instanz-DB SPL / Teststopp
+DB KollSchutz DB 122 DB 122 Kollision Reitstock
+DB Service OEM DB 125 UDT 125 Serviceanzeigen
+NC_MD_GeschwBegr_1 DB 161 DB 161 NC MD schreiben für Geschw.Grenzen bei offener Schutzeinrichtung
+DB DP deaktivieren DB 180 DB 180 SFC Handling
+DB DP Addressen DB 181 DB 181 beinhaltet DP-Adressen (Diagnose) des zweiten Supports
+DB 190-FB3_C1 DB 190 FB 3 Instanz DB FB3 Kanal 1
+DB Sup1/2 DB 200 DB 200 DB Umschaltungen / Masteranwahl Bedienung zwischen den Supporten
+DB GRAY DB 208 DB 208 GRAY-CODE-TABLE
+DB HT2 DB 212 DB 212 DB HT2
+DB MCP1 Stack DB 215 DB 215 DB Tastenbeeinflussung MSTT1
+DB MCP2 Stack DB 225 DB 225 DB Tastenbeeinflussung MSTT2
+DB Headstock DB 400 DB 400 Spindelstock
+DB Spi Interval DB 420 DB 420 Spindel Interval
+DB Carriage DB 500 DB 500 DB Support
+DB Basis ZO DB 530 DB 530 Basis Nullpunktverschiebung Anzeige in Bild
+DB LeTCar C1 DB 531 UDT 531 Linker (SpindelStSeitiger) Äußerer Werkzeugträger Support 1
+DB LeInTCar C1 DB 532 UDT 531 Linker (SpiStSeitiger) Innerer Werkzeugträger Support 1
+DB RiTCar C1 DB 533 UDT 531 Rechter (ReitStSeitiger) Äußerer Werkzeugträger Support 1
+DB Basis NPV C2 DB 580 DB 580 Basis Nullpunktverschiebung Anzeige in Bild Support 2
+DB LeTCar C2 DB 581 UDT 531 Linker (SpiStSeitiger) Äußerer Werkzeugträger Support 2
+DB LeInTCar C2 DB 582 UDT 531 Linker (SpiStSeitiger) Innerer Werkzeugträger Support 2
+DB RiTCar C2 DB 583 UDT 531 Rechter (ReitStSeitiger) Äußerer Werkzeugträger Support 2
+DB Tailstock DB 600 DB 600 DB Reitstock Komplett
+DB HT2 AxPos DB 804 DB 804 Istwert MKS / WKS / Restweg / Repos / DRF für HT2
+DB NC MD LimitSpeed DB 805 UDT 1805 NC MD schreiben für Geschw.Grenzen bei offener Schutzeinrichtung
+DB DPR DB 807 DB 807 DUAL-PORT-RAM
+DB ASUP DB 808 DB 808 ASUP`S Einrichen
+DB Vorschub Last Lesen DB 809 DB 809 Vorschub Last lesen & auswerten
+DB NC MD SoftEnd DB 810 DB 810 DB Umschreiben der 2. SoftEnd von Z1
+DB H-Fct Channel 1 DB 811 DB 811 Dekodierte H-Functionen CNC-Kanal 1
+DB BZO Write Ch.1 DB 813 DB 813 Basis-Nullpunkt-Verschiebung schreiben / aktivieren
+DB AxPos Ch.1 DB 814 DB 814 Istwert MKS / Spindeldrehzahl
+RECORD FC851 DB 851 DB 851 ProfiBus Check
+IDB LeTH Car1 DB 1535 FB 535 Instanz DB Schritkette Linker Meiselschieber
+IDB RiTH Car1 DB 1545 FB 545 Instanz DB Schritkette Rechter Meiselschieber
+IDB BNPV write DB 1803 FB 3 Instanz DB Basisnullpunktverschiebung schreiben
+IDB AxPos_HT2 DB 1804 FB 2 Instanz DB FB2 NC-Pos für HT2
+IDB FB3 LimitSpeed DB 1805 FB 3 Instanz DB FB3 Max Spindel Geschw.k. schreiben
+IDB FB4 Limit NewConf DB 1806 FB 4 Instanz DB FB3 New Conf nach Geschw.k. schreiben
+IDB Asup 0 DB 1808 FB 4 Instanz DB FB4 ASUP 1 Install Fcut
+IDB BNPV write Ch1 DB 1813 FB 3 Instanz DB Basisnullpunktverschiebung schreiben
+IDB AxPos Ch.1 DB 1814 FB 2 Instanz DB FB2 NC-Pos Kanalachsen
+IDB BZO SETUFR Ch1 DB 1815 FB 4 Instanz DB FB4 SETUFR
+IDB Asup 1 DB 1818 FB 4 Instanz DB FB4 ASUP 1 Install TPO
+IDB AxPos Ch.2 DB 1824 FB 2 Instanz DB FB2 NC-Pos für Kanalachsen
+IDB Asup 2 DB 1828 FB 4 Instanz DB FB4 ASUP 1 Install TPO
+IDB BNPV write C2 DB 1833 FB 3 Instanz DB Basisnullpunktverschiebung schreiben
+IDB BNPV SETUFR C2 DB 1834 FB 4 Instanz DB FB4 SETUFR
+E E-Stop-Key active C E 0.0 BOOL Not-Halt-Taster betätigt am Schaltschrank =A3-S1D (+E1)
+E Machine (MainPow) = On E 0.1 BOOL Maschine (Lastspannung) ist eingeschaltet =A5-K1F
+E Main switch Power = On E 0.2 BOOL Großer Hauptschalter (400V Einspeisung Lastspannung) ist ein =A5-K1K
+E CB AC Blower C E 0.3 BOOL Schutzschalter Lüfter =A1-F6M
+E CB AC SupplyCont C E 0.4 BOOL LSS 230V AC Steuerung =A1-Q3J, -F4G
+E CB AC AirCond C E 0.5 BOOL Schutzschalter Klimageräte =A1-Q2C, -Q2K
+E CB FaultAirCond E 0.6 BOOL Fehlermeldung Klimageräte Schaltfeld
+E CB Blower Panel C1 E 0.7 BOOL Schutzschalter Lüfter Steuerpult =A1-F4Q
+E FU 24V Monitor Sply C E 1.0 BOOL Automat Versorgung LSS-Überwachung für Anzeige am S =A2-F10C chrank
+E FU 24V E-Stop E 1.1 BOOL Automat Versorgung 24V Not-Aus-Kette Steuerspanng E =A2-F4K inschaltung
+E FU 24V Sinamics 1 C E 1.2 BOOL Automat Versorgung 24V Sinamics S120 Line-Modul =A2-F2S
+E FU 24V Repeater C E 1.3 BOOL Automat Versorgung 24V Pofibus Repeater und Switche =A2-F2V s Schrank
+E FU 24V Sinamics 2 C E 1.4 BOOL Automat Versorgung 24V Sinamics S120 Motor-Module Spindel =A2-F3C
+E FU 24V Sinamics 3 C E 1.5 BOOL Automat Versorgung 24V Sinamics S120 Motor-Module Achsen =A2-F3H
+E FU 24V S7 Outp-C C E 1.6 BOOL Automat Versorgung 24V PLC Ausgangsmodule im Schalt =A2-F3S schrank
+E 1.7 E 1.7 BOOL
+E FU 24V NCU 840Dsl E 2.0 BOOL Automat Versorgung 24V NCU 840Dsl =A2-F3M
+E FU 24V Sply OP15 C1 C E 2.1 BOOL Automat Versorgung 24V PCU50+OP15 Hpt-BedienStation =A2-F2C 1
+E FU 24V Sply MCP 1 C E 2.2 BOOL Automat Versorgung 24V Maschinensteuertafel Hpt.Pul =A2-F2M t P1
+E FU 24V S7 Inputs 1#2C E 2.3 BOOL Automat Versorgung 24V PLC Digitale Eingangsmodule =A2-F4C Schrank
+E FU 24V S7 Inputs 2#2C E 2.4 BOOL Automat Versorgung 24V PLC Digitale Eingangsmodule =A2-F6C Maschine
+E FU 24V Profibus C E 2.5 BOOL Automat Versorgung 24V Pofibus Buskoppler ET200 =A2-F5G
+E FU 24V CntrVolt E 2.6 BOOL Automat Versorgung 24V Steuerspanng Einschaltung =A2-F4S
+E FU* 24V S7 Outp-HS C E 2.7 BOOL Automat Versorgung 24V PLC Ausgangsmodule am Spinde +N1 =A2-F7C lstock
+E FU 24V S7 Outp-Car. C E 3.0 BOOL Automat Versorgung 24V PLC Ausgangsmodule am Suppor =A2-F7L t 1 +U2
+E FU 24V S7 Outp-TS C E 3.1 BOOL Automat Versorgung 24V PLC Ausgangsmodule am Reitst =A2-F8C ock +T2
+E FU Roll measuringC1 C E 3.2 BOOL Automat Versorgung 24V Werkstückvermessung =A2-F8k
+E FU 24V PresDisplay E 3.3 BOOL Automat Versorgung 24V Pinolendruckanzeige
+E FU 24V MOVIMOT C E 3.4 BOOL Automat Versorgung 24V MOVIMOT =A2-F9J
+E CB Sply Valve Brake C E 3.5 BOOL MSS Trafo Versorgung Ventile Bremsen Kupplungen =A2-Q1V
+E FU 24V Valve++ TS C E 3.6 BOOL Automat Versorgung 24V Ventile Bremsen Kupplungen Reitstock =A2-F11C
+E FU 24V Valve++ Car C E 3.7 BOOL Automat Versorgung 24V Ventile Bremsen Kupplungen Support =A2-F11L
+E DINA ready C E 6.0 BOOL DINA Betriebsbereit
+E E-Stop E 6.1 BOOL Not-Aus unverzögert (aus DINA) wenn "0"
+E Req BA II E 6.2 BOOL BA I angewählt Automatik
+E Req BA I E 6.3 BOOL BA II angewählt Einrichten
+E Req BA III E 6.4 BOOL BA III angewählt man Eingreifen
+E Req SBA E 6.5 BOOL Sonder-BA angewählt
+E DINA BA I act E 6.6 BOOL BA I aktiv (von DINA) Automatik
+E DINA BA II act E 6.7 BOOL BA II aktiv (von DINA) Einrichten
+E DINA BA III act E 7.0 BOOL BA III aktiv (von DINA) man Eingreifen
+E DINA SBA act E 7.1 BOOL Sonder-BA aktiv (von DINA)
+E DINA C1 n=0 E 7.2 BOOL Spindel im Stillstand (von DINA)
+E DINA C1 n>max E 7.3 BOOL Spindel Überdrehzahl (von DINA)
+E DINA Z n=0 E 7.4 BOOL Z-Achse im Stillstand (von DINA)
+E DINA Z n>max E 7.5 BOOL Z-Achse Überdrehzahl (von DINA)
+E DINA X n=0 E 7.6 BOOL X-Achse im Stillstand (von DINA)
+E DINA X n>max E 7.7 BOOL X-Achse Überdrehzahl (von DINA)
+E NoEmergencyLimitSW E 8.0 BOOL *Not-Endschalter angefahren
+E LimitSW bridged E 8.1 BOOL Not-Endschalter Überbrückung aktiv =A4-K1U
+E DINA HS door1 closed E 8.2 BOOL Schutztür Spindelstock vorn verschlossen
+E DINA HS door2 closed E 8.3 BOOL Schutztür Spindelstock hinten verschlossen
+E DINA Car door1 closed E 8.4 BOOL Schutztür Bettschlitten links verschlossen
+E DINA Car door2 closed E 8.5 BOOL Schutztür Bettschlitten rechts verschlossen (Opt)
+E AgreementBotton 2 E 8.6 BOOL Option
+E AgreementButton E 8.7 BOOL HT2 Zustimmtaster von Dina
+E ALM is On E 9.0 BOOL ALM eigeschaltet
+E SH activ Axis E 9.1 BOOL SH aktiv Achsen
+E ALM ready turnON E 9.2 BOOL ALM Einschaltbereit
+E SH activ Spindle E 9.3 BOOL SH aktiv Hauptspindel
+E 9.4 E 9.4 BOOL
+E DINA WP1 door1 closed E 9.5 BOOL Schutztür Zugang Spindelstock verschlossen
+E DINA WP1 door2 closed E 9.6 BOOL Schutztür Zugang Reitstock verschlossen
+E E-Stop-Key act Panel E 9.7 BOOL Not-Halt-Taster betätigt Hauptbedienpult +P1 =A3-S1D
+E CB Motor Blower HS E 10.0 BOOL MSS Haupt-Spindel Motorlüfter =E2-Q1C
+E 10.1 E 10.1 BOOL
+E CB Lube HS E 10.2 BOOL MSS Spindelstock Pumpe (P3) Schmierung =E2-Q1K
+E 10.3 E 10.3 BOOL
+E CB BedLub X/Z E 10.4 BOOL MSS Bahnschmierung Z/X-Achse =E3-Q1C
+E 10.5 E 10.5 BOOL
+E CB Adjustm. TS E 10.6 BOOL MSS Reitstockverstellung =E6-Q1C
+E 10.7 E 10.7 BOOL
+E CB Centr. Lube TS E 11.0 BOOL MSS Reitstock Bettbahnschmierung =E8-Q1C
+E CB Quill Lube TS E 11.1 BOOL MSS Reitstock-Körnerwellenverstellung =E8-Q1K
+E CB Hydraulic Pump TS E 11.2 BOOL MSS Reitstock Hydraulik Pumpe (P50) =E9-Q1C
+E 11.3 E 11.3 BOOL
+E 11.4 E 11.4 BOOL
+E CB Adjustm. Q-TS E 11.5 BOOL MSS Reitstock-Körnerwellenverstellung =E7-Q1C
+E 11.6 E 11.6 BOOL
+E 11.7 E 11.7 BOOL
+E E-Stop-Key active FrHS E 34.0 BOOL Not-Halt-Taster betätigt vordere Bedientafel Spindelstock =A3-S1M (+P3)
+E KYSW PanelAct FrPa HS E 34.1 BOOL Schlüsselsch. Spindelstock vordere Bedientafel (+P3) angewählt
+E PB* Spi Stop FrPaHS E 34.2 BOOL DT* Spindel Halt Spindelstock vordere Bedientafel =M13-S34J (+P3)
+E PB Spi.Jog CCW FrPaHS E 34.3 BOOL DT Spindel -CCW Spindelstock vordere Bedientafel =M13-S34L (+P3)
+E PB Spi.Jog CW FrPaHS E 34.4 BOOL DT Spindel +CW Spindelstock vordere Bedientafel =M13-S34P (+P3)
+E PB Spi Osci FrPaHS E 34.5 BOOL DT Spindel Pendeln vordere Bedientafel =M13-S34R (+P3)
+E 34.6 E 34.6 BOOL
+E LEVL GearLub HS E 34.7 BOOL SWS Getriebeschmierung Spindelstock (Opt)
+E E-Stop-Key active ReHS E 35.0 BOOL Not-Halt-Taster betätigt hintere Bedientafel Spindelstock =M13-S1M (+P31)
+E KYSW PanelAct RePa HS E 35.1 BOOL Schlüsselsch. Spindelstock hintere Bedientafel (+P3) angewählt
+E PB* Spi Stop RePaHS E 35.2 BOOL DT* Spindel Halt Spindelstock hintere Bedientafel =M13-S35H (+P31)
+E PB Spi.Jog CCW RePaHS E 35.3 BOOL DT Spindel -CCW Spindelstock hintere Bedientafel =M13-S35L (+P31)
+E PB Spi.Jog CW RePaHS E 35.4 BOOL DT Spindel +CW Spindelstock hintere Bedientafel =M13-S35N (+P31)
+E E-Stop-Key active WPD1 E 35.5 BOOL Not-Halt-Taster betätigt Schutztür Zugang Spindelstock =A3-S1M (+P7)
+E E-Stop-Key active WPD2 E 35.6 BOOL Not-Halt-Taster betätigt Schutztür Zugang Reitstock =A3-S1M (+P7)
+E TEMP* GearOil >70°C HS E 35.7 BOOL TEMP 1* Spindelstock Öltemperatur > 70°C (Opt)
+E PROX Freecutting HS E 36.0 BOOL BERO Spindel freischneiden =M13-B36D
+E FLSW Oil Lube HS E 36.1 BOOL DFW Spindelstock Schmierung =M13-B36F
+E LSW GearStep 1 HS E 36.2 BOOL ES Getriebestufe 1 eingelegt =M13-S36J
+E LSW GearStep 2 HS E 36.3 BOOL ES Getriebestufe 2 eingelegt =M13-S36J
+E LSW GearStep 3 HS E 36.4 BOOL ES Getriebestufe 3 eingelegt =M13-S36J
+E LSW Reserve HS E 36.5 BOOL ES Reserve =M13-S36R
+E LSW door closed FrHS E 36.6 BOOL Schutztür Spindelstock Vorderseite geschlossen =M13-S36T
+E LSW door closed ReHS E 36.7 BOOL Schutztür Spindelstock Rückseite geschlossen =M13-S36W
+E KYSW reqest Door1 HS E 37.0 BOOL Schlüsselsch. Anfordern Tür hinten Planscheibenschu =M13-S tz Spindelstock
+E KYSW reqest Door2 HS E 37.1 BOOL Schlüsselsch. Anfordern Tür vorn Planscheibenschutz =M13-S Spindelstock
+E KYSW reqest Door 1 WP E 37.2 BOOL Schlüsselsch. Anfordern Zaun-Tür 1 Werkstückseite Spindelstock =M13-S (+P)
+E KYSW reqest Door 2 WP E 37.3 BOOL Schlüsselsch. Anfordern Zaun-Tür 2 Werkstückseite Reitstock =M13-S (+P)
+E KYSW reqest Door 3 WP E 37.4 BOOL Schlüsselsch. Anfordern Tür 3 Werkstückseite (Opt9
+E 37.5 E 37.5 BOOL
+E 37.6 E 37.6 BOOL
+E 37.7 E 37.7 BOOL
+E LSW E-End Pos. (-) Z1 E 44.0 BOOL ES Not-Endlage Minus Z1 (Msg) =A4-S1D1
+E LSW E-End Pos. (+) Z1 E 44.1 BOOL ES Not-Endlage Plus Z1 (Msg) =A4-S1D1.1
+E LSW Ref.Pos. Z1 E 44.2 BOOL ES Referenzpunkt Z1 =M13-S44J
+E 44.3 E 44.3 BOOL
+E LSW E-End Pos. (-) X1 E 44.4 BOOL ES Not-Endlage Minus X1 (Msg) =A4-S1D2
+E LSW E-End Pos. (+) X1 E 44.5 BOOL ES Not-Endlage Plus X1 (Msg) =A4-S1D2.1
+E LSW Ref.Pos. X1 E 44.6 BOOL ES Referenzpunkt X1 =M13-S44T
+E LSW Park pos X1 E 44.7 BOOL ES Reserve =M13-S44V
+E LEVL BedLub X/Z C1 E 45.0 BOOL SWS Bettbahnschmierung X/Z-Achse =M13-S45C
+E PSW BedLub >12B C1 E 45.1 BOOL DS Bettbahnschmierung X/Z-Achse =M13-B45F
+E LSW Tool Pos 1 C1 E 45.2 BOOL *ES Meißelschieber Position 1 =M13-S45H
+E LSW Tool Pos 2 C1 E 45.3 BOOL *ES Meißelschieber Position 2 =M13-S45K
+E LSW Tool Pos 3 C1 E 45.4 BOOL *ES Meißelschieber Position 3 =M13-S45N
+E LSW Tool Pos 4 C1 E 45.5 BOOL *ES Meißelschieber Position 4 =M13-S45Q
+E KYSW reqest Door1 C1 E 45.6 BOOL Schlüsselsch.Anfordern Schutztür Bettschlitten links
+E KYSW reqest Door2 C1 E 45.7 BOOL Schlüsselsch.Anfordern Schutztür Bettschlitten rechts (Opt.)
+E Renishaw Arm down C E 46.0 BOOL Messarm ist unten = Messbereit (ARO)
+E Renishaw Arm up C E 46.1 BOOL Messarm ist oben (MRO)
+E 46.2 E 46.2 BOOL
+E 46.3 E 46.3 BOOL
+E 46.4 E 46.4 BOOL
+E 46.5 E 46.5 BOOL
+E 46.6 E 46.6 BOOL
+E PB FastRetract X1MP1 E 46.7 BOOL MP1:LT Hpt-BedienStation 1 Schnellrückzug X1 =M13-S84S (+P1)
+E 47.0 E 47.0 BOOL
+E 47.1 E 47.1 BOOL
+E 47.2 E 47.2 BOOL
+E 47.3 E 47.3 BOOL
+E 47.4 E 47.4 BOOL
+E 47.5 E 47.5 BOOL
+E 47.6 E 47.6 BOOL
+E 47.7 E 47.7 BOOL
+E Key AUTO MCP1 E 64.0 BOOL MSST1 Taste AUTO
+E Key MDA MCP1 E 64.1 BOOL MSST1 Taste MDA
+E Key TEACH IN MCP1 E 64.2 BOOL MSST1 Taste TEACH IN
+E Key JOG MCP1 E 64.3 BOOL MSST1 Taste Jog
+E SSO% Code A MCP1 E 64.4 BOOL MSST1 Spindel Korrektur Schalter Code A
+E SSO% Code B MCP1 E 64.5 BOOL MSST1 Spindel Korrektur Schalter Code B
+E SSO% Code C MCP1 E 64.6 BOOL MSST1 Spindel Korrektur Schalter Code C
+E SSO% Code D MCP1 E 64.7 BOOL MSST1 Spindel Korrektur Schalter Code D
+E Key 1 INC MCP1 E 65.0 BOOL MSST1 Taste 1 INC
+E Key 10 INC MCP1 E 65.1 BOOL MSST1 Taste 10 INC
+E Key 100 INC MCP1 E 65.2 BOOL MSST1 Taste 100 INC
+E Key 1.000 INC MCP1 E 65.3 BOOL MSST1 Taste 1.000 INC
+E Key 10.000 INC MCP1 E 65.4 BOOL MSST1 Taste 10.000 INC
+E Key var INC MCP1 E 65.5 BOOL MSST1 Taste var INC
+E Key REF MCP1 E 65.6 BOOL MSST1 Taste REF
+E Key REPOS MCP1 E 65.7 BOOL MSST1 Taste REPOS
+E Key* NC Stop MCP1 E 66.0 BOOL MSST1 Taste *NC-Stopp
+E Key NC Start MCP1 E 66.1 BOOL MSST1 Taste NC Start
+E Key* Feed Stop MCP1 E 66.2 BOOL MSST1 Taste *Vorschub Halt
+E Key Feed Start MCP1 E 66.3 BOOL MSST1 Taste Vorschub Start
+E Key* Spi. Stop MCP1 E 66.4 BOOL MSST1 Taste *Spindel Halt
+E Key Spi.Start MCP1 E 66.5 BOOL MSST1 Taste Spindel Start
+E KeySwitch Pos.2 MCP1 E 66.6 BOOL MSST1 Schlüssel Schalter Stellung 2
+E KeySwitch Pos.0 MCP1 E 66.7 BOOL MSST1 Schlüssel Schalter Stellung 0
+E Feed Overr.CodeA MCP1 E 67.0 BOOL MSST1 Vorschub-Korrektur Code A
+E Feed Overr.CodeB MCP1 E 67.1 BOOL MSST1 Vorschub-Korrektur Code B
+E Feed Overr.CodeC MCP1 E 67.2 BOOL MSST1 Vorschub-Korrektur Code C
+E Feed Overr.CodeD MCP1 E 67.3 BOOL MSST1 Vorschub-Korrektur Code D
+E Feed Overr.CodeE MCP1 E 67.4 BOOL MSST1 Vorschub-Korrektur Code E
+E Key SingleBlock MCP1 E 67.5 BOOL MSST1 Taste Einzelsatz
+E Key Switch Pos1 MCP1 E 67.6 BOOL MSST1 Schlüssel Schalter Stellung 1
+E Reset Key MCP1 E 67.7 BOOL MSST1 Taste Reset
+E Key R10 Clear DTG MCP1 E 68.0 BOOL MSST1 Taste R10 Restweg löschen
+E Key R7 Spi. CW MCP1 E 68.1 BOOL MSST1 Taste R7 Spindel Jog +CW
+E Key R4 Z (-) MCP1 E 68.2 BOOL MSST1 Taste R4 Z1 (-)
+E Key R1 Spi. CCW MCP1 E 68.3 BOOL MSST1 Taste R1 Spindel Jog -CCW
+E Key Switch Pos3 MCP1 E 68.4 BOOL MSST1 Schlüssel Schalter Stellung 3
+E Key R14 X++ MCP1 E 68.5 BOOL MSST1 Taste R14
+E Key R13 MCP1 E 68.6 BOOL MSST1 Taste R13
+E Key R15 MCP1 E 68.7 BOOL MSST1 Taste R15
+E Key R6 Z (+) MCP1 E 69.0 BOOL MSST1 Taste R6 Z1 (+)
+E Key R8 X (+) MCP1 E 69.1 BOOL MSST1 Taste R8 X1 (+)
+E Key R9 MCP1 E 69.2 BOOL MSST1 Taste R9
+E Key R11 MCP1 E 69.3 BOOL MSST1 Taste R11
+E Key R12 MCS/WCS MCP1 E 69.4 BOOL MSST1 Taste R12 MKS / WKS
+E Key R5 Rapid MCP1 E 69.5 BOOL MSST1 Taste R5 Eilgang
+E Key R3 MCP1 E 69.6 BOOL MSST1 Taste R3
+E Key R2 X (-) MCP1 E 69.7 BOOL MSST1 Taste R2 X1 (-)
+E Not used MCP1 E 70.0 BOOL Nicht belegt MSST
+E Key T15 IntervI/O MCP1 E 70.1 BOOL MSST1 Taste T15 Spindelintervall Ein/Aus
+E Key T14 S30 MCP1 E 70.2 BOOL MSST1 Taste T14 S30 Ein/Aus
+E Key T13 HT2 MCP1 E 70.3 BOOL MSST1 Taste T13 Handrad HT2 Ein
+E Key T12 Spi.Gear3 MCP1 E 70.4 BOOL MSST1 Taste T12 Spindelstock Getriebestufe 3 Option
+E Key T11 Spi.Gear2 MCP1 E 70.5 BOOL MSST1 Taste T11 Spindelstock Getriebestufe 2
+E Key T10 Spi.Gear1 MCP1 E 70.6 BOOL MSST1 Taste T10 Spindelstock Getriebestufe 1
+E Key T9 RevTurn MCP1 E 70.7 BOOL MSST1 Taste T9 Revolver Drehen Manuell Option
+E KEY T8 MCP1 E 71.0 BOOL MSST1 Taste T8 MSST
+E KEY T7 MeasArmUpD MCP1 E 71.1 BOOL MSST1 Taste T7 Messarm Ein/Aus-Schwenken
+E Key T6 CC JogBwd MCP1 E 71.2 BOOL MSST1 Taste T6 Späneförder Tippen Rückwärts Option
+E Key T5 ChipConI/O MCP1 E 71.3 BOOL MSST1 Taste T5 Späneförder Ein / Aus Option
+E Key T4 MCP1 E 71.4 BOOL MSST1 Taste T4 MSST
+E Key T3 SreenOnOff MCP1 E 71.5 BOOL MSST1 Taste T3 Bildschirm Ein/Aus
+E Key T2 LampTest MCP1 E 71.6 BOOL MSST1 Taste T2 Lampentest
+E KEY T1 autoRef MCP1 E 71.7 BOOL MSST1 Taste T1 Referenzieren aller Achsen
+E E-Stop-Key act TS E 164.0 BOOL Not-Halt-Taster betätigt Reitstock =A3-S1M (+P4)
+E KYSW PanelAct TS E 164.1 BOOL Schlüsselsch. Reitstock Bedientafel (+P4) angewählt
+E PBIL Unclamp TS E 164.2 BOOL LT Reitstock lösen =M13-S164J (+P4)
+E PB Clamp TS E 164.3 BOOL LT Reitstock klemmen =M13-S164L (+P4)
+E PB Rapid FWD (Z-) TS E 164.4 BOOL DT Reitstock schnell Vor Z (-) =M13-S164N (+P4)
+E PB Rapid BWD (+) TS E 164.5 BOOL DT Reitstock schnell Zurück Z (+) =M13-S164R (+P4)
+E PB Slow FWD (Z-) TS E 164.6 BOOL DT Reitstock langsam Vor Z (-) =M13-S164T (+P4)
+E PB Slow BWD (+) TS E 164.7 BOOL DT Reitstock langsam Zurück Z (+) =M13-S164V (+P4)
+E PBIL FWD (Z-) Q-TS E 165.0 BOOL LT Reitstock Pinole Z (-) Richtung (+P4) =M13-S165C (+P4)
+E PBIL BWD (Z+) Q-TS E 165.1 BOOL LT Reitstock Pinole Z (+) Richtung (+P4) =M13-S165F (+P4)
+E SEL Rapid (slow) Q-TS E 165.2 BOOL WS Reitstock Pinolenverstellung Schnell =M13-S165H (+P4)
+E PSW unclamp TS E 165.3 BOOL DS Reitstock gelöst, Frg.Bett-Verstellung =M13-B166T
+E LEVL* Lube Oil Q-TS E 165.4 BOOL LEVL Pinolenschmierung Reitstock Oilstand > min. =M13-S165M
+E FLSW Oil Lube Q-TS E 165.5 BOOL DFW Getriebeschmierung Pinole Reitstock =M13-S165Q
+E Ready MOVIMOT TS E 165.6 BOOL MOVIMOT Betriebsbereit Z-Verstellung Reitstock =E6-M1C
+E Ready MOVIMOT Q-TS E 165.7 BOOL MOVIMOT Betriebsbereit Pinolenverstellung Reitstock =E7-M1C
+E LSW clamp TS E 166.0 BOOL ES Reitstock gelöst =M13-S166D
+E LSW* End (Z+) TS E 166.1 BOOL ES Reitstock Endlage Z (+) =M13-S166F
+E PSW* Stop Workpice TS E 166.2 BOOL BERO Reitstock Pinole Walzenberührung =M13-B166J
+E LSW* Quill Pres>Max TS E 166.3 BOOL BERO Reitstock Pinole Maximaldruck =M13-B166L
+E LSW* End (Z-) Q-TS E 166.4 BOOL BERO Reitstock Pinole Endlage vorn Z (-) =M13-B166N
+E LSW* End (Z+) Q-TS E 166.5 BOOL BERO Reitstock Pinole Endlage hinten Z (+) =M13-B166Q
+E PSW BedLube >12B TS E 166.6 BOOL DS Schmierung Reitstock =M13-B165K
+E LEVL* Lube Oil TS E 166.7 BOOL LEVL Bahnschmierung Reitstock Oilstand > min. =M13-B128L
+E 167.0 E 167.0 BOOL
+E 167.1 E 167.1 BOOL
+E 167.2 E 167.2 BOOL
+E 167.3 E 167.3 BOOL
+E 167.4 E 167.4 BOOL
+E 167.5 E 167.5 BOOL
+E 167.6 E 167.6 BOOL
+E 167.7 E 167.7 BOOL
+EB Start Adresse MCP1 EB 64 BYTE Support 1 Anfangsadresse der MSST
+EB Feed-OVR MCP1 EB 67 BYTE Support / MSST 1 VS-OVR-Schalter (Bit 0-4)
+FB 1: Run up FB 1 FB 1 Siemens Grundprogramm, Anlaufteil
+FB 2: Get NC-lesen FB 2 FB 2 Siemens Grundprogramm, NC-Variable lesen
+FB 3: Put NC-schreiben FB 3 FB 3 Siemens Grundprogramm, NC-Variable schreiben
+FB 4: PI_SERV FB 4 FB 4 PI-Services 1
+FB 5: GET GUD FB 5 FB 5 Siemens Grundprogramm, GUD-Variable lesen
+FB 6: Kommunikation FB 6 FB 6 Siemens Grundprogramm, Kommunikation
+FB 7: PI_SERV2 FB 7 FB 7 PI-Services 2
+M2N FB 9 FB 9 Several OPs/NCUs
+SI_Relais FB 10 FB 10 Safety Integrated: Relais
+SI_BrakeTest FB 11 FB 11 Safety Integrated: Brake Test
+FB 12: P RCV CP340 FB 12 FB 12 Siemens P RCV (CP 340 empfangen)
+FB 13: P SEND CP340 FB 13 FB 13 Siemens P SEND (CP 340 senden)
+FB 14: GP FB 16 FB 16 Siemens Grundprogramm
+FB 15: GP FB 17 FB 17 Siemens Grundprogramm
+FB 16: GP FB 18 FB 18 Siemens Grundprogramm
+FB 17: GP FB 19 FB 19 Siemens Grundprogramm
+HiGraphErrEmitterFB FB 20 FB 20
+MULTI_INST_FUNCTION FB 28 FB 28 Manager for multi-instance-function
+Diagnose FB 29 FB 29 Signal recorder and data trigger diagnostics
+FB SPL Teststop FB 96 FB 96 Safety SPL und Teststop
+CTM_INIT FB 120 FB 120 Initialization CTM; user defined number
+FC 1: GP FC 1 FC 1 Siemens Grundprogramm
+FC 2: GP HP FC 2 FC 2 Siemens Grundprogramm, Zyklischer Teil
+FC 3: GP PRAL FC 3 FC 3 Siemens Grundprogramm, Alarmgesteuerter Teil
+FC 4: GP FC 4 FC 4 Siemens Grundprogramm
+FC 5: GP DIAG FC 5 FC 5 Siemens Grundprogramm, Diagnosealarm und Modulfehler
+FC 6: GP FC 6 FC 6 Siemens Grundprogramm 840D
+FC 7: TM REV FC 7 FC 7 Siemens Grundprogramm, Transfer Baustein für Werkzeugwechsel (Revolver)
+FC 8: TM TRANS FC 8 FC 8 Siemens Grundprogramm, Transfer Baustein für Werkzeugverwaltung
+FC 9: ASUP FC 9 FC 9 Siemens Grundprogramm, Start von asynchronen Unterprogrammen
+FC 10: AL MSG FC 10 FC 10 Siemens Grundprogramm, Fehler- und Betriebsmeldungen
+FC 11: GP FC 11 FC 11 Siemens Grundprogramm
+FC 12: GP FC 12 FC 12 Siemens Grundprogramm
+FC 13: BHGDisp FC 13 FC 13 Siemens Grundprogramm, Displaysteuerung für Bedienhandgerät
+FC 14: GP FC 14 FC 14 Siemens Grundprogramm
+FC 15: POS AX FC 15 FC 15 Siemens Grundprogramm 840D, Positionierung von Linear- und Rundachsen
+FC 16: PART AX FC 16 FC 16 Siemens Grundprogramm, Positionierung 840D von Teilungsachsen
+FC 17: YDelta FC 17 FC 17 Siemens Grundprogramm, Stern- /Dreieckumschaltung
+FC 18: SpinCtrl FC 18 FC 18 Siemens Grundprogramm, Spindelsteuerung (Positionierachse)
+FC 19: MCP IFM FC 19 FC 19 Siemens Grundprg, MCP IMP Übertragung der Maschinensteuertafel an die Nahtst. M
+FC20: WRITE_MESSAGE FC 20 FC 20 Write Message to PLC-Diagnostic Buffer 840D
+FC21: Transfer FC 21 FC 21 Quick Datachannel
+FC22: TM_DIR FC 22 FC 22 Directioncontrol for Toolmanagment Mag.
+FC24: MCP_IFMs FC 24 FC 24 Siemens Grundprg, MSST Übertragung der Maschinensteuertafel an die Nahtst. M
+FC 25: MCP IFT FC 25 FC 25 Siemens Grundprg, Übertragung der MSST-/BT-Signale an die Nahtstelle T
+FC26:HPU_MCP FC 26 FC 26 MCP-Signals of PHG to Interface
+FC 28: V24 STAT CP340 FC 28 FC 28 Siemens V24 STAT (Status CP 340 lesen)
+FC 29: V24 SET CP340 FC 29 FC 29 Siemens V24 SET (Ausgänge CP 340 setzen/rücksetzen)
+CTM3 FC 30 FC 30 FC-Graphgroup CTM3
+CTM1 FC 31 FC 31 FC-Graphgroup CTM1
+CTM2 FC 32 FC 32 FC-Graphgroup CTM2
+CTM4 FC 33 FC 33 FC-Graphgroup CTM4
+CTM_MONIT FC 34 FC 34 Signal Monitor NCK-Signals
+FUNCTIONS FC 35 FC 35 CTM-Functions
+FC 40 FC 40 FC 40
+FC 49 FC 49 FC 49
+FC 50 FC 50 FC 50
+FC 59 FC 59 FC 59
+FC 60 FC 60 FC 60
+FC 69 FC 69 FC 69
+FC 70 FC 70 FC 70
+FC 79 FC 79 FC 79
+FC 80 FC 80 FC 80
+FC 81 FC 81 FC 81
+FC 82 FC 82 FC 82
+FC 83 FC 83 FC 83
+FC 84 FC 84 FC 84
+FC OEM_Time FC 85 FC 85 Umwandlung Zeitwert von OEM Oberfläche
+FC 86 FC 86 FC 86
+FC 87 FC 87 FC 87
+FC 88 FC 88 FC 88
+FC 89 FC 89 FC 89
+FC 90 Clear Byte FC 90 FC 90 Byteweise löschen
+FC 91 Byte <> 0 ? FC 91 FC 91 Byte ungleich 0 ?
+FC DBD --> DBD FC 92 FC 92 Blocktransfer Doppelworte DB -> DB
+FC DBB --> DBB FC 93 FC 93 Blocktransfer Byteweise DB -> DB
+FC 94 Test Abschaltpfade FC 94 FC 94
+FC 95 Test ext Stops FC 95 FC 95
+FC 97 SPL_FC_ZD FC 97 FC 97 SPL_FC_ZD Zwangsdynamisierung
+FC 98 Dina FC 98 FC 98 Dina
+FC Machine General FC 100 FC 100 Maschine allgemein & Fehler
+FC General Machine On FC 101 FC 101 Maschinen Einschaltung algemein
+FC E-Stop Locate FC 102 FC 102 Not-Aus Betätigungs Ort + Koppelrelais Fehler
+FC Clock FC 103 FC 103 Taktmerker
+FC HelpDrives FC 104 FC 104 Hilfsantriebe Maschine ( Späneförderer )
+FC Dina BA select FC 105 FC 105 Betriebsartenanwahl Dina
+FC WorkingCounter FC 108 FC 108 Betriebsstundenzaehler
+FC Doors Fence FC 109 FC 109 Zauntüren
+FC Scree Meassys FC 110 FC 110 Messsystem Anwahl über Bild
+FC Gen.Machine On C1 FC 111 FC 111 Maschinen Einschaltung Support 1
+FC 120 FC 120 FC 120
+FC Gen.Machine On C2 FC 121 FC 121 Maschinen Einschaltung Support 2
+FC ALM / Axis general FC 150 FC 150 Aktiv Line Modul / Achsen Übergeordnet
+FC DP deaktivieren FC 180 FC 180 Profibusteilnehmer im Hochlauf deaktivieren
+FC MainPanel Master FC 200 FC 200 Anwahl Masterpanel, hier Spindelmaster
+FC Switch MainPanel C1/2 FC 201 FC 201 Umschaltung Bedienung Sup 2 von Sup1 und umgekehrt
+FC Handweel HT2 FC 202 FC 202 HT2 als Handrad 1
+FC Handwheel Switch FC 203 FC 203 Handrad Umschaltung / Anwahl
+FC Key-Simulation Gen. FC 204 FC 204 Tastaturbeeinflussung allgemein OVR-Handling
+FC GRAY FC 208 FC 208 GRAY-CODE-DECODING
+FC HT2 Displayanwahl FC 211 FC 211 HT2 Anzeige
+FC HT2 Display FC 212 FC 212 HT2 Anzeige
+FC HT2 Key Simulation FC 213 FC 213 HT2 Tasten Beeinflussung
+FC Fast retract C1 FC 214 FC 214 Schnellrückzug Kanal 1 = Support 1 X1-Achse
+FC Key Simulation C1 FC 215 FC 215 1. Maschinensteuertafel Tasten Beeinflussung vor FC25
+FC Key Simulation 2 C1 FC 216 FC 216 1. Maschinensteuertafel Tasten Beeinflussung nach FC25
+FC HT2 Display C2 FC 222 FC 222 HT2 Anzeige
+FC HT2 Key Simulation C2 FC 223 FC 223 HT2 Tasten Beeinflussung
+FC Fast retract C2 FC 224 FC 224 Schnellrückzug Kanal 2 = Support 2 X-Achse
+FC Key Simulation C2 FC 225 FC 225 2. Maschinensteuertafel Tasten Beeinflussung
+FC Key Simulation 2 C2 FC 226 FC 226 2. Maschinensteuertafel Tasten Beeinflussung nach FC25
+FC General Drives FC 300 FC 300 Allgemeine Hilfsantriebe
+FC Chipconveyor C FC 332 FC 332 Späneförderer
+FC Headstock HS FC 400 FC 400 Spindelstock Allgemein
+FC GetrSchmierung FC 401 FC 401 Spindelstockschmierung Wasi
+FC Hydr + Lube HS FC 402 FC 402 Hydraulik und Schmierung Spindelstock
+FC Lube HS FC 403 FC 403 Schmierung Spindelstock
+FC GearstepSelect HS FC 405 FC 405 Getriebestufenanwahl an NC
+FC GearDecoder HS FC 406 FC 406 Spindelstock Getriebstufendecodierung
+FC Valve after 48h HS FC 408 FC 408 Spindelstock neuansteuern der Ventile nach 48 h ohne Aktion
+FC Doors Cover HS FC 409 FC 409 Sicherheits-Tueren, Planscheibenabdeckung Spindelstock
+FC Main Drive HS FC 411 FC 411 Hauptspindel "C"
+FC Load readout HS FC 419 FC 419 Spindel Lastanzeige
+FC Spindel Intervall HS FC 420 FC 420 Spindel Intervall allgemein
+FC Spindel IntervTime HS FC 421 FC 421 Spindel Intervall Zeitalarmbearbeitet
+FC Gear ChangeMan HS FC 430 FC 430 Spindelstock Getriebstufenwechsel HAND
+FC Gear Change HS FC 431 FC 431 Spindelstock Getriebstufenwechsel 2 OLD
+FC Gear Change2 HS FC 432 FC 432 Spindelstock Getriebstufenwechsel 2 mIt DS
+FC Gear Change3 HS FC 433 FC 433 Spindelstock Getriebstufenwechsel 3
+FC Gear Change4 HS FC 434 FC 434 Spindelstock Getriebstufenwechsel 2 mit ES
+FC Gear Change5 HS FC 435 FC 435 Spindelstock Getriebstufenwechsel MAFA3
+FC Gear Change6 HS FC 436 FC 436 Spindelstock Getriebstufenwechsel MAFA4
+FC Freecut HS FC 440 FC 440 Spindelstock Freischneiden
+FC Carriage 1 C1 FC 500 FC 500 Support 1
+FC Hydrostatic Car.1 FC 502 FC 502 Hydrostatik Support 1
+FC Aux. Drive Car.1 FC 504 FC 504 Hilfsantriebe an Support 1
+FC VibrationContr. Car.1 FC 507 FC 507 Vibrationsüberwachung Support 1
+FC Collision Car.1 FC 508 FC 508 Kollision Überwachung in X oder Z
+FC Doors C1 FC 509 FC 509 Sicherheits-Tueren, VS-Sperre Achse Betriebsartenabhängig Support 1
+FC X-Axis Car.1 FC 511 FC 511 X-Achse
+FC Z-Axis Car.1 FC 512 FC 512 Z-Achse
+FC 520 FC 520 FC 520
+FC Lub_X/Z Car.1 FC 524 FC 524 Schmierung X/Z
+FC Tool Revolver Car.1 FC 529 FC 529 Werkzeugrevolver Support 1
+FC General TCar-C1 FC 530 FC 530 Allgemein oder Bild WzT Support 1
+FC Hydraulic TCar-C1 FC 531 FC 531 Wz-Träger Hydraulik Support 1
+FC Lube TCar-C1 FC 532 FC 532 Schmierung aller Werkzeugträger am Support 1
+FC Left Tool Carrier C1 FC 533 FC 533 Linker äußerer Wz-Träger Positionierung Support 1
+FC Man.Posi.sel. LeTC-C1 FC 534 FC 534 Anwahl Positonen Linker äußerer Werkzeugträger Support 1
+FC Posi.Cycle LeTC-C1 FC 535 FC 535 Schrittkette Linker äußerer Werkzeugträger Positionieren Support 1
+FC Unclmp Cycle LeTC-C1 FC 536 FC 536 Schrittkette Linker äußerer Werkzeugträger Lösen Support 1
+FC T-Holder+Tool LeTC-C1 FC 537 FC 537
+FC Left InnerTool Car C1 FC 538 FC 538 Linker inner Wz-Träger Positionierung Support 1
+FC Man.Posi.sel.LeITC-C1 FC 539 FC 539 Anwahl Positonen Linker inner Werkzeugträger Support 1
+FC Posi.Cycle LeInTC-C1 FC 540 FC 540 Schrittkette Linker inner Werkzeugträger Positionieren Support 1
+FC UnclmpCycle LeInTC-C1 FC 541 FC 541 Schrittkette Linker inner Werkzeugträger Lösen Support 1
+FC T-Hold+Tool LeInTC-C1 FC 542 FC 542
+FC Man.Posi.sel. RiTC-C1 FC 544 FC 544 Anwahl Positonen Rechter Werkzeugträger Support 1
+FC Posi.Cycle RiTC-C1 FC 545 FC 545 Schrittkette Schmaler Werkzeugträger Positionieren
+FC Unclmp Cycle RiTC-C1 FC 546 FC 546 Schrittkette Schmaler Werkzeugträger Lösen
+FC T-Holder-Tool RiTC-C1 FC 547 FC 547
+FC Manual Tool Change C1 FC 548 FC 548 Support 1, Manueller Wz-Wechsel M06
+FC Carriage 2 C2 FC 550 FC 550
+FC Hydrostatic Car.2 FC 552 FC 552 Hydrostatik Support 2
+FC Aux. Drive Car.2 FC 554 FC 554 Hilfsantriebe an Support 2
+FC VibrationContr. Car.2 FC 557 FC 557 Vibrationsüberwachung Support 2
+FC Collision Car.2 FC 558 FC 558 Kollision Überwachung in X2 oder Z2
+FC Doors Car.2 FC 559 FC 559 Sicherheits-Tueren, VS-Sperre Achse Betriebsartenabhängig Support 1
+FC X2-Axis Car.2 FC 561 FC 561 X2-Achse Support 2
+FC Z2-Axis Car.2 FC 562 FC 562 Z2-Achse Support 2
+FC 570 FC 570 FC 570
+FC General TCar-C2 FC 580 FC 580 Allgemein oder Bild WzT Support 2
+FC Hydraulic TCar-C2 FC 581 FC 581 Support 2, Wz-Träger Hydraulik
+FC Lube TCar-C2 FC 582 FC 582 Schmierung Werkzeugträger am Support 2
+FC Left Tool Carrier C2 FC 583 FC 583 Support 2, Breiter Wz-Träger Positionierung
+FC Man.Posi.sel. LeTC-C2 FC 584 FC 584 Anwahl Positonen Linker Werkzeugträger Support 2
+FC Posi.Cycle LeTC-C2 FC 585 FC 585 Schrittkette Linker Werkzeugträger Support 2 Positionieren
+FC Unclmp Cycle LeTC-C2 FC 586 FC 586 Schrittkette Linker Werkzeugträger Support 2 Lösen
+FC T-Holder+Tool LeTC-C2 FC 587 FC 587
+FC Left InnerTool Car C2 FC 588 FC 588 Linker inner Wz-Träger Positionierung Support 2
+FC Man.Posi.sel.LeITC-C2 FC 589 FC 589 Anwahl Positonen Linker inner Werkzeugträger Support 2
+FC Posi.Cycle LeInTC-C2 FC 590 FC 590 Schrittkette Linker inner Werkzeugträger Positionieren Support 2
+FC UnclmpCycle LeInTC-C2 FC 591 FC 591 Schrittkette Linker inner Werkzeugträger Lösen Support 2
+FC T-Hold+Tool LeInTC-C2 FC 592 FC 592
+FC Right Tool Carrier C2 FC 593 FC 593 Support 2, Rechter Wz-Träger Positionierung
+FC Man.Posi.sel. RiTC-C2 FC 594 FC 594 Anwahl Positonen Schmaler Werkzeugträger
+FC Posi.Cycle RiTC-C2 FC 595 FC 595 Schrittkette Schmaler Werkzeugträger Positionieren
+FC Unclmp Cycle RiTC-C2 FC 596 FC 596 Schrittkette Schmaler Werkzeugträger Lösen
+FC T-Holder-Tool RiTC-C2 FC 597 FC 597
+FC Manual Tool Change C2 FC 598 FC 598 Support 2, Manueller Wz-Wechsel M06
+FC Tailstock TS FC 600 FC 600 Reitock Allgemein
+FC Tst Encoder TS FC 601 FC 601 Reistock Messsystem
+FC Doors TS FC 609 FC 609 Sicherheits-Tueren, VS-Sperre Achse Betriebsartenabhängig Reitstock
+FC Tst ClampHandHydr TS FC 610 FC 610 Reitstock Bettklemmung Hydraulik Hand + Verstellung
+FC Tst Clamp TS FC 611 FC 611 Reitstock Bettklemmung
+FC Quill Clamp TSQ FC 612 FC 612 Reitstock Pinolenklemmung
+FC Faceplate Clamp TS FC 613 FC 613 Reitstock Fixierung Planscheibe
+FC Tst CentrLub TS FC 620 FC 620 Reitstock Zentralschmierung
+FC Tst Lub TS FC 621 FC 621 Reitstock Bettschmierung
+FC Quill Lub TSQ FC 622 FC 622 Reitstock Pinolenschmierung
+FC Tst Move1 TS FC 631 FC 631 Reitstock Bettverstellung Normalmotor
+FC Tst Move2 TS FC 632 FC 632 Reitstock Bettverstellung polumschaltbarer Motor
+FC Tst Move3 TS FC 633 FC 633 Reitstock Bettverstellung Movimot
+FC Tst Move4 TS FC 634 FC 634 Reitstock Bettverstellung Demag
+FC Tst Move5 TS FC 635 FC 635 Reitstock Bettverstellung Micromaster
+FC Quill Move1 TSQ FC 641 FC 641 Reitstock Pinolenverstellung Normalmotor
+FC Quill Move2 TSQ FC 642 FC 642 Reitstock Pinolenverstellung polumschaltbarer Motor
+FC Quill Move3 TSQ FC 643 FC 643 Reitstock Pinolenverstellung Movimot
+FC Quill Move4 TSQ FC 644 FC 644 Reitstock Pinolenverstellung Demag
+FC Quill Move5 TSQ FC 645 FC 645 Reitstock Pinolenverstellung Micromaster
+FC Quill PressDispl TSQ FC 650 FC 650 Reitstock Pinolenkraftanzeige
+FC 96 KollSchutz FC 696 FC 696 Kollision Reitstock
+FC MeasureTool HS FC 701 FC 701 Werkzeugvermessung Renishaw Interface am Spindelstock
+FC MeasureTool TS FC 702 FC 702 Werkzeugvermessung Renishaw Interface am Reitstock
+FC MeasureWorkpiece C1 FC 710 FC 710 Werkstückvermessung Renishaw Interface Support 1
+FC MeasureWorkpiece C2 FC 720 FC 720 Werkstückvermessung Renishaw Interface Support 2
+FC BNPV Display C1 FC 750 FC 750 Basis-Nullpunkt-Verschiebung-Custom-Display Kanal 1
+FC BNPV Display C2 FC 760 FC 760 Basis-Nullpunkt-Verschiebung-Custom-Display Kanal 1
+FC 800 FC 800 FC 800
+FC 803 FC 803 FC 803
+FC Read Pos for HT2 FC 804 FC 804 Lesen Achsposition MKS / WKS / Restweg für HT2
+FC NC_MD_Write_Spindel FC 805 FC 805 NC-MD Schreiben für Geschwindigkeitsbegrenzung bei offener Schutzeinrichtung
+FC H-Decode FC 806 FC 806 TOOL H-Decodierung alle Kanäle
+FC DualPortRam FC 807 FC 807 Dualportram lesen / schreiben
+FC Install ASUP0 FC 808 FC 808 ASUP Einrichten Freecut
+FC 810 NC_MD_Write_Axis FC 810 FC 810 NC-MD Achsen umschreiben
+FC H-/M-/G-Decod. Ch.1 FC 811 FC 811 H- / M- / G-Decodierung Kanal 1
+FC BZO Calc Ch.1 FC 812 FC 812 BasisNPV ermitteln
+FC BZO Write Ch.1 FC 813 FC 813 BasisNPV WzT an NC Kanal 1 Schreiben
+FC act AxValue read Ch.1 FC 814 FC 814 Istwerte Achsen im WKS / MKS lesen Achsen Kanal 1
+FC NC-Interface Ch.1 FC 815 FC 815 NC Nahtstelle Kanal 1
+FC 816 FC 816 FC 816
+FC 817 FC 817 FC 817
+FC Install ASUP1 Ch.1 FC 818 FC 818 ASUP Einrichten Kanal 1
+FC 819 FC 819 FC 819
+FC 820 FC 820 FC 820
+FC 821 FC 821 FC 821
+FC BZO Calc Ch.2 FC 822 FC 822
+FC BZO Write Ch.2 FC 823 FC 823 BasisNPV WzT an NC Kanal 2 Schreiben
+FC act AxValue read Ch.2 FC 824 FC 824 Istwerte Achsen im WKS / MKS lesen (für BHG) Achsen Kanal 2
+FC 826 FC 826 FC 826
+FC 827 FC 827 FC 827
+FC 829 FC 829 FC 829
+FC CHECK PROFIBUS FC 850 FC 850 CHECK ALL PROFIBUS SLAVES
+FC GLOBAL_DP_DIAG FC 851 FC 851 PROFIBUS CHECK
+IBN allways 0 M 0.0 BOOL Immer "0"
+IBN allways 1 M 0.1 BOOL Immer "1"
+M Clock 10Hz M 1.0 BOOL Takt 10 Hz (0,1sec)
+M Clock 5Hz M 1.1 BOOL Takt 5 Hz (0,2sec)
+M Clock 2,5Hz M 1.2 BOOL Takt 2,5Hz (0,4sec) Blinktakt Schnell
+M Clock 2Hz M 1.3 BOOL Takt 2 Hz (0,5sec)
+M Clock 1,25Hz M 1.4 BOOL Takt 1,25 Hz (0,8sec) Blinktakt
+M Clock 1Hz M 1.5 BOOL Takt 1 Hz (1sec)
+M Clock 0,625Hz M 1.6 BOOL Takt 0,625 Hz (1,6sec) Blinktakt Langsam
+M Clock 0,5Hz M 1.7 BOOL Takt 0,5 Hz (2sec)
+M first run SIRELAY M 2.0 BOOL remanenter Merker "First Run" für SIRELAY
+M first SPL run M 2.1 BOOL SPL ist einmal durchlaufen
+M_10.0 M 10.0 BOOL Freigabe Spindel nach Getriebewechsel
+M 10.1 M 10.1 BOOL IMPP Getriebe umschalten
+M 10.2 M 10.2 BOOL FLMP Getriebe umschalten
+M 15.0 M 15.0 BOOL Speicher Werkzeugrevolver schwenken blockiert per M38
+M 48.3 M 15.3 BOOL Speicher Messeinrichtung Vor+Ein
+M 20.1 M 20.1 BOOL Startmerker für PI-Dienst ASUP2
+M 21.2 M 21.2 BOOL Fehler PI-Dienst ASUP2
+M 21.3 M 21.3 BOOL Fehler PI-Dienst ASUP2
+M_22.0 M 22.0 BOOL *Vorschub Halt
+M_22.1 M 22.1 BOOL *Spindel Halt
+M 48.0 M 48.0 BOOL Sammelstörung Messeinrichtung Walze
+M 48.1 M 48.1 BOOL IMP Messeinrichtung Vor+Ein
+M 48.2 M 48.2 BOOL FLM Messeinrichzung Ein
+M 48.4 M 48.4 BOOL Einlesesperre von Messeirichtung
+M 48.5 M 48.5 BOOL IMP Messeinrichtung Zurück/Aus
+M 48.6 M 48.6 BOOL Messschlitten vorn in Messstellung
+M 48.7 M 48.7 BOOL Messeinrichtung angesteckt
+M 49.0 M 49.0 BOOL FLM Messtastertouch
+M 49.1 M 49.1 BOOL Messarm unten
+M 49.3 M 49.3 BOOL Anfahrtouch Z+
+M 49.4 M 49.4 BOOL Anfahrtouch C+
+M 49.5 M 49.5 BOOL Anfahrtouch CM 49.6 M 49.6 BOOL Anfahrtouch XM 51.5 M 51.5 BOOL NSA Getriebestufe ist umgeschaltet
+M_60.0 M 60.0 BOOL FP Schmierimpuls X-Achse Ein
+M_60.1 M 60.1 BOOL IMPP Schmierung X-Achse
+M_60.2 M 60.2 BOOL FN Schmierimpuls X-Achse Aus
+M_60.3 M 60.3 BOOL IMPN Schmierung X-Achse
+M_60.4 M 60.4 BOOL FP Schmierimpuls Z-Achse Ein
+M_60.5 M 60.5 BOOL IMPP Schmierung Z-Achse
+M_60.6 M 60.6 BOOL FN Schmierimpuls Z-Achse Aus
+M_60.7 M 60.7 BOOL IMPN Schmierung Z-Achse
+M_61.0 M 61.0 BOOL HM AR Z-Achsenschmierung Ein
+M_61.1 M 61.1 BOOL HM AR X-Achsenschmierung Ein
+M_61.2 M 61.2 BOOL
+M_61.3 M 61.3 BOOL FLMP Z-Achsschmierung Ein
+M_61.4 M 61.4 BOOL FLMP X-Achsschmierung Ein
+M_61.5 M 61.5 BOOL Doppelschmieranforderung X+Z
+M 61.6 M 61.6 BOOL
+M 61.7 M 61.7 BOOL
+M_62.0 M 62.0 BOOL FN Supportschmierpumpe
+M_62.1 M 62.1 BOOL IMP Supportschmierpumpe Aus
+M_62.2 M 62.2 BOOL X-Achsenschmierung erlaubt
+M_62.3 M 62.3 BOOL Z-Achsenschmierung erlaubt
+M_62.4 M 62.4 BOOL IBN Schmierung Z
+M 62.5 M 62.5 BOOL
+M 62.6 M 62.6 BOOL
+M 62.7 M 62.7 BOOL
+M_65.0 M 65.0 BOOL MS2 Iststellung 0 (Parken)
+M-65.1 M 65.1 BOOL MS2 Iststellung 1
+M-65.2 M 65.2 BOOL MS2 Iststellung 2
+M_65.3 M 65.3 BOOL MS2 Iststellung 3
+M_65.4 M 65.4 BOOL MS2 Iststellung 4
+M_67.0 M 67.0 BOOL IMP Anwahl Bildschirm dunkel
+M-67.1 M 67.1 BOOL FLM Anwahl Bildschirm dunkel
+M-67.2 M 67.2 BOOL IMP Abwahl Bildschirm dunkel
+M-67.3 M 67.3 BOOL Speicher Anwahl Bildschirm dunkel
+M_75.5 M 75.5 BOOL MS2 geparkt
+M_84.6 M 84.6 BOOL X-Achse nicht in Einschwenkstellung
+M_85.0 M 85.0 BOOL MS1 Iststellung 0 (Parken)
+M_85.1 M 85.1 BOOL MS1 Iststellung 1
+M_85.2 M 85.2 BOOL MS1 Iststellung 2
+M_85.3 M 85.3 BOOL MS1 Iststellung 3
+M_85.4 M 85.4 BOOL MS1 Iststellung 4
+M 88.0 M 88.0 BOOL
+M 88.1 M 88.1 BOOL
+M 88.2 M 88.2 BOOL
+M 88.3 M 88.3 BOOL
+M 88.4 M 88.4 BOOL
+M 88.5 M 88.5 BOOL
+M 88.6 M 88.6 BOOL
+M 88.7 M 88.7 BOOL
+M 89.0 M 89.0 BOOL
+M 89.1 M 89.1 BOOL
+M 89.2 M 89.2 BOOL
+M 89.3 M 89.3 BOOL
+M 89.4 M 89.4 BOOL
+M 89.5 M 89.5 BOOL
+M 89.6 M 89.6 BOOL
+M 89.7 M 89.7 BOOL
+M 90.0 M 90.0 BOOL
+M 90.1 M 90.1 BOOL
+M 90.2 M 90.2 BOOL
+M 90.3 M 90.3 BOOL
+M 91.2 M 91.2 BOOL
+M 91.5 M 91.5 BOOL MS1 geparkt
+M 93.0 M 93.0 BOOL
+M 93.1 M 93.1 BOOL
+M 93.2 M 93.2 BOOL
+M 93.3 M 93.3 BOOL
+M 93.4 M 93.4 BOOL
+M 93.5 M 93.5 BOOL
+M 93.6 M 93.6 BOOL
+M 93.7 M 93.7 BOOL
+M_94.1 M 94.1 BOOL Bohrstange
+M Reset Key act.Panel M 97.4 BOOL Reset Taste von aktiver Bedienstelle
+M Acknowledge Reset Flt M 97.5 BOOL Reset Fehler quittieren
+M Fault AchnowKey actPan M 97.6 BOOL
+M Fault acknowledge M 97.7 BOOL Fehler quittieren
+M 98.3 M 98.3 BOOL
+M 98.4 M 98.4 BOOL
+M 98.5 M 98.5 BOOL
+M 98.6 M 98.6 BOOL
+M 98.7 M 98.7 BOOL
+M Parken Flanke Sup. 1 M 99.0 BOOL Support 1 Parken Flanke
+M Parken Impuls Sup. 1 M 99.1 BOOL Support 1 Parken Impuls
+M Parken Flanke Sup. 2 M 99.3 BOOL Support 2 Parken Flanke
+M Parken Impuls Sup. 2 M 99.4 BOOL Support 2 Parken Impuls
+M 99.5 M 99.5 BOOL
+M 99.6 M 99.6 BOOL
+M 99.7 M 99.7 BOOL
+M E-Stop Fault active M 100.0 BOOL Schwere Störung mit NOT-AUS
+M No-E-Stop-Stored M 100.1 BOOL Kein NOT-HALT gespeichert
+M Vorber. Maschine Ein M 100.2 BOOL Reserviert (2Stellen Einschalt-Variante) Vorbereitung Maschine Ein %
+M Vorber. Maschine Aus M 100.3 BOOL Reserviert (2Stellen Einschalt-Variante) Vorbereitung Maschine Ein %
+M Maschine Aus Impuls M 100.4 BOOL Reserviert (2Stellen Einschalt-Variante) Vorbereitu % ng Maschine Ein
+M Lastspg. (Ma.) ist Ein M 100.5 BOOL Lastspannung (Maschine) ist Ein
+M Enable Aux.DrivesMa On M 100.6 BOOL Freigabe Hilfsantriebe ( Kein NOT-AUS und Frei nach Maschine Ein )
+M Enable Drives aft MaOn M 100.7 BOOL Freigabe Antriebe ( Kein NOT-AUS und Frei nach verz.Maschine Ein )
+M Enable Drives edge M 101.0 BOOL Antriebe Frei nach Maschine Ein Flanke
+M Enable Drives Pulse On M 101.1 BOOL Antriebe Frei nach Maschine Ein Impuls
+M Main Power Off pulse M 101.2 BOOL Antriebe Aus Impuls
+M Support 1 Ein Befehl M 101.3 BOOL M Support 1 Ein Befehl
+M Support 1 ist Ein M 101.4 BOOL M Support 1 ist Ein
+M Support 1 = Ein Flanke M 101.5 BOOL M Support 1 = Ein Flanke %
+M Support 1 = Ein Impuls M 101.6 BOOL M Support 1 = Ein Impuls %
+M Ein 611D Antr.Läuft S1 M 101.7 BOOL Ein Digitaler Antrieb Support 1 läuft
+M Support 2 Ein Befehl M 102.0 BOOL M Support 2 Ein Befehl
+M Support 2 ist Ein M 102.1 BOOL M Support 2 ist Ein %
+M Support 2 = Ein Flanke M 102.2 BOOL M Support 2 = Ein Flanke %
+M Support 2 = Ein Impuls M 102.3 BOOL M Support 2 = Ein Impuls %
+M Ein 611D Antr.Läuft S2 M 102.4 BOOL Ein Digitaler Antrieb Support 2 läuft %
+M Support 1 Abwahl M 102.5 BOOL
+M Support 2 Abwahl M 102.6 BOOL
+M 102.7 M 102.7 BOOL
+M HoldAllMotion Edge MP1 M 103.0 BOOL Schnellhalt FIanke ((+P1))
+M HoldAllMotion Edge MP2 M 103.1 BOOL Schnellhalt FIanke (Hpt-BedienStation 2)
+M HoldAllMotion Edge Res M 103.2 BOOL
+M Hold All Motion Active M 103.3 BOOL Schnellhalt Maschine ist aktiv
+M 103.4 M 103.4 BOOL
+M 103.5 M 103.5 BOOL
+M Support 1 Speicher M 103.6 BOOL Support 1 An/Abwahl Speicher
+M Support 2 Speicher M 103.7 BOOL Support 2 An/Abwahl Speicher
+M PLC-Acknowl-Flt active M 104.0 BOOL Ein PLC-Quittier-Fehler steht an
+M PLC-Quit-Msg. active M 104.1 BOOL Eine PLC-Quittier Meldung steht an
+M PLC-R-Flt/Msg. active M 104.2 BOOL Ein PLC-Reset Fehler/Meldung steht an
+M 104.3 M 104.3 BOOL
+M MSG Safe Quitt Edge M 104.4 BOOL
+M MSG Safe Quitt Puls M 104.5 BOOL
+M 104.6 M 104.6 BOOL
+M 104.7 M 104.7 BOOL
+M AnfZauntuer1Gesp M 105.0 BOOL Anforderung Zauntür 1 öffnen gespeichert
+M AnfZauntuer2Gesp M 105.1 BOOL Anforderung Zauntür 2 öffnen gespeichert
+M AnfZauntuer3Gesp M 105.2 BOOL Anforderung Zauntür 3 öffnen gespeichert
+M 105.3 M 105.3 BOOL
+M 105.4 M 105.4 BOOL
+M 105.5 M 105.5 BOOL
+M 105.6 M 105.6 BOOL
+M 105.7 M 105.7 BOOL
+M Chipconveyor On Edge M 106.0 BOOL Späneförderer Ein Flanke
+M Chipconveyor On Store M 106.1 BOOL Späneförderer Ein gespeichert
+M Chipconveyor del Off M 106.2 BOOL Späneförderer verzögert aus
+M 106.3 M 106.3 BOOL
+M Chipconveyor Off Edge M 106.4 BOOL Späneförderer Aus Flanke
+M 106.5 M 106.5 BOOL Späneförderer Aus Flanke gespeichert
+M 106.6 M 106.6 BOOL
+M 106.7 M 106.7 BOOL
+M Lastspg. Ein Impuls M 107.0 BOOL Lastspannung Ein Impuls
+M Lastspg. Aus Impuls M 107.1 BOOL Lastspannung Aus Impuls
+M Lastspg. Flanke M 107.2 BOOL Lastspannung Ein Flanke
+M Mainswtch On Puls M 107.3 BOOL Impuls Haupschalter Ein
+M Mainswtch Off Puls M 107.4 BOOL Impuls Hauptschalter Aus
+M Mainswtch On Edge M 107.5 BOOL Flankenmerker Haupschalter Ein
+M 107.6 M 107.6 BOOL
+M FistRun Store M 107.7 BOOL erste Einschaltung maschine gespeichert
+M One_Support M 108.0 BOOL Einsupportmaschine
+M 108.1 M 108.1 BOOL
+M 108.2 M 108.2 BOOL
+M 108.3 M 108.3 BOOL
+M 108.6 M 108.6 BOOL
+M 108.7 M 108.7 BOOL
+M 109.0 M 109.0 BOOL
+M Renishaw_On_store_C1 M 110.0 BOOL Speicher Renishaw Aus Speicher Kannal 1 (M47)
+M Renishaw_Off_store_C1 M 110.1 BOOL Speicher Renishaw Aus Speicher Kannal 1 (M49)
+M 110.2 M 110.2 BOOL
+M 110.3 M 110.3 BOOL
+M 110.4 M 110.4 BOOL
+M 110.5 M 110.5 BOOL
+M 110.6 M 110.6 BOOL
+M 110.7 M 110.7 BOOL
+M Renishaw_On_edge_C2 M 111.0 BOOL Flanke Renishaw Ein Speicher Kannal 2 (M47)
+M Renishaw_On_pulse_C2 M 111.1 BOOL Impuls Renishaw Ein Speicher Kannal 2 (M47)
+M Renishaw_On_store_C2 M 111.2 BOOL Speicher Renishaw Ein Speicher Kannal 2 (M47)
+M Renishaw_Off_edge_C2 M 111.3 BOOL Flanke Renishaw Aus Speicher Kannal 2 (M47)
+M Renishaw_Off_pulse_C2 M 111.4 BOOL Impuls Renishaw Aus Speicher Kannal 2 (M47)
+M Renishaw_Off_store_C2 M 111.5 BOOL Speicher Renishaw Aus Speicher Kannal 2 (M49)
+M 112.2 M 112.2 BOOL
+M 112.3 M 112.3 BOOL
+M 113.0 M 113.0 BOOL
+M IBN LubFill HS M 114.0 BOOL Fill headstock oil lines IBN Schmiersystem IBN Füllen Spika
+M IBN LubFill Car M 114.1 BOOL Fill axes oil lines IBN Schmiersystem IBN Füllen Support X/Z
+M IBN LubFill TS M 114.2 BOOL IBN Schmiersystem füllen Reitstock
+M IBN LubFill Q-TS M 114.3 BOOL IBN Schmiersystem füllen Pinole
+M IBN LubFill T-Car M 114.4 BOOL IBN Schmiersystem füllen Meiselschieber
+M IBN LubFill Stdy M 114.5 BOOL IBN Schmiersystem füllen Lünette
+M IBN GS M 115.0 BOOL IBN Tippbetrieb Getriebeschaltung S1 von +P31#
+M IBN Pendeln M 115.1 BOOL IBN Getriebeschaltung Pendelbetrieb Ein
+M IBN T-Car M 115.2 BOOL IBN Meiselschieber verfahren
+M IBN MeasCar M 115.3 BOOL IBN Tippbetrieb Messschlitten
+M IBN Clamp TS M 115.4 BOOL IBN Tippbetrieb Reitstockklemmung
+M IBN Clamp Q-TS M 115.5 BOOL IBN Tippbetrieb Pinolenklemmung
+M IBN Clamp T-Car M 115.6 BOOL IBN Tippbetrieb Klemmung Meiselschieber
+M IBN Clamp Stdy M 115.7 BOOL IBN Tippbetrieb Lünettenklemmung
+M IBN MessX M 116.0 BOOL Startup for switching measuring system X-Axis IBN Meßsystems X-Achse
+M IBN MessZ M 116.1 BOOL Startup for switching measuring system Z-Axis IBN Meßsystems Z-Achse
+M IBN MessC M 116.2 BOOL Startup for switching measuring system C-Axis IBN Meßsystems С-Achse
+M IBN HourCount M 116.6 BOOL IBN Setzen Betriebsstundenzähler auf (Anfangswert)
+M IBN Screensaver M 116.7 BOOL IBN Sreensaver Off
+M 117.0 M 117.0 BOOL IBN Fehler Ausblenden: Sammelstörung Druckschalter/Strömungswächter Ölversorgung
+M 117.1 M 117.1 BOOL IBN Fehler Ausblenden: Sammelstörung Druckschalter/Strömungswächter defekt
+M 117.2 M 117.2 BOOL IBN Fehler Ausblenden
+M 117.3 M 117.3 BOOL
+M 118.2 M 118.2 BOOL OPT Getriebeschaltung hydraulisch
+M 118.5 M 118.5 BOOL X
+M 118.6 M 118.6 BOOL X
+M 118.7 M 118.7 BOOL X
+M_ 119.2 M 119.2 BOOL OPT External zero point offset Keine Auswertung externe NPV
+M 121.0 M 121.0 BOOL Istposition 1 Werkzeugrevolver
+M 121.1 M 121.1 BOOL Istposition 2 Werkzeugrevolver
+M 121.2 M 121.2 BOOL Istposition 3 Werkzeugrevolver
+M 121.3 M 121.3 BOOL Istposition 4 Werkzeugrevolver
+M 121.4 M 121.4 BOOL Istposition 5 Werkzeugrevolver
+M 121.5 M 121.5 BOOL Istposition 6 Werkzeugrevolver
+M 121.6 M 121.6 BOOL Istposition 7 Werkzeugrevolver
+M 121.7 M 121.7 BOOL Istposition 8 Werkzeugrevolver
+M 122.0 M 122.0 BOOL Sollposition Werkzeugrevolver
+M 122.1 M 122.1 BOOL Sollposition Werkzeugrevolver
+M 122.2 M 122.2 BOOL Sollposition Werkzeugrevolver
+M 122.3 M 122.3 BOOL Sollposition Werkzeugrevolver
+M 122.4 M 122.4 BOOL Sollposition Werkzeugrevolver
+M 122.5 M 122.5 BOOL Sollposition Werkzeugrevolver
+M 122.6 M 122.6 BOOL Sollposition Werkzeugrevolver
+M 122.7 M 122.7 BOOL Sollposition Werkzeugrevolver
+M 123.0 M 123.0 BOOL HM Werkzeugrevolver
+M 123.1 M 123.1 BOOL HM Werkzeugrevolver
+M 123.2 M 123.2 BOOL HM Werkzeugrevolver
+M 123.3 M 123.3 BOOL HM Werkzeugrevolver
+M 123.4 M 123.4 BOOL HM Werkzeugrevolver
+M 123.5 M 123.5 BOOL HM Werkzeugrevolver
+M 123.6 M 123.6 BOOL HM Werkzeugrevolver
+M 123.7 M 123.7 BOOL HM Werkzeugrevolver
+M 124.0 M 124.0 BOOL
+M 124.1 M 124.1 BOOL
+M 124.2 M 124.2 BOOL
+M 124.3 M 124.3 BOOL
+M 124.4 M 124.4 BOOL
+M 124.5 M 124.5 BOOL
+M 124.6 M 124.6 BOOL
+M 124.7 M 124.7 BOOL
+M 125.0 M 125.0 BOOL
+M 125.1 M 125.1 BOOL
+M 125.2 M 125.2 BOOL
+M 125.3 M 125.3 BOOL
+M 125.4 M 125.4 BOOL
+M 125.5 M 125.5 BOOL
+M 125.6 M 125.6 BOOL
+M 125.7 M 125.7 BOOL
+M 126.0 M 126.0 BOOL
+M 126.1 M 126.1 BOOL
+M 126.2 M 126.2 BOOL
+M 126.3 M 126.3 BOOL
+M 126.4 M 126.4 BOOL
+M 126.5 M 126.5 BOOL
+M 126.6 M 126.6 BOOL
+M 126.7 M 126.7 BOOL
+M 127.0 M 127.0 BOOL
+M 127.1 M 127.1 BOOL
+M 127.2 M 127.2 BOOL
+M 127.3 M 127.3 BOOL
+M 127.4 M 127.4 BOOL
+M 127.5 M 127.5 BOOL
+M 127.6 M 127.6 BOOL
+M 127.7 M 127.7 BOOL
+M 128.0 M 128.0 BOOL
+M 128.1 M 128.1 BOOL
+M 128.2 M 128.2 BOOL
+M 128.3 M 128.3 BOOL
+M 128.4 M 128.4 BOOL
+M 128.5 M 128.5 BOOL
+M 128.6 M 128.6 BOOL
+M 128.7 M 128.7 BOOL
+M SicherhKuppl Aktiv X1 M 129.0 BOOL X1-Achse Sicherheitskupplung ausgelöst
+M SiKuppl Freifahren X1 M 129.1 BOOL X1-Achse Sicherheitskupplung freifahren
+M SicherhKuppl Aktiv Z1 M 129.2 BOOL Z1-Achse Sicherheitskupplung ausgelöst
+M SiKuppl Freifahren Z1 M 129.3 BOOL Z1-Achse Sicherheitskupplung freifahren
+M SicherhKuppl Aktiv X2 M 129.4 BOOL X2-Achse Sicherheitskupplung ausgelöst
+M SiKuppl Freifahren X2 M 129.5 BOOL X2-Achse Sicherheitskupplung freifahren
+M SicherhKuppl Aktiv Z2 M 129.6 BOOL Z2-Achse Sicherheitskupplung ausgelöst
+M SiKuppl Freifahren Z2 M 129.7 BOOL Z2-Achse Sicherheitskupplung freifahren
+M 130.0 M 130.0 BOOL
+M 130.1 M 130.1 BOOL
+M 130.2 M 130.2 BOOL
+M 130.3 M 130.3 BOOL
+M 130.4 M 130.4 BOOL Spindel Sperre von Reitstock
+M 130.5 M 130.5 BOOL
+M 130.6 M 130.6 BOOL
+M 130.7 M 130.7 BOOL
+M 131.0 M 131.0 BOOL
+M 131.1 M 131.1 BOOL
+M 131.2 M 131.2 BOOL
+M 131.3 M 131.3 BOOL
+M 131.4 M 131.4 BOOL
+M 131.5 M 131.5 BOOL
+M 131.6 M 131.6 BOOL
+M 131.7 M 131.7 BOOL
+M 132.0 M 132.0 BOOL
+M 132.1 M 132.1 BOOL
+M 132.2 M 132.2 BOOL
+M 132.3 M 132.3 BOOL
+M 132.4 M 132.4 BOOL
+M 132.5 M 132.5 BOOL
+M 132.6 M 132.6 BOOL
+M 132.7 M 132.7 BOOL
+M 133.0 M 133.0 BOOL
+M 133.1 M 133.1 BOOL
+M 133.2 M 133.2 BOOL
+M 133.3 M 133.3 BOOL
+M 133.4 M 133.4 BOOL
+M 133.5 M 133.5 BOOL
+M 133.6 M 133.6 BOOL
+M 133.7 M 133.7 BOOL
+M 134.0 M 134.0 BOOL
+M 134.1 M 134.1 BOOL
+M 134.2 M 134.2 BOOL
+M 134.3 M 134.3 BOOL
+M 134.4 M 134.4 BOOL
+M 134.5 M 134.5 BOOL
+M 134.6 M 134.6 BOOL
+M 134.7 M 134.7 BOOL
+M 135.0 M 135.0 BOOL
+M 135.1 M 135.1 BOOL
+M 135.2 M 135.2 BOOL
+M 135.3 M 135.3 BOOL
+M 135.4 M 135.4 BOOL
+M 135.5 M 135.5 BOOL
+M 135.6 M 135.6 BOOL
+M 135.7 M 135.7 BOOL
+M M06 Stored C1 M 136.0 BOOL S1 M06 (Manueller Werkzeugwechsel) gespeichert
+M M06 Stored Edge C1 M 136.1 BOOL S1 M06 (Manueller Werkzeugwechsel) Flanke
+M M06 Stored & Acknow C1 M 136.2 BOOL S1 M06 Gespeichert & Quittiert, warte auf NC-Start Taste
+M 136.3 M 136.3 BOOL
+M 136.4 M 136.4 BOOL
+M 136.5 M 136.5 BOOL
+M 136.6 M 136.6 BOOL
+M 136.7 M 136.7 BOOL
+M M06 Stored C2 M 137.0 BOOL S2 M06 (Manueller Werkzeugwechsel) gespeichert
+M M06 Stored Edge C2 M 137.1 BOOL S2 M06 (Manueller Werkzeugwechsel) Flanke
+M M06 Stored & Acknow C2 M 137.2 BOOL S2 M06 Gespeichert & Quittiert, warte auf NC-Start Taste
+M 137.3 M 137.3 BOOL
+M 137.4 M 137.4 BOOL
+M 137.5 M 137.5 BOOL
+M 137.6 M 137.6 BOOL
+M 137.7 M 137.7 BOOL
+M 138.0 M 138.0 BOOL
+M 138.1 M 138.1 BOOL
+M 138.2 M 138.2 BOOL
+M 138.3 M 138.3 BOOL
+M 138.4 M 138.4 BOOL
+M 138.5 M 138.5 BOOL
+M 138.6 M 138.6 BOOL
+M 138.7 M 138.7 BOOL
+M 139.0 M 139.0 BOOL
+M 139.1 M 139.1 BOOL
+M 139.2 M 139.2 BOOL
+M 139.3 M 139.3 BOOL
+M 139.4 M 139.4 BOOL
+M 139.5 M 139.5 BOOL
+M 139.6 M 139.6 BOOL
+M 139.7 M 139.7 BOOL
+M 140.0 M 140.0 BOOL
+M 140.1 M 140.1 BOOL
+M 140.2 M 140.2 BOOL
+M 140.3 M 140.3 BOOL
+M 140.4 M 140.4 BOOL
+M 140.5 M 140.5 BOOL
+M 140.6 M 140.6 BOOL
+M 140.7 M 140.7 BOOL
+M 141.0 M 141.0 BOOL
+M 141.1 M 141.1 BOOL
+M 141.2 M 141.2 BOOL
+M 141.3 M 141.3 BOOL
+M 141.4 M 141.4 BOOL
+M 141.5 M 141.5 BOOL
+M 141.6 M 141.6 BOOL
+M 141.7 M 141.7 BOOL
+M 142.0 M 142.0 BOOL
+M 142.1 M 142.1 BOOL
+M 142.2 M 142.2 BOOL
+M 142.3 M 142.3 BOOL
+M 142.4 M 142.4 BOOL
+M 142.5 M 142.5 BOOL
+M 142.6 M 142.6 BOOL
+M 142.7 M 142.7 BOOL
+M 143.0 M 143.0 BOOL
+M 143.1 M 143.1 BOOL
+M 143.2 M 143.2 BOOL
+M 143.3 M 143.3 BOOL
+M 143.4 M 143.4 BOOL
+M 143.5 M 143.5 BOOL
+M 143.6 M 143.6 BOOL
+M 143.7 M 143.7 BOOL
+M 144.0 M 144.0 BOOL
+M 144.1 M 144.1 BOOL
+M 144.2 M 144.2 BOOL
+M 144.3 M 144.3 BOOL
+M 144.4 M 144.4 BOOL
+M 144.5 M 144.5 BOOL
+M 144.6 M 144.6 BOOL
+M 144.7 M 144.7 BOOL
+M 145.0 M 145.0 BOOL
+M 145.1 M 145.1 BOOL
+M 145.2 M 145.2 BOOL
+M 145.3 M 145.3 BOOL
+M 145.4 M 145.4 BOOL
+M 145.5 M 145.5 BOOL
+M 146.0 M 146.0 BOOL
+M 146.1 M 146.1 BOOL
+M 146.2 M 146.2 BOOL
+M 146.3 M 146.3 BOOL
+M 146.4 M 146.4 BOOL
+M 146.5 M 146.5 BOOL
+M 146.6 M 146.6 BOOL
+M 146.7 M 146.7 BOOL
+M 147.0 M 147.0 BOOL
+M 147.1 M 147.1 BOOL
+M 147.2 M 147.2 BOOL
+M 147.3 M 147.3 BOOL
+M 147.4 M 147.4 BOOL
+M 147.5 M 147.5 BOOL
+M 147.6 M 147.6 BOOL
+M 147.7 M 147.7 BOOL
+M 148.0 M 148.0 BOOL
+M 148.1 M 148.1 BOOL
+M 148.2 M 148.2 BOOL
+M 148.3 M 148.3 BOOL
+M 148.4 M 148.4 BOOL
+M 148.5 M 148.5 BOOL
+M 148.6 M 148.6 BOOL
+M 148.7 M 148.7 BOOL
+M 149.0 M 149.0 BOOL
+M 149.1 M 149.1 BOOL
+M 149.2 M 149.2 BOOL
+M 149.3 M 149.3 BOOL
+M 149.4 M 149.4 BOOL
+M 149.5 M 149.5 BOOL
+M 149.6 M 149.6 BOOL
+M 149.7 M 149.7 BOOL
+M Line-Modul Off Aktiv M 150.0 BOOL Zeit Er-Modul Aus Aktiv
+M LIne-Modul EnableDrive M 150.1 BOOL Freigabe Antriebe von ER-Modul
+M 150.2 M 150.2 BOOL
+M 150.3 M 150.3 BOOL
+M 150.4 M 150.4 BOOL
+M 150.5 M 150.5 BOOL
+M 150.6 M 150.6 BOOL
+M 150.7 M 150.7 BOOL
+M 151.0 M 151.0 BOOL
+M 151.1 M 151.1 BOOL
+M 151.2 M 151.2 BOOL
+M 151.3 M 151.3 BOOL
+M 151.4 M 151.4 BOOL
+M 151.5 M 151.5 BOOL
+M 151.6 M 151.6 BOOL
+M 151.7 M 151.7 BOOL
+M 152.0 M 152.0 BOOL
+M 152.1 M 152.1 BOOL
+M 152.2 M 152.2 BOOL
+M 152.3 M 152.3 BOOL
+M 152.4 M 152.4 BOOL BNPV von LMD
+M 152.5 M 152.5 BOOL
+M 152.6 M 152.6 BOOL
+M 152.7 M 152.7 BOOL
+M 153.0 M 153.0 BOOL
+M 153.1 M 153.1 BOOL
+M 153.2 M 153.2 BOOL
+M 153.3 M 153.3 BOOL
+M 153.4 M 153.4 BOOL Getriebeschaltung angewählt
+M 153.5 M 153.5 BOOL Getriebeschaltung läuft
+M 153.6 M 153.6 BOOL
+M 153.7 M 153.7 BOOL
+M 154.0 M 154.0 BOOL
+M 154.1 M 154.1 BOOL
+M 154.2 M 154.2 BOOL
+M 154.3 M 154.3 BOOL
+M 154.4 M 154.4 BOOL
+M 154.5 M 154.5 BOOL
+M 154.6 M 154.6 BOOL
+M 154.7 M 154.7 BOOL
+M 155.0 M 155.0 BOOL H1 Sammelstoerung Spindelstock
+M 155.1 M 155.1 BOOL FLM Planscheibenschutz offen
+M 155.2 M 155.2 BOOL Planscheibenschutz offen
+M 155.3 M 155.3 BOOL
+M 155.4 M 155.4 BOOL
+M 155.5 M 155.5 BOOL
+M 155.6 M 155.6 BOOL
+M 155.7 M 155.7 BOOL
+M 156.0 M 156.0 BOOL
+M 156.1 M 156.1 BOOL
+M 156.2 M 156.2 BOOL
+M 156.3 M 156.3 BOOL
+M 156.4 M 156.4 BOOL
+M 156.5 M 156.5 BOOL
+M 156.6 M 156.6 BOOL
+M 156.7 M 156.7 BOOL
+M 157.0 M 157.0 BOOL
+M 157.1 M 157.1 BOOL
+M 157.2 M 157.2 BOOL
+M 157.3 M 157.3 BOOL Feed Stop from spindle 1 Vorschub-Halt von Spindel S1
+M 157.4 M 157.4 BOOL
+M 157.5 M 157.5 BOOL
+M 157.6 M 157.6 BOOL
+M 157.7 M 157.7 BOOL S1= Masterspindle S1 = Masterspindel
+M 158.0 M 158.0 BOOL
+M 158.1 M 158.1 BOOL
+M 158.2 M 158.2 BOOL
+M 158.3 M 158.3 BOOL
+M 158.4 M 158.4 BOOL
+M 158.5 M 158.5 BOOL
+M 158.6 M 158.6 BOOL
+M 158.7 M 158.7 BOOL
+M 159.0 M 159.0 BOOL
+M 159.1 M 159.1 BOOL
+M 159.2 M 159.2 BOOL
+M 159.3 M 159.3 BOOL
+M 159.4 M 159.4 BOOL Verzögert Getriebestufe eingelegt - Freigabe Spindel
+M 159.5 M 159.5 BOOL Keine Getriebestufe eingelegt
+M 159.6 M 159.6 BOOL Richtige Getriebestufe eingelegt
+M 159.7 M 159.7 BOOL Verzögert Getriebestufe eingelegt
+M 160.0 M 160.0 BOOL Ist-Getriebestufe 1
+M 160.1 M 160.1 BOOL Ist-Getriebestufe 2
+M 160.2 M 160.2 BOOL Ist-Getriebestufe 3
+M Set SpiStStatus48h Imp M 160.3 BOOL Ventile Spindelstock ansteuern nach 48 Stunden Betrieb Impuls
+M Set SpiStStatus48h Flk M 160.4 BOOL Ventile Spindelstock ansteuern nach 48 Stunden Betrieb Flanke
+M 160.5 M 160.5 BOOL
+M 160.6 M 160.6 BOOL
+M 160.7 M 160.7 BOOL
+M 161.0 M 161.0 BOOL Soll-Getriebestufe 1
+M 161.1 M 161.1 BOOL Soll-Getriebestufe 2
+M 161.2 M 161.2 BOOL Soll-Getriebestufe 3
+M 161.3 M 161.3 BOOL
+M 161.4 M 161.4 BOOL
+M 161.5 M 161.5 BOOL
+M 161.6 M 161.6 BOOL
+M 161.7 M 161.7 BOOL
+M 162.0 M 162.0 BOOL M41 vorgewählt (Getriebestufe 1)
+M 162.1 M 162.1 BOOL M42 vorgewählt (Getriebestufe 2)
+M 162.2 M 162.2 BOOL M43 vorgewählt (Getriebestufe 3)
+M_164.7 M 164.7 BOOL Fahrbefehl Z-Achse
+M_165.7 M 165.7 BOOL Fahrbefehl X-Achse
+M 170.0 M 170.0 BOOL M-Befehle Getriebewechsel gespeichert
+M 170.1 M 170.1 BOOL
+M 170.2 M 170.2 BOOL
+M 170.3 M 170.3 BOOL
+M 170.4 M 170.4 BOOL
+M 170.5 M 170.5 BOOL
+M 170.6 M 170.6 BOOL
+M 170.7 M 170.7 BOOL
+M 171.0 M 171.0 BOOL
+M 171.1 M 171.1 BOOL
+M 171.2 M 171.2 BOOL
+M 171.3 M 171.3 BOOL
+M 171.4 M 171.4 BOOL
+M 171.5 M 171.5 BOOL
+M 171.6 M 171.6 BOOL
+M 171.7 M 171.7 BOOL
+M 172.0 M 172.0 BOOL
+M 172.1 M 172.1 BOOL
+M 172.2 M 172.2 BOOL
+M 172.3 M 172.3 BOOL
+M 172.4 M 172.4 BOOL
+M 172.5 M 172.5 BOOL
+M 172.6 M 172.6 BOOL
+M 172.7 M 172.7 BOOL
+M 173.0 M 173.0 BOOL
+M 173.1 M 173.1 BOOL
+M 173.2 M 173.2 BOOL
+M 173.3 M 173.3 BOOL
+M 173.4 M 173.4 BOOL
+M 173.5 M 173.5 BOOL
+M 173.6 M 173.6 BOOL BNPV Walzenmesseinrichtung aktiv
+M 173.7 M 173.7 BOOL BNPV von MS2
+M 174.0 M 174.0 BOOL Uebergabe Ext.Nullpunktverschieb. X-Achse
+M 174.1 M 174.1 BOOL Uebergabe Ext.Nullpunktverschieb. Z-Achse
+M 174.2 M 174.2 BOOL
+M 174.3 M 174.3 BOOL NPV_X+Z geschrieben
+M 174.4 M 174.4 BOOL keine definierte Meiselschieberstellung
+M 174.5 M 174.5 BOOL
+M 174.6 M 174.6 BOOL Übergabe Ext.Nullpunktverschiebung beendet
+M 174.7 M 174.7 BOOL
+M 175.0 M 175.0 BOOL Ab-/Anwahl Basis-Nullpunktverschiebung
+M 175.1 M 175.1 BOOL
+M 175.2 M 175.2 BOOL
+M_175.3 M 175.3 BOOL BNPV von Frässpindel
+M_175.4 M 175.4 BOOL Aktive Nullpunktverschiebung geändert
+M 175.5 M 175.5 BOOL
+M 175.6 M 175.6 BOOL
+M 175.7 M 175.7 BOOL
+M_178.0 M 178.0 BOOL Meisselschieber 1 Position 0 (Parkposition)
+M_178.1 M 178.1 BOOL Meisselschieber 1 Position 1
+M_178.2 M 178.2 BOOL Meisselschieber 1 Position 2
+M_178.3 M 178.3 BOOL Meisselschieber 1 Position 3
+M_178.4 M 178.4 BOOL Meisselschieber 1 Position 4
+M_178.5 M 178.5 BOOL Meisselschieber 1 Position 5 (Option)
+M_178.6 M 178.6 BOOL FLM MS1 Park-Position 0 eingelegt
+M_178.7 M 178.7 BOOL IMP MS1 Park-Position 0 eingelegt
+M_179.0 M 179.0 BOOL Meisselschieber 2 Position 0 (Parkposition)
+M_179.1 M 179.1 BOOL Meisselschieber 2 Position 1
+M_179.2 M 179.2 BOOL Meisselschieber 2 Position 2
+M_179.3 M 179.3 BOOL Meisselschieber 2 Position 3
+M_179.4 M 179.4 BOOL Meisselschieber 2 Position 4
+M_179.5 M 179.5 BOOL Meisselschieber 2 Position 5 (Option)
+M_179.6 M 179.6 BOOL FLM MS2 Park-Position 0 eingelegt
+M_179.7 M 179.7 BOOL IMP MS2 Park-Position 0 eingelegt
+M_180.0 M 180.0 BOOL Istposition 1 Werkzeugrevolver
+M_180.1 M 180.1 BOOL Istposition 2 Werkzeugrevolver
+M_180.2 M 180.2 BOOL Istposition 3 Werkzeugrevolver
+M_180.3 M 180.3 BOOL Istposition 4 Werkzeugrevolver
+M_180.4 M 180.4 BOOL Istposition 5 Werkzeugrevolver
+M_180.5 M 180.5 BOOL Istposition 6 Werkzeugrevolver
+M_180.6 M 180.6 BOOL Istposition 7 Werkzeugrevolver
+M_180.7 M 180.7 BOOL Istposition 8 Werkzeugrevolver
+M 184.5 M 184.5 BOOL
+M 184.6 M 184.6 BOOL
+M 184.7 M 184.7 BOOL
+M 185.0 M 185.0 BOOL
+M 185.1 M 185.1 BOOL
+M 185.2 M 185.2 BOOL
+M 185.3 M 185.3 BOOL
+M 185.4 M 185.4 BOOL
+M 185.5 M 185.5 BOOL
+M 185.6 M 185.6 BOOL
+M 185.7 M 185.7 BOOL
+M 186.0 M 186.0 BOOL
+M 186.1 M 186.1 BOOL
+M 186.2 M 186.2 BOOL
+M 186.3 M 186.3 BOOL
+M 186.4 M 186.4 BOOL
+M 186.5 M 186.5 BOOL
+M 186.6 M 186.6 BOOL
+M 186.7 M 186.7 BOOL
+M 187.0 M 187.0 BOOL
+M 187.1 M 187.1 BOOL
+M 187.2 M 187.2 BOOL
+M 187.3 M 187.3 BOOL
+M 187.4 M 187.4 BOOL
+M 187.5 M 187.5 BOOL
+M 187.6 M 187.6 BOOL
+M 187.7 M 187.7 BOOL
+M 188.0 M 188.0 BOOL
+M 188.1 M 188.1 BOOL
+M 188.2 M 188.2 BOOL
+M 188.3 M 188.3 BOOL
+M 188.4 M 188.4 BOOL
+M 188.5 M 188.5 BOOL
+M 188.6 M 188.6 BOOL
+M 188.7 M 188.7 BOOL
+M M98PSSAufGespBisQuitt M 189.0 BOOL M98 gespeichet bis Quittiert
+M M99PSSZuGespBisQuitt M 189.1 BOOL M99 gespeichet bis Quittiert
+M SchutzhAufGespeich PS M 189.2 BOOL Schutzhaube Öffnen gespeichert
+M SchutzhZuGespeich PS M 189.3 BOOL Schutzhaube Schließen gespeichert
+M 189.4 M 189.4 BOOL
+M Anf_Schutz Tür Gesp TS M 189.5 BOOL Anforderung Spindel Stock Tür Gespeichert
+M 189.6 M 189.6 BOOL
+M 189.7 M 189.7 BOOL
+M_190.0 M 190.0 BOOL Sammelstörung Werkzeugrevolver
+M_190.1 M 190.1 BOOL T-Befehl nicht erlaubt
+M_190.2 M 190.2 BOOL Neue Revolverstellung
+M_190.3 M 190.3 BOOL IMP Revolver schwenken
+M_190.4 M 190.4 BOOL Einlesesperre von Werkzeugrevolver
+M_190.5 M 190.5 BOOL FLM Revolver schwenken
+M_190.6 M 190.6 BOOL Schwenken Revolver blockiert
+M_190.7 M 190.7 BOOL Werkzeugrevolver aktiv
+M_191.0 M 191.0 BOOL FLM neue Stellung Revolver
+M_191.1 M 191.1 BOOL IMP neue Stellung Revolver
+M 191.2 M 191.2 BOOL
+M 191.3 M 191.3 BOOL
+M 191.4 M 191.4 BOOL
+M 191.5 M 191.5 BOOL
+M 191.6 M 191.6 BOOL
+M 191.7 M 191.7 BOOL
+M 192.0 M 192.0 BOOL
+M 192.1 M 192.1 BOOL
+M 192.2 M 192.2 BOOL
+M 192.3 M 192.3 BOOL
+M 192.4 M 192.4 BOOL
+M 192.5 M 192.5 BOOL
+M 192.6 M 192.6 BOOL
+M 192.7 M 192.7 BOOL
+M 193.0 M 193.0 BOOL
+M 193.1 M 193.1 BOOL
+M 193.2 M 193.2 BOOL
+M 193.3 M 193.3 BOOL
+M 193.4 M 193.4 BOOL
+M 193.5 M 193.5 BOOL
+M 193.6 M 193.6 BOOL
+M 193.7 M 193.7 BOOL
+M 194.0 M 194.0 BOOL
+M 194.1 M 194.1 BOOL
+M 194.2 M 194.2 BOOL
+M 194.3 M 194.3 BOOL
+M 194.4 M 194.4 BOOL
+M 194.5 M 194.5 BOOL
+M 194.6 M 194.6 BOOL
+M 194.7 M 194.7 BOOL
+M 195.0 M 195.0 BOOL
+M 195.1 M 195.1 BOOL
+M 195.2 M 195.2 BOOL
+M 195.3 M 195.3 BOOL
+M 195.4 M 195.4 BOOL
+M 195.5 M 195.5 BOOL
+M 195.6 M 195.6 BOOL
+M 195.7 M 195.7 BOOL
+M 196.0 M 196.0 BOOL
+M 196.1 M 196.1 BOOL
+M 196.2 M 196.2 BOOL
+M 196.3 M 196.3 BOOL
+M 196.4 M 196.4 BOOL
+M 196.5 M 196.5 BOOL
+M 196.6 M 196.6 BOOL
+M 196.7 M 196.7 BOOL
+M 197.0 M 197.0 BOOL
+M 197.1 M 197.1 BOOL
+M 197.2 M 197.2 BOOL
+M 197.3 M 197.3 BOOL
+M 197.4 M 197.4 BOOL
+M 197.5 M 197.5 BOOL
+M 197.6 M 197.6 BOOL
+M 197.7 M 197.7 BOOL
+M 198.0 M 198.0 BOOL
+M 198.1 M 198.1 BOOL
+M 198.2 M 198.2 BOOL
+M 198.3 M 198.3 BOOL
+M 198.4 M 198.4 BOOL
+M 198.5 M 198.5 BOOL
+M 198.6 M 198.6 BOOL
+M 198.7 M 198.7 BOOL
+M 199.0 M 199.0 BOOL
+M 199.1 M 199.1 BOOL
+M 199.2 M 199.2 BOOL
+M 199.3 M 199.3 BOOL
+M 199.4 M 199.4 BOOL
+M 199.5 M 199.5 BOOL
+M 199.6 M 199.6 BOOL
+M 199.7 M 199.7 BOOL
+M Spi<>Kanal 2.Umlauf M 200.0 BOOL Zuordnung Spindel zu Kanal, 2.Durchlauf
+M 202.1 M 200.1 BOOL
+M 202.2 M 200.2 BOOL
+M 202.3 M 200.3 BOOL
+M 202.4 M 200.4 BOOL
+M 202.5 M 200.5 BOOL
+M 202.6 M 200.6 BOOL
+M 202.7 M 200.7 BOOL
+M Act.FeedOverride=0 HP1 M 201.0 BOOL Aktiver Vorschub-Override = 0 (+P1)
+M Rapid-Ovr=0 C1 M 201.1 BOOL Eilgang-Override = 0 (+P1)
+M Feed OVR = 0 C1 M 201.2 BOOL Vorschub-Override = 0 (+P1)
+M 201.3 M 201.3 BOOL
+M 201.4 M 201.4 BOOL
+M 201.5 M 201.5 BOOL
+M 201.6 M 201.6 BOOL
+M 201.7 M 201.7 BOOL
+M SBL off Auto select C1 M 202.0 BOOL SBL aus mit BA-Auto Anwahl Flanke
+M SBL off ManE select C1 M 202.1 BOOL SBL aus mit BA-Manuellem Eingreifen Anwahl Flanke
+M MT-Abwahl Richt.Flanke M 202.2 BOOL MT-Richtungsabwahl Flanke
+M 202.3 M 202.3 BOOL
+M MCS/WCS f. MMC Edge C1 M 202.4 BOOL MKS / WKS Umschaltung von MMC Flanke Kanal 1
+M MCS/WCS f. MMC Puls C1 M 202.5 BOOL MKS / WKS Umschaltung von MMC Impuls Kanal 1
+M 202.6 M 202.6 BOOL
+M 202.7 M 202.7 BOOL
+M BA Einr Puls M 203.0 BOOL Puls Anwahl BA-Einrichten
+M Setup Edge C1 M 203.1 BOOL BA Einrichten Flanke (Anwahl Jog) Kanal 1
+M Agree switch Edge C1 M 203.2 BOOL HT2 Zustimmtaste Flanke Hpt-BedienStation 1
+M Agree switch Puls C1 M 203.3 BOOL HT2 Zustimmtaste Impuls Hpt-BedienStation 1
+M 203.4 M 203.4 BOOL
+M Auto->Jog Edge C1 M 203.5 BOOL Wechsel von Auto nach Jog Flanke Kanal 1
+M Auto->Jog Store C1 M 203.6 BOOL Wechsel von Auto nach Jog Impuls gespeichert (NC-Stop) Kanal 1
+M Auto->Jog Jog C1 M 203.7 BOOL Wechsel von Auto nach Jog Taste Jog nach NC-Stop Kanal 1
+M Act.FeedOverride=0 HP2 M 204.0 BOOL Aktiver Vorschub-Override = 0 Hpt-BedienStation 2
+M Rapid-Ovr=0 C2 M 204.1 BOOL Eilgang-Override = 0 Hpt-BedienStation 2
+M Feed OVR = 0 C2 M 204.2 BOOL Vorschub-Override = 0 Hpt-BedienStation 2
+M 204.3 M 204.3 BOOL
+M 204.4 M 204.4 BOOL
+M 204.5 M 204.5 BOOL
+M 204.6 M 204.6 BOOL
+M 204.7 M 204.7 BOOL
+M SBL off Auto select C2 M 205.0 BOOL
+M SBL off Eing select C2 M 205.1 BOOL
+M 205.2 M 205.2 BOOL
+M 205.3 M 205.3 BOOL
+M MCS/WCS f. MMC Edge C2 M 205.4 BOOL MKS / WKS Umschaltung von MMC Flanke Kanal 2
+M MCS/WCS f. MMC Puls C2 M 205.5 BOOL MKS / WKS Umschaltung von MMC Impuls Kanal 2
+M 205.6 M 205.6 BOOL
+M 205.7 M 205.7 BOOL
+M 206.0 M 206.0 BOOL
+M Setup Edge C2 M 206.1 BOOL BA Einrichten Flanke (Anwahl Jog) Kanal 2
+M Agree switch Edge C2 M 206.2 BOOL HT2 Zustimmtaste Flanke Hpt-BedienStation 2
+M Agree switch Puls C2 M 206.3 BOOL HT2 Zustimmtaste Impuls Hpt-BedienStation 2
+M Store Feed Stop Axis M 206.4 BOOL Speicher Vorschub Stop
+M Auto->Jog Edge C2 M 206.5 BOOL Wechsel von Auto nach Jog Flanke Kanal 2
+M Auto->Jog Store C2 M 206.6 BOOL Wechsel von Auto nach Jog Impuls gespeichert (NC-Stop) Kanal 2
+M Auto->Jog Jog C2 M 206.7 BOOL Wechsel von Auto nach Jog Taste Jog nach NC-Stop Kanal 2
+M_ 207.0 M 207.0 BOOL FLMP Handrad ein von MSST
+M_ 207.1 M 207.1 BOOL Handrad Ein
+M_ 207.2 M 207.2 BOOL Anwahl Handrad im JOG(mm) = Anwahl 10 INC
+M_ 207.3 M 207.3 BOOL Anwahl Handrad im AUT / JOG(inch) = Anwahl 1 INC
+M_ 207.4 M 207.4 BOOL Abwahl Handrad im JOG
+M_ 207.5 M 207.5 BOOL Abwahl Handrad in AUT
+M 207.6 M 207.6 BOOL
+M 207.7 M 207.7 BOOL
+M_ 208.0 M 208.0 BOOL FLMP Handrad Ein von MMC
+M_ 208.1 M 208.1 BOOL FLMN Handrad Aus von MMC
+M 208.2 M 208.2 BOOL
+M 208.3 M 208.3 BOOL
+M 208.4 M 208.4 BOOL
+M 208.5 M 208.5 BOOL
+M 208.6 M 208.6 BOOL
+M 208.7 M 208.7 BOOL
+M 209.0 M 209.0 BOOL
+M 209.1 M 209.1 BOOL
+M 209.2 M 209.2 BOOL
+M 209.3 M 209.3 BOOL
+M 209.4 M 209.4 BOOL
+M 209.5 M 209.5 BOOL
+M 209.6 M 209.6 BOOL
+M 209.7 M 209.7 BOOL
+M 210.0 M 210.0 BOOL
+M 210.1 M 210.1 BOOL
+M 210.2 M 210.2 BOOL
+M 210.3 M 210.3 BOOL
+M 210.4 M 210.4 BOOL
+M 210.5 M 210.5 BOOL
+M 210.6 M 210.6 BOOL
+M 210.7 M 210.7 BOOL
+M 211.0 M 211.0 BOOL
+M 211.1 M 211.1 BOOL
+M 211.2 M 211.2 BOOL
+M 211.3 M 211.3 BOOL
+M 211.4 M 211.4 BOOL
+M 211.5 M 211.5 BOOL
+M 211.6 M 211.6 BOOL
+M 211.7 M 211.7 BOOL
+M 212.0 M 212.0 BOOL
+M 212.1 M 212.1 BOOL
+M 212.2 M 212.2 BOOL
+M 212.3 M 212.3 BOOL
+M 212.4 M 212.4 BOOL
+M 212.5 M 212.5 BOOL
+M 212.6 M 212.6 BOOL
+M 212.7 M 212.7 BOOL
+M_213.0 M 213.0 BOOL steigende Flanke Handrad aktiv
+M 213.1 M 213.1 BOOL
+M 213.2 M 213.2 BOOL
+M 213.3 M 213.3 BOOL
+M 213.4 M 213.4 BOOL
+M 213.5 M 213.5 BOOL
+M 213.6 M 213.6 BOOL
+M 213.7 M 213.7 BOOL
+M 214.0 M 214.0 BOOL
+M 214.1 M 214.1 BOOL
+M 214.2 M 214.2 BOOL
+M 214.3 M 214.3 BOOL
+M 214.4 M 214.4 BOOL
+M 214.5 M 214.5 BOOL
+M 214.6 M 214.6 BOOL
+M 214.7 M 214.7 BOOL
+M 215.0 M 215.0 BOOL
+M 215.1 M 215.1 BOOL
+M 215.2 M 215.2 BOOL
+M 215.3 M 215.3 BOOL
+M 215.4 M 215.4 BOOL
+M 215.5 M 215.5 BOOL
+M 215.6 M 215.6 BOOL
+M 215.7 M 215.7 BOOL
+M 216.0 M 216.0 BOOL
+M 216.1 M 216.1 BOOL
+M 216.2 M 216.2 BOOL
+M 216.3 M 216.3 BOOL
+M 216.4 M 216.4 BOOL
+M 216.5 M 216.5 BOOL
+M 216.6 M 216.6 BOOL
+M 216.7 M 216.7 BOOL
+M 217.0 M 217.0 BOOL
+M 217.1 M 217.1 BOOL
+M 217.2 M 217.2 BOOL
+M 217.3 M 217.3 BOOL
+M 217.4 M 217.4 BOOL
+M 217.5 M 217.5 BOOL
+M 217.6 M 217.6 BOOL
+M 217.7 M 217.7 BOOL
+M 218.0 M 218.0 BOOL
+M 218.1 M 218.1 BOOL
+M 218.2 M 218.2 BOOL
+M 218.3 M 218.3 BOOL
+M 218.4 M 218.4 BOOL
+M 218.5 M 218.5 BOOL
+M 218.6 M 218.6 BOOL
+M 218.7 M 218.7 BOOL
+M 219.0 M 219.0 BOOL
+M 219.1 M 219.1 BOOL
+M 219.2 M 219.2 BOOL
+M 219.3 M 219.3 BOOL
+M 219.4 M 219.4 BOOL
+M 219.5 M 219.5 BOOL
+M 219.6 M 219.6 BOOL
+M 219.7 M 219.7 BOOL
+M 220.0 H.M. M 220.0 BOOL Hilfsmerker
+M 220.1 H.M. M 220.1 BOOL Hilfsmerker
+M 220.2 H.M. M 220.2 BOOL Hilfsmerker
+M 220.3 H.M. M 220.3 BOOL Hilfsmerker
+M 220.4 H.M. M 220.4 BOOL Hilfsmerker
+M 220.5 H.M. M 220.5 BOOL Hilfsmerker
+M 220.6 H.M. M 220.6 BOOL Hilfsmerker
+M 220.7 H.M. M 220.7 BOOL Hilfsmerker
+M 221.0 H.M. M 221.0 BOOL Hilfsmerker
+M 221.1 H.M. M 221.1 BOOL Hilfsmerker
+M 221.2 H.M. M 221.2 BOOL Hilfsmerker
+M 221.3 H.M. M 221.3 BOOL Hilfsmerker
+M 221.4 H.M. M 221.4 BOOL Hilfsmerker
+M 221.5 H.M. M 221.5 BOOL Hilfsmerker
+M 221.6 H.M. M 221.6 BOOL Hilfsmerker
+M 221.7 H.M. M 221.7 BOOL Hilfsmerker
+M 222.0 H.M. M 222.0 BOOL Hilfsmerker
+M 222.1 H.M. M 222.1 BOOL Hilfsmerker
+M 222.2 H.M. M 222.2 BOOL Hilfsmerker
+M 222.3 H.M. M 222.3 BOOL Hilfsmerker
+M 222.4 H.M. M 222.4 BOOL Hilfsmerker
+M 222.5 H.M. M 222.5 BOOL Hilfsmerker
+M 222.6 H.M. M 222.6 BOOL Hilfsmerker
+M 222.7 H.M. M 222.7 BOOL Hilfsmerker
+M 223.0 H.M. M 223.0 BOOL Hilfsmerker
+M 223.1 H.M. M 223.1 BOOL Hilfsmerker
+M 223.2 H.M. M 223.2 BOOL Hilfsmerker
+M 223.3 H.M. M 223.3 BOOL Hilfsmerker
+M 223.4 H.M. M 223.4 BOOL Hilfsmerker
+M 223.5 H.M. M 223.5 BOOL Hilfsmerker
+M 223.6 H.M. M 223.6 BOOL Hilfsmerker
+M 223.7 H.M. M 223.7 BOOL Hilfsmerker
+M 224.0 H.M. M 224.0 BOOL Hilfsmerker
+M 224.1 H.M. M 224.1 BOOL Hilfsmerker
+M 224.2 H.M. M 224.2 BOOL Hilfsmerker
+M 224.3 H.M. M 224.3 BOOL Hilfsmerker
+M 224.4 H.M. M 224.4 BOOL Hilfsmerker
+M 224.5 H.M. M 224.5 BOOL Hilfsmerker
+M 224.6 H.M. M 224.6 BOOL Hilfsmerker
+M 224.7 H.M. M 224.7 BOOL Hilfsmerker
+M 225.0 H.M. M 225.0 BOOL Hilfsmerker
+M 225.1 H.M. M 225.1 BOOL Hilfsmerker
+M 225.2 H.M. M 225.2 BOOL Hilfsmerker
+M 225.3 H.M. M 225.3 BOOL Hilfsmerker
+M 225.4 H.M. M 225.4 BOOL Hilfsmerker
+M 225.5 H.M. M 225.5 BOOL Hilfsmerker
+M 225.6 H.M. M 225.6 BOOL Hilfsmerker
+M 225.7 H.M. M 225.7 BOOL Hilfsmerker
+M_240.0 M 240.0 BOOL Start ASUP JOG_FC_MEA
+M_241.0 M 241.0 BOOL ASUP JOG_FC_MEA aktiv
+M_241.1 M 241.1 BOOL ASUP JOG_FC_MEA fertig
+M_241.2 M 241.2 BOOL AUSUP JOG_FC_MEA Fehler
+M_241.3 M 241.3 BOOL JOG_FC_MEA Startfehler
+M_ 255.0 M 255.0 BOOL Hilfsmerkerbit 0
+M_ 255.1 M 255.1 BOOL Hilfsmerkerbit 1
+M_ 255.2 M 255.2 BOOL Hilfsmerkerbit 2
+M_ 255.3 M 255.3 BOOL Hilfsmerkerbit 3
+M_ 255.4 M 255.4 BOOL Hilfsmerkerbit 4
+M_ 255.5 M 255.5 BOOL Hilfsmerkerbit 5
+M_ 255.6 M 255.6 BOOL Hilfsmerkerbit 6
+M_ 255.7 M 255.7 BOOL Hilfsmerkerbit 7
+Manual Turn aktiv M 282.0 BOOL Manual Turn aktiv
+Manual Turn verl Flanke M 282.1 BOOL Manual Turn verlassen Flanke
+Manual Turn verl Impuls M 282.2 BOOL Manual Turn verlassen Impulse
+M282.3 MT Spi Jog Flanke M 282.3 BOOL Manual Turn Spindel Jog Flanke
+M282.4 MT Spi. Jog M 282.4 BOOL Manual Turn Spindel Jog
+M282.5 MT Spi. CW Taste M 282.5 BOOL Manual Turn Spi CW Taste
+M282.6 MT Spi. CCW Taste M 282.6 BOOL Manual Turn Spi CCW Taste
+M282.7 MT Spi. CW/CCW M 282.7 BOOL Manual Turn Spi CW/CCW Taste
+MT Handrad X aktiv M 283.6 BOOL MT Handrad X aktiv
+MT Handrad Z aktiv M 283.7 BOOL MT Handrad Z aktiv
+M 284.0 M 284.0 BOOL
+M 284.1 M 284.1 BOOL
+M 1sec Clock Edge M 300.0 BOOL 1 sec Takt Flanke
+M 1sec Clock Pulse M 300.1 BOOL 1 sec Takt Impuls
+M 1min Clock Pulse M 300.2 BOOL 1 min Takt Impuls
+M 0,1sec Clock Edge M 300.3 BOOL 0,1 sec Takt Flanke
+M 0,11sec Clock Pulse M 300.4 BOOL 0,1 sec Takt Impuls
+M MainBearLubPmpPulse HS M 402.0 BOOL Spindelstock Radiallagerschmierung Pumpe ein Impuls
+M MainBearLubPresReachHS M 402.1 BOOL Spindelstock Radiallagerschmierung Druck erreicht gespeichert
+M AnfTuer1SpiGesp M 403.0 BOOL Anforderung Schutztür 1 Spindel öffnen gespeichert
+M AnfTuer2SpiGesp M 403.1 BOOL Anforderung Schutztür 2 Spindel öffnen gespeichert
+M 403.2 M 403.2 BOOL
+M NC-Stop stored M 403.3 BOOL Nc-stop gespeichert
+M 403.7 M 403.7 BOOL
+M M41 stored Until Reset M 404.0 BOOL M41 Gespeichert bis Quittiert
+M M42 stored Until Reset M 404.1 BOOL M42 Gespeichert bis Quittiert
+M 404.2 M 404.2 BOOL
+M M41 Gear 1 stored MSpi M 404.3 BOOL M41 Gespeichert, Spindel Getriebestufe 1
+M M42 Gear 2 stored MSpi M 404.4 BOOL M42 Gespeichert, Spindel Getriebestufe 2
+M Spi. Gear 1 stored M 404.5 BOOL Spindel Getriebestufe 1 Gespeichert
+M Spi. Gear 2 stored M 404.6 BOOL Spindel Getriebestufe 2 Gespeichert
+M Spi. Stop Gear Change M 404.7 BOOL Spindel Stop während Getriebestufenwechsel
+M IBN GSW M 405.0 BOOL IBN-Merker Getriebestufenwechsel
+M SollGS1 NC set M 405.1 BOOL Sollgetriebestufe 1 von NC gespeichert
+M SollGS2 NC set M 405.2 BOOL Sollgetriebestufe 2 von NC gespeichert
+M Gear 1 not reached HS M 405.3 BOOL Getriebstufe 1 nicht erreicht
+M Gear 2 not reached HS M 405.4 BOOL Getriebstufe 2 nicht erreicht
+M 405.5 M 405.5 BOOL
+M Gear Change activ MSpi M 405.6 BOOL Spindel Getriebestufenwechsel aktiv
+M Gear Step reached MSpi M 405.7 BOOL Spindel Getriebestufe erreicht
+M Jog From GearChg. MSpi M 406.0 BOOL Spindel Jog von Stufenwechsel
+M Gear 1 is engaged MSpi M 406.1 BOOL Spindel Getriebestufe 1 ist eingerueckt
+M Gear 2 is engaged MSpi M 406.2 BOOL Spindel Getriebestufe 2 ist eingerueckt
+M 406.3 M 406.3 BOOL
+M SpiJogGearChgWithoutGear M 406.4 BOOL Spindel Jog ohne Getriebstufe von Stufenwechsel
+M Spi GearChg Edge HS M 406.5 BOOL Spindel (Headstock) Getriebstufenwechsel wurde ausgeführt Flanke
+M Gear was engaged HS M 406.6 BOOL Spindel (Headstock) Getriebstufenwechsel wurde ausgeführt
+M 406.7 M 406.7 BOOL
+M 407.0 M 407.0 BOOL
+M M96 stored Until Reset M 408.0 BOOL M96 stored until acknowledged, HS engage C10-Axis
+M M97 stored Until Reset M 408.1 BOOL M97 stored until acknowledged, HS Disengage C10-Axis
+M Enga actUntilReset C10 M 408.2 BOOL Headstock Engage C10-Axis active until reset
+M DisengactUntilResetC10 M 408.3 BOOL Headstock Disengage C10-Axis active until reset
+M En-/DisengageF.CNC C10 M 408.4 BOOL Headstock Engage / Disengage C10 Axis from CNC
+M Spi.Stop shift C10 M 408.5 BOOL
+M Engage Stored C10 M 408.6 BOOL Headstock Engage C10-Axis stored
+M Disengage Stored C10 M 408.7 BOOL Headstock Disengage C10-Axis stored
+M not Engaged inTime C10 M 409.0 BOOL Headstock C10-Axis not engaged (after time)
+M 409.1 M 409.1 BOOL
+M En-Disengage activ C10 M 409.2 BOOL Headstock C10-Axis shift (engage / Disengage) is active
+M Ref.-StatusReached C10 M 409.3 BOOL Headstock C10-Axis Ref. Status reached (engaged or Disengaged)
+M C10 Jog for engage C10 M 409.4 BOOL C10-Motor JOG during shift C10-Axis
+M Is Engaged C10 M 409.5 BOOL Headstock C10-Axis is engaged
+M Is Disengaged C10 M 409.6 BOOL Headstock C10-Axis is Disengaged
+M Meas.Sys 1 for jog C10 M 409.7 BOOL C10 Measuring system 1 for jog
+M Shift Edge C10 M 410.0 BOOL Headstock shift C10-Axis edge
+M has been shifted C10 M 410.1 BOOL Headstock C10-Axis was shifted
+M Shift active C10 M 411.0 BOOL M C10-Axis is Disengaged
+M 411.1 M 411.1 BOOL
+M M94 untilReset,clmpC10 M 412.0 BOOL M94 stored until acknowledged, clamp C10-Axis (Faceplate)
+M M95 untilReset,unclC10 M 412.1 BOOL M95 stored until acknowledged, unclamp C10-Axis (Faceplate)
+M Unclamp stored FaPl M 412.2 BOOL unclamp Faceplate stored (C10), M95
+M Clamp stored FaPl M 412.3 BOOL clamp Faceplate stored (C10), M94
+M Clamp Faceplate ! M 412.4 BOOL clamp Faceplate command
+M Is clamped FaPl M 412.5 BOOL Faceplate is clamped
+M Is unclamped FaPl M 412.6 BOOL Faceplate is unclamped
+M 412.7 M 412.7 BOOL
+M 418.0 M 418.0 BOOL
+M 418.1 M 418.1 BOOL
+M Spindle Override=0 MCP M 418.2 BOOL Spindle Override = 0 (Left Main Control Panel)
+M Spi OVR Change Signal M 418.3 BOOL Spindle Override Änderung
+M 418.4 M 418.4 BOOL
+M Spi CW Store M 418.5 BOOL Speicher Spindel CW
+M Spi CCW Store M 418.6 BOOL Speicher Spindel CCW
+M 418.7 M 418.7 BOOL
+M 419.0 M 419.0 BOOL
+M I 200% Edge Spi M 419.1 BOOL Stromgrenze von 100% auf 200% anheben Flanke
+M I 200% Pulse Spi M 419.2 BOOL Stromgrenze von 100% auf 200% anheben Impulse
+M 419.3 M 419.3 BOOL
+M 419.4 M 419.4 BOOL
+M Measure Sys 1 MSpi M 419.5 BOOL Main Spindle Measuring System 1 (Motor-Encoder) active
+M Measure Sys 2 MSpi M 419.6 BOOL Main Spindle Measuring System 2 (Direct Encoder 360 active 00 Imp/R)
+M 419.7 M 419.7 BOOL
+M Spindle RPM=0 MSpi M 420.0 BOOL Hpt-Spindel steht
+M Spindle RPM>0 MSpi M 420.1 BOOL Hpt-Spindel dreht
+M 420.2 M 420.2 BOOL Hpt-Spindel Schutzrelais
+M SollGS1 NC set M 405.1 BOOL Sollgetriebestufe 1 von NC gespeichert
+M SollGS2 NC set M 405.2 BOOL Sollgetriebestufe 2 von NC gespeichert
+M Gear 1 not reached HS M 405.3 BOOL Getriebstufe 1 nicht erreicht
+M Gear 2 not reached HS M 405.4 BOOL Getriebstufe 2 nicht erreicht
+M 405.5 M 405.5 BOOL
+M Gear Change activ MSpi M 405.6 BOOL Spindel Getriebestufenwechsel aktiv
+M Gear Step reached MSpi M 405.7 BOOL Spindel Getriebestufe erreicht
+M Jog From GearChg. MSpi M 406.0 BOOL Spindel Jog von Stufenwechsel
+M Gear 1 is engaged MSpi M 406.1 BOOL Spindel Getriebestufe 1 ist eingerueckt
+M Gear 2 is engaged MSpi M 406.2 BOOL Spindel Getriebestufe 2 ist eingerueckt
+M 406.3 M 406.3 BOOL
+M SpiJogGearChgWithoutGear M 406.4 BOOL Spindel Jog ohne Getriebstufe von Stufenwechsel
+M Spi GearChg Edge HS M 406.5 BOOL Spindel (Headstock) Getriebstufenwechsel wurde ausgeführt Flanke
+M Gear was engaged HS M 406.6 BOOL Spindel (Headstock) Getriebstufenwechsel wurde ausgeführt
+M 406.7 M 406.7 BOOL
+M 407.0 M 407.0 BOOL
+M M96 stored Until Reset M 408.0 BOOL M96 stored until acknowledged, HS engage C10-Axis
+M M97 stored Until Reset M 408.1 BOOL M97 stored until acknowledged, HS Disengage C10-Axis
+M Enga actUntilReset C10 M 408.2 BOOL Headstock Engage C10-Axis active until reset
+M DisengactUntilResetC10 M 408.3 BOOL Headstock Disengage C10-Axis active until reset
+M En-/DisengageF.CNC C10 M 408.4 BOOL Headstock Engage / Disengage C10 Axis from CNC
+M Spi.Stop shift C10 M 408.5 BOOL
+M Engage Stored C10 M 408.6 BOOL Headstock Engage C10-Axis stored
+M Disengage Stored C10 M 408.7 BOOL Headstock Disengage C10-Axis stored
+M not Engaged inTime C10 M 409.0 BOOL Headstock C10-Axis not engaged (after time)
+M 409.1 M 409.1 BOOL
+M En-Disengage activ C10 M 409.2 BOOL Headstock C10-Axis shift (engage / Disengage) is active
+M Ref.-StatusReached C10 M 409.3 BOOL Headstock C10-Axis Ref. Status reached (engaged or Disengaged)
+M C10 Jog for engage C10 M 409.4 BOOL C10-Motor JOG during shift C10-Axis
+M Is Engaged C10 M 409.5 BOOL Headstock C10-Axis is engaged
+M Is Disengaged C10 M 409.6 BOOL Headstock C10-Axis is Disengaged
+M Meas.Sys 1 for jog C10 M 409.7 BOOL C10 Measuring system 1 for jog
+M Shift Edge C10 M 410.0 BOOL Headstock shift C10-Axis edge
+M has been shifted C10 M 410.1 BOOL Headstock C10-Axis was shifted
+M Shift active C10 M 411.0 BOOL M C10-Axis is Disengaged
+M 411.1 M 411.1 BOOL
+M M94 untilReset,clmpC10 M 412.0 BOOL M94 stored until acknowledged, clamp C10-Axis (Faceplate)
+M M95 untilReset,unclC10 M 412.1 BOOL M95 stored until acknowledged, unclamp C10-Axis (Faceplate)
+M Unclamp stored FaPl M 412.2 BOOL unclamp Faceplate stored (C10), M95
+M Clamp stored FaPl M 412.3 BOOL clamp Faceplate stored (C10), M94
+M Clamp Faceplate ! M 412.4 BOOL clamp Faceplate command
+M Is clamped FaPl M 412.5 BOOL Faceplate is clamped
+M Is unclamped FaPl M 412.6 BOOL Faceplate is unclamped
+M 412.7 M 412.7 BOOL
+M 418.0 M 418.0 BOOL
+M 418.1 M 418.1 BOOL
+M Spindle Override=0 MCP M 418.2 BOOL Spindle Override = 0 (Left Main Control Panel)
+M Spi OVR Change Signal M 418.3 BOOL Spindle Override Änderung
+M 418.4 M 418.4 BOOL
+M Spi CW Store M 418.5 BOOL Speicher Spindel CW
+M Spi CCW Store M 418.6 BOOL Speicher Spindel CCW
+M 418.7 M 418.7 BOOL
+M 419.0 M 419.0 BOOL
+M I 200% Edge Spi M 419.1 BOOL Stromgrenze von 100% auf 200% anheben Flanke
+M I 200% Pulse Spi M 419.2 BOOL Stromgrenze von 100% auf 200% anheben Impulse
+M 419.3 M 419.3 BOOL
+M 419.4 M 419.4 BOOL
+M Measure Sys 1 MSpi M 419.5 BOOL Main Spindle Measuring System 1 (Motor-Encoder) active
+M Measure Sys 2 MSpi M 419.6 BOOL Main Spindle Measuring System 2 (Direct Encoder 360 active 00 Imp/R)
+M 419.7 M 419.7 BOOL
+M Spindle RPM=0 MSpi M 420.0 BOOL Hpt-Spindel steht
+M Spindle RPM>0 MSpi M 420.1 BOOL Hpt-Spindel dreht
+M 420.2 M 420.2 BOOL Hpt-Spindel Schutzrelais
+M KuehlmittelNebelGespS1 M 512.1 BOOL Kuehlmittel Nebel Gespeichert
+M Kuehlm Ein Flanke S1 M 512.2 BOOL Kühlmittel Ein Flanke
+M Kuehlm Ein Gesp S1 M 512.3 BOOL Kühlmittel Ein Gespeichert
+M 512.4 M 512.4 BOOL
+M 512.5 M 512.5 BOOL
+M 512.6 M 512.6 BOOL
+M Feed Enable fr Cool C1 M 512.7 BOOL Vorschubfreigabe von Kühlmittel Sup. 1
+M Carriage Light edge C1 M 513.0 BOOL Licht Support 1 Ein Flanke
+M 513.1 M 513.1 BOOL
+M 513.2 M 513.2 BOOL
+M 515.0 M 515.0 BOOL
+M Anf_Schutz Tür1Gesp S1 M 515.2 BOOL Anforderung Schutz-Tür 1 Gespeichert
+M Anf_Schutz Tür2Gesp S1 M 515.3 BOOL Anforderung Schutz-Tür 2 Gespeichert
+M 515.4 M 515.4 BOOL
+M 515.5 M 515.5 BOOL
+M RequestCoverSto TCarC1 M 515.6 BOOL Anforderung Schutzhaube WZT öffnen gespeichert
+M 515.7 M 515.7 BOOL
+M 516.0 M 516.0 BOOL
+M FastRetract Fla X1 M 520.0 BOOL Schnellrückzug X1-Achse Ein-Flanke
+M FastRetract Akt X1 M 520.1 BOOL Schnellrückzug X1-Achse Aktiv
+M FastRetract Start X1 M 520.2 BOOL Schnellrückzug X1-Achse Start
+M FastRetract Key X+ X1 M 520.3 BOOL Schnell-Rückzug X1-Achse, Anwahl Taste (X+)
+M FastRetract n.enabl X1 M 520.4 BOOL Schnellrückzug X1-Achse gesperrt M-Fkt.
+M FastRetrac Jog X1 M 520.5 BOOL Schnell-Rückzug X1 Jog-Anwahl
+M FastRetract offEdge X1 M 520.6 BOOL Schnell-Rückzug X1 beendet Flanke
+M FastRetract offPuls X1 M 520.7 BOOL Schnell-Rückzug X1 beendet Impuls
+M Schnell-Rückz Fla K1X2 M 521.0 BOOL Schnellrückzug X2-Achse im Kanal 1 Flanke
+M Schnell-Rückz Akt K1X2 M 521.1 BOOL
+M Schnell-Rückz Inc K1X2 M 521.2 BOOL Schnellrückzug X2-Achse im Kanal 1 Flanke INC
+M Schnell-Rückz T+ K1X2 M 521.3 BOOL Schnell-Rückzug X2-Achse im Kanal 1 Flanke, Sim.Taste (+)
+M 521.4 M 521.4 BOOL
+M 521.5 M 521.5 BOOL
+M 521.6 M 521.6 BOOL
+M Vib Schlichten S1 M 530.0 BOOL Vibüberw Schlichten Sup1
+M Vib Schruppen S1 M 530.1 BOOL Vibüberw Schruppen Sup1
+M 530.2 M 530.2 BOOL
+M FltFeedInh Stoped X1 M 540.0 BOOL X-Achse Störung -> Vorschubsperre nach Stillstand Achse
+M Fault->FeedStop X1 M 540.1 BOOL X-Achse Störung -> Vorschubsperre
+M Flt>Contr. Inhibit X1 M 540.2 BOOL X-Achse Störung -> Reglersperre
+M Measure Sys 1 X1 M 540.3 BOOL X-Achse Messystem 1 (Motorencoder) Aktiv
+M Measure Sys 2 X1 M 540.4 BOOL X-Achse Messystem 2 (Heidenhein LC181) Aktiv
+M Handwheel MP Edge X1 M 540.5 BOOL X-Achse Handrad Hpt-BedienStation Flanke
+M Handwheel MP On X1 M 540.6 BOOL X-Achse Handrad Hpt-BedienStation aktiv
+M Handwheel HT2 On X1 M 540.7 BOOL
+M Feed On - store X1 M 541.0 BOOL X-Achse VS-Selbshaltung (-) gespeichert
+M Feed On + store X1 M 541.1 BOOL X-Achse VS-Selbshaltung (+) gespeichert
+M M46 stored untill Quit M 541.2 BOOL M46 gespeichert bis quittiert, Freigabe Fahren hinter Planscheibe
+M Frg Fahr hinPlansch X1 M 541.3 BOOL Freigabe Fahren hinter Planscheibe
+M 541.4 M 541.4 BOOL
+M 541.5 M 541.5 BOOL
+M Flanke Handrad HP2r X1 M 541.6 BOOL X-Achse Handrad Hpt-BedienStation 2 rechts Flanke
+M Handrad HptP2r Ein X1 M 541.7 BOOL X-Achse Handrad Hpt-BedienStation 2 rechts aktiv
+M 542.0 M 542.0 BOOL
+M 542.7 M 542.7 BOOL
+M FltFeedInh Stoped Z1 M 543.0 BOOL Z-Achse Störung -> Vorschubsperre nach Stillstand Achse
+M Fault->FeedStop Z1 M 543.1 BOOL Z-Achse Störung -> Vorschubsperre
+M Flt>Contr. Inhibit Z1 M 543.2 BOOL Z-Achse Störung -> Reglersperre
+M Measure Sys 1 Z1 M 543.3 BOOL Z-Achse Messystem 1 (Motorencoder) Aktiv
+M Measure Sys 2 Z1 M 543.4 BOOL Z-Achse Messystem 2 (Heidenhein LC181) Aktiv
+M Handwheel MP Edge Z1 M 543.5 BOOL Z-Achse Handrad Hpt-BedienStation Flanke
+M Handwheel MP On Z1 M 543.6 BOOL Z-Achse Handrad Hpt-BedienStation aktiv
+M Handwheel HT2 On Z1 M 543.7 BOOL
+M Feed On - store Z1 M 544.0 BOOL Z-Achse VS-Selbshaltung (-) gespeichert
+M Feed On + store Z1 M 544.1 BOOL Z-Achse VS-Selbshaltung (+) gespeichert
+M 543.2 M 544.2 BOOL
+M Freigabe 2. SW-ES Z1 M 544.3 BOOL Z-Achse Freigabe 2. SWES Spannklauen
+M Master-only Z1 M 544.4 BOOL
+M Slave-only Z1 M 544.5 BOOL
+M Flanke Handrad HP2r Z1 M 544.6 BOOL Z-Achse Handrad Hpt-BedienStation 2 rechts Flanke
+M Handrad HptP2r Ein Z1 M 544.7 BOOL Z-Achse Handrad Hpt-BedienStation 2 rechts aktiv
+M 545.0 M 545.0 BOOL
+M 545.7 M 545.7 BOOL
+M 549.7 M 549.7 BOOL Letzter Merker Support 1
+M Key (-) Pulse X1 M 550.0 BOOL Fahrtaste X- Puls MSST1
+M Key (-) Store X1 M 550.1 BOOL Fahrtaste X- Speicher MSST1
+M Key (+) Pulse X1 M 550.2 BOOL Fahrtaste X+ Puls MSST1
+M Key (+) Store X1 M 550.3 BOOL Fahrtaste X+ Speicher MSST1
+M Key (-) Pulse Z1 M 550.4 BOOL Fahrtaste Z- Puls MSST1
+M Key (-) Store Z1 M 550.5 BOOL Fahrtaste Z- Speicher MSST1
+M Key (+) Pulse Z1 M 550.6 BOOL Fahrtaste Z+ Puls MSST1
+M Key (+) Store Z1 M 550.7 BOOL Fahrtaste Z+ Speicher MSST1
+M Hydrost-Freigabe -> X2 M 560.0 BOOL Achsfreigabe von Hydrostatik an X2
+M Hydrost-Freigabe -> Z2 M 560.1 BOOL Achsfreigabe von Hydrostatik an Z2
+M Kuehlmittel NebFlan S2 M 562.0 BOOL Kuehlmittel Nebel Flanke
+M KuehlmittelNebelGespS2 M 562.1 BOOL Kuehlmittel Nebel Gespeichert
+M Kuehlm Ein Flanke S2 M 562.2 BOOL Kühlmittel Ein Flanke
+M Kuehlm Ein Gesp S2 M 562.3 BOOL Kühlmittel Ein Gespeichert
+M 562.4 M 562.4 BOOL
+M 562.5 M 562.5 BOOL
+M 562.6 M 562.6 BOOL
+M Feed Enable fr Cool C2 M 562.7 BOOL Vorschubfreigabe von Kühlmittel
+M Carriage Light edge C2 M 563.0 BOOL Licht Support 2 Ein Flanke
+M 563.1 M 563.1 BOOL
+M 563.2 M 563.2 BOOL
+M 565.0 M 565.0 BOOL
+M Anf_Schutz Tür1Gesp S2 M 565.2 BOOL Anforderung Schutz-Tür 1 Gespeichert
+M Anf_Schutz Tür2Gesp S2 M 565.3 BOOL Anforderung Schutz-Tür 2 Gespeichert
+M 565.4 M 565.4 BOOL
+M 565.5 M 565.5 BOOL
+M RequestCoverSto TCarC2 M 565.6 BOOL Anforderung Schutzhaube WZT öffnen gespeichert
+M 565.7 M 565.7 BOOL
+M 566.0 M 566.0 BOOL
+M 566.1 M 566.1 BOOL
+M Schnell-Rückzug Fla X2 M 570.0 BOOL S2 Schnellrückzug X2-Achse Flanke
+M Schnell-Rückzug Akt X2 M 570.1 BOOL S2 Schnellrückzug X2-Achse Aktiv
+M Schnell-Rückzug Inc X2 M 570.2 BOOL S2 Schnellrückzug X2-Achse INC
+M Schnell-Rückzug T+ X2 M 570.3 BOOL Schnell-Rückzug X2, Sim.Taste (+)
+M Schnell-Rückz 0-MFktX2 M 570.4 BOOL Schnellrückzug X2-Achse gesperrt M-Fkt.
+M Schnell-Rückzug Jog X2 M 570.5 BOOL Schnell-Rückzug X2 Jog
+M 570.6 M 570.6 BOOL
+M Schnell-RückzK1 Imp X2 M 570.7 BOOL
+M Schnell-Rückz Fla K2X1 M 571.0 BOOL Schnellrückzug X2-Achse im Kanal 1 Flanke
+M Schnell-Rückz Akt K2X1 M 571.1 BOOL
+M Schnell-Rückz Inc K2X1 M 571.2 BOOL Schnellrückzug X2-Achse im Kanal 1 Flanke INC
+M Schnell-Rückz T+ K2X1 M 571.3 BOOL Schnell-Rückzug X2-Achse im Kanal 1 Flanke, Sim.Taste (+)
+M Vib Schlichten S2 M 580.0 BOOL Vibüberw Schlichten Sup2
+M Vib Schruppen S2 M 580.1 BOOL Vibüberw Schruppen Sup2
+M FltFeedInh Stoped X2 M 590.0 BOOL X2-Achse Störung -> Vorschubsperre nach Stillstand Achse
+M Fault->FeedStop X2 M 590.1 BOOL X2-Achse Störung -> Vorschubsperre
+M Flt>Contr. Inhibit X2 M 590.2 BOOL X2-Achse Störung -> Reglersperre
+M Measure Sys 1 X2 M 590.3 BOOL X2-Achse Messystem 1 (Motorencoder) Aktiv
+M Measure Sys 2 X2 M 590.4 BOOL X2-Achse Messystem 2 (Heidenhein LC181) Aktiv
+M Handwheel MP Edge X2 M 590.5 BOOL X2-Achse Handrad Hpt-BedienStation Flanke
+M Handwheel MP On X2 M 590.6 BOOL X2-Achse Handrad Hpt-BedienStation aktiv
+M Handwheel Aux.PaOn X2 M 590.7 BOOL
+M Feed On - store X2 M 591.0 BOOL X2-Achse VS-Selbshaltung (-) gespeichert
+M Feed On + store X2 M 591.1 BOOL X2-Achse VS-Selbshaltung (+) gespeichert
+M M46 stored untill Q C2 M 591.2 BOOL M46 gespeichert bis quittiert, Freigabe Fahren hinter Planscheibe Support 2
+M Frg Fahr hinPlansch X2 M 591.3 BOOL Freigabe Fahren hinter Planscheibe Support 2
+M 591.4 M 591.4 BOOL
+M 591.5 M 591.5 BOOL
+M Flanke Handrad HP1r X2 M 591.6 BOOL X2-Achse Handrad Hpt-BedienStation 1 rechts Flanke
+M Handrad HptP1r Ein X2 M 591.7 BOOL X2-Achse Handrad Hpt-BedienStation 1 rechts aktiv
+M 592.0 M 592.0 BOOL
+M 592.7 M 592.7 BOOL
+M FltFeedInh Stoped Z2 M 593.0 BOOL Z2-Achse Störung -> Vorschubsperre nach Stillstand Achse
+M Fault->FeedStop Z2 M 593.1 BOOL Z2-Achse Störung -> Vorschubsperre
+M Flt>Contr. Inhibit Z2 M 593.2 BOOL Z2-Achse Störung -> Reglersperre
+M Measure Sys 1 Z2 M 593.3 BOOL Z2-Achse Messystem 1 (Motorencoder) Aktiv
+M Measure Sys 2 Z2 M 593.4 BOOL Z2-Achse Messystem 2 (Heidenhein LC181) Aktiv
+M Handwheel MP Edge Z2 M 593.5 BOOL Z2-Achse Handrad Hpt-BedienStation Flanke
+M Handwheel MP On Z2 M 593.6 BOOL Z2-Achse Handrad Hpt-BedienStation aktiv
+M Handwheel Aux.PaOn Z2 M 593.7 BOOL
+M Feed On - store Z2 M 594.0 BOOL Z2-Achse VS-Selbshaltung (-) gespeichert
+M Feed On + store Z2 M 594.1 BOOL Z2-Achse VS-Selbshaltung (+) gespeichert
+M 594.2 M 594.2 BOOL
+M Freigabe 2. SW-ES Z2 M 594.3 BOOL Z2-Achse Freigabe 2. SWES Spannklauen
+M Master-only Z2 M 594.4 BOOL
+M Slave-only Z2 M 594.5 BOOL
+M Flanke Handrad HP1r Z2 M 594.6 BOOL Z2-Achse Handrad Hpt-BedienStation 1 rechts Flanke
+M Handrad HptP1r Ein Z2 M 594.7 BOOL Z2-Achse Handrad Hpt-BedienStation 1 rechts aktiv
+M Key (-) Pulse X2 M 595.0 BOOL Fahrtaste X2- Puls MSST1
+M Key (-) Store X2 M 595.1 BOOL Fahrtaste X2- Speicher MSST1
+M Key (+) Pulse X2 M 595.2 BOOL Fahrtaste X2+ Puls MSST1
+M Key (+) Store X2 M 595.3 BOOL Fahrtaste X2+ Speicher MSST1
+M Key (-) Pulse Z2 M 595.4 BOOL Fahrtaste Z2- Puls MSST1
+M Key (-) Store Z2 M 595.5 BOOL Fahrtaste Z2- Speicher MSST1
+M Key (+) Pulse Z2 M 595.6 BOOL Fahrtaste Z2+ Puls MSST1
+M Key (+) Store Z2 M 595.7 BOOL Fahrtaste Z2+ Speicher MSST1
+M Spindle_hold from TS M 600.0 BOOL Spindelsperre vom Reitstock keine Bewegung möglich
+M Enable_Spindle from TS M 600.1 BOOL Freigabe Spindel vom Reitstock
+M Pin vorn M 602.5 BOOL Pinole im vorderen Bereich
+M Pin hinten M 602.6 BOOL Pinole im hinteren Bereich
+M Pin in Mitte M 602.7 BOOL Pin in der Mitte
+M AnfTuerRtstckGesp M 609.0 BOOL Anforderung Schutztür Reitstock öffnen gespeichert
+M 610.0 M 610.0 BOOL Spindel Freigabe von Reitstock
+M MainSpi. M40 Pulse HS M 800.0 BOOL Hauptspindel M40 Impuls
+M MainSpi. M41 Pulse HS M 800.1 BOOL Hauptspindel M41 Impuls
+M MainSpi. M42 Pulse HS M 800.2 BOOL Hauptspindel M42 Impuls
+M MainSpi. M43 Pulse HS M 800.3 BOOL Hauptspindel M43 Impuls
+M 800.4 M 800.4 BOOL
+M MainSpi M03 static HS M 801.0 BOOL M03 statisch Hauptspindel S1
+M MainSpi M04 static HS M 801.1 BOOL M04 statisch Hauptspindel S1
+M MainSpi M05 static HS M 801.2 BOOL M05 statisch Hauptspindel S1
+M MainSpi M03 Edge HS M 801.3 BOOL M03 Flanke Hauptspindel S1
+M MainSpi M03 Pulse HS M 801.4 BOOL M03 Impuls Hauptspindel S1
+M MainSpi M04 Edge HS M 801.5 BOOL M04 Flanke Hauptspindel S1
+M MainSpi M04 Pulse HS M 801.6 BOOL M04 Impuls Hauptspindel S1
+M MainSpi M05 Edge HS M 801.7 BOOL M05 Flanke Hauptspindel S1
+M MainSpi M05 Pulse HS M 802.0 BOOL M05 Impuls Hauptspindel S1
+M 802.1 M 802.1 BOOL
+M M70 statisch HauptSpi M 803.0 BOOL M70 statisch Hauptspindel S1 C-Achsbetrieb
+M MainSpi M70 Edge HS M 803.1 BOOL M70 Flanke Hauptspindel S1 C-Achsbetrieb
+M MainSpi M70 Pulse HS M 803.2 BOOL M70 Impuls Hauptspindel S1 C-Achsbetrieb
+M 803.3 M 803.3 BOOL
+M G0 active Channel 1 M 804.0 BOOL G0 Aktiv Kanal 1
+M G33 active Channel 1 M 804.1 BOOL G33 Aktiv Kanal 1
+M G75 active Channel 1 M 804.2 BOOL G75 Fahren auf Festpunkt Aktiv Kanal 1
+M 804.3 M 804.3 BOOL
+M 804.4 M 804.4 BOOL
+M 804.5 M 804.5 BOOL
+M G96 Aktiv Channel 1 M 804.6 BOOL G96 Aktiv Kanal 1
+M 804.7 M 804.7 BOOL
+M M00/M01 Edge M 805.0 BOOL M00/M01 Flanke
+M M00/M01 Pulse M 805.1 BOOL M00/M01 Impuls
+M M02/M30 Edge M 805.2 BOOL M02/M30 Flanke
+M M02/M30 Pulse M 805.3 BOOL M02/M30 Impuls
+M 805.4 M 805.4 BOOL
+M 805.5 M 805.5 BOOL
+M 805.6 M 805.6 BOOL
+M 805.7 M 805.7 BOOL
+M M2=03 Pulse Channel 1 M 806.0 BOOL Drilling/Milling Spindle S2 M2=M03 Pulse NC-Channel 1
+M M2=04 Pulse Channel 1 M 806.1 BOOL Drilling/Milling Spindle S2 M2=M04 Pulse NC-Channel 1
+M M2=05 Pulse Channel 1 M 806.2 BOOL Drilling/Milling Spindle S2 M2=M05 Pulse NC-Channel 1
+M M2=31 Pulse Channel 1 M 806.3 BOOL Drilling/Milling Spindle S2 M2=M31 Pulse NC-Channel 1
+M M3=03 Pulse Channel 1 M 806.4 BOOL Drilling/Milling Spindle S3 M3=M03 Pulse NC-Channel 1
+M M3=04 Pulse Channel 1 M 806.5 BOOL Drilling/Milling Spindle S3 M3=M04 Pulse NC-Channel 1
+M M3=05 Pulse Channel 1 M 806.6 BOOL Drilling/Milling Spindle S3 M3=M05 Pulse NC-Channel 1
+M M3=31 Pulse Channel 1 M 806.7 BOOL Drilling/Milling Spindle S3 M3=M31 Pulse NC-Channel 1
+M Fahrtenschr Flanke S1 M 807.0 BOOL Fahrtenschreiber sichern negative Flanke Kanal 1
+M 807.1 M 807.1 BOOL
+M Interrupt_Lock_C1 M 807.5 BOOL Unterbrechungssperre Ein (Nutenfräsen)
+M S_OVR_to_C_OVR C1 M 807.6 BOOL Spindeloverride = Kanaloverride (Nutenfräsen)
+M Axis-OVR 100 C1 M 807.7 BOOL Linearachsen OVR 100%
+M DRF off Edge C1 M 808.0 BOOL K1 Abwahl DRF
+M DRF on Edge C1 M 808.1 BOOL K1 Anwahl DRF
+M WKS/MKS Edge C1 M 808.2 BOOL K1 Anwahl WKS/MKS Flanke
+M DRF WKS aktiv C1 M 808.3 BOOL K1 Anwahl WKS/MKS aktiv
+M DRF Edge C1 M 808.4 BOOL K1 Anwahl DRF Flanke
+M DRF activ C1 M 808.5 BOOL K1 Anwahl DRF Aktiv
+M M01 Edge C1 M 808.6 BOOL K1 Anwahl M01 Flanke
+M M01 activ C1 M 808.7 BOOL K1 Anwahl M01 Aktiv
+M SKP Edge C1 M 809.0 BOOL K1 Anwahl SKP Flanke
+M SKP active C1 M 809.1 BOOL K1 Anwahl SKP Aktiv
+M Feed-Stop-SBL Edge C1 M 809.2 BOOL K1 Anwahl Vorschub Stop Einzelsatz Flanke
+M Feed-Stop-SBL aktiv C1 M 809.3 BOOL K1 Anwahl Vorschub Stop Einzelsatz Aktiv
+M 809.4 M 809.4 BOOL
+M Feed Start(Stop) C1 M 809.5 BOOL Vorschub Start (Stopp) Speicher Support 1
+M Feed-Inhibit gen. C1 M 809.6 BOOL VS-Sperre Allgemein Support 1
+M_809.7 M 809.7 BOOL Programm- unterbrochen/halt
+M 67.2 M 810.0 BOOL IMP Abwahl Bildschirm dunkel
+M 67.3 M 810.1 BOOL Speicher Anwahl Bildschirm dunkel
+M 67.1 M 810.2 BOOL FLM Anwahl Bildschirm dunkel
+M MainSpi. M40 Pulse C2 M 820.0 BOOL Hauptspindel M40 Impuls
+M MainSpi. M41 Pulse C2 M 820.1 BOOL Hauptspindel M41 Impuls
+M MainSpi. M42 Pulse C2 M 820.2 BOOL Hauptspindel M42 Impuls
+M MBy 1 Spindel Chanal 2 M 821.0 BOOL Spindel Signale Kanal 2
+M MBy 2 Spindel Chanal 2 M 822.7 BOOL Spindel Signale Kanal 2
+M MBy 3 Spindel Chanal 2 M 823.7 BOOL Spindel Signale Kanal 2
+M G0 active Channel 2 M 824.0 BOOL G0 Aktiv Kanal 2
+M G33 active Channel 2 M 824.1 BOOL G33 Aktiv Kanal 2
+M G75 active Channel 2 M 824.2 BOOL G75 Fahren auf Festpunkt Aktiv Kanal 2
+M G96 Aktiv Channel 2 M 824.6 BOOL G96 Aktiv Kanal 2
+M Fahrtenschr Flanke S2 M 828.0 BOOL Fahrtenschreiber sichern negative Flanke Kanal 2
+M DRF Edge C2 M 828.4 BOOL K2 Anwahl DRF Flanke
+M DRF activ C2 M 828.5 BOOL K2 Anwahl DRF Aktiv
+M M01 Edge C2 M 828.6 BOOL K2 Anwahl M01 Flanke
+M M01 activ C2 M 828.7 BOOL K2 Anwahl M01 Aktiv
+M SKP Edge C2 M 829.0 BOOL K2 Anwahl SKP Flanke
+M SKP active C2 M 829.1 BOOL K2 Anwahl SKP Aktiv
+M Feed-Stop-SBL Edge C2 M 829.2 BOOL K2 Anwahl Vorschub Stop Einzelsatz Flanke
+M Feed-Stop-SBL aktiv C2 M 829.3 BOOL K2 Anwahl Vorschub Stop Einzelsatz Aktiv
+M Feed Start(Stop) C2 M 829.4 BOOL Vorschub Start (Stopp) Speicher Support 2
+M Feed-Inhibit gen. C2 M 829.5 BOOL VS-Sperre Allgemein Support 2
+M MCP1_Status_Send_Ob100 M 830.0 BOOL
+M MCP1_Status_Rec_Ob100 M 834.0 BOOL
+M MCP2_Status_Send_Ob100 M 880.0 BOOL
+M MCP2_Status_Rec_Ob100 M 884.0 BOOL
+M Enable_Spindle from St M 900.0 BOOL Freigabe Spindel vom Lünetten/Rollenböcken
+M IBN_0 M 1000.0 BOOL
+M IBN_1 M 1000.1 BOOL
+MB MT-Signale MB 110 BYTE
+MB 121 MB 121 BYTE Istposition Werkzeugrevolver
+MB 122 MB 122 BYTE Sollposition Werkzeugrevolver
+MB 123 MB 123 BYTE HM Werkzeugrevolver
+MB 128 MB 128 BYTE Fehlerstatus Spindelsteuerung FC18
+MB 160 MB 160 BYTE Getriebestufe =Istwert=
+MB 161 MB 161 BYTE Getriebestufe =Sollwert=
+MB 162 MB 162 BYTE HM-Byte Getriebestufe =Anzeige=
+M M40-42 Imp Ch.1 HS MB 800 BYTE Hauptspindel M40-42 Impuls Kanal 1
+M M40-42 Imp Ch.2 HS MB 810 BYTE Hauptspindel M40-42 Impuls Kanal 2
+MD Teststop Gr.1 Intern MD 230 DWORD Teststop Gruppe 1 interne Funktionen
+MD Teststop Gr.2 Intern MD 234 DWORD Teststop Gruppe 2 interne Funktionen
+MW MaxBAG MW 50 WORD Maximal definierte BAG's
+MW MaxKanäle MW 52 WORD Maximal definierte Kanäle
+MW MaxAchsen MW 54 WORD Maximal definierte Achsen
+MW FB120 MT Status MW 146 WORD FB120 MT Status
+MW Hilfsmerker Word MW 222 WORD
+OB 1 Zyklische Bearb OB 1 OB 1 Zyklische Programmbearbeitung
+OB 35 TimeInterr 100ms OB 35 OB 35 Time Interrupt control 100msec
+OB 40 Prozeßalarm OB 40 OB 40 Prozeßalarm
+DP_Koppler OB 82 OB 82
+OB NOT LOADED FAULT OB 85 OB 85 OB NOT LOADED
+DP_DP OB 86 OB 86
+OB 100 Anlauf OB 100 OB 100 Anlauf OB
+OB I/O-MONITORING OB 122 OB 122 I/O-MONITORING
+Cntr word 1 to MainSpi PAW 258 WORD Control word 1 to Main Spindle drive
+Cntr word 2 to MainSpi PAW 260 WORD Control word 2 to Main Spindle drive
+Spi. Drive Statusword 1 PEW 258 WORD Spindel Status Word 1 vom 6RA70
+Spi. Drive Statusword 2 PEW 260 WORD Spindel Status Word 1 vom 6RA70
+Spi. Drive act.Spindle n PEW 262 WORD Spindel aktuelle Drehzahl vom vom 6RA70
+Spi. Drive act.Spindle I PEW 264 WORD Spindel aktueller Strom vom 6RA70
+Spi. Drive actSpindle Md PEW 266 WORD Spindel aktuelles Drehmoment vom 6RA70
+Spi. Statusword freePrg. PEW 268 WORD Spindel frei programmierbares Zustandsword (ZSWF) vom 6RA70
+CTU SFB 0 SFB 0
+TON SFB 4 SFB 4 Generate an On Delay
+TOF SFB 5 SFB 5 Generate an Off Delay
+SET_RTM SFC 2 SFC 2 Set Run-Time Meter
+CTRL_RTM SFC 3 SFC 3 Start/Stop Run-Time Meter
+READ_RTM SFC 4 SFC 4 Read Run-Time Meter
+D_ACT_DP SFC 12 SFC 12 Deactivating and Activating DP Slaves
+ALARM_SQ SFC 17 SFC 17 Generate Block-Related Messages with Acknowledgment
+BLKMOV SFC 20 SFC 20 Copy Variables
+FILL SFC 21 SFC 21 Initialize a Memory Area
+CREAT_DB SFC 22 SFC 22 Create Data Block
+DIS_AIRT SFC 41 SFC 41 Delay the Higher Priority Interrupts and Asynchronous Errors
+EN_AIRT SFC 42 SFC 42 Enable Higher Priority Interrupts and Asynchronous Errors
+STP SFC 46 SFC 46 Change the CPU to STOP
+WAIT SFC 47 SFC 47 Delay Execution of the User Program
+RDSYSST SFC 51 SFC 51 Read a System Status List or Partial List
+WR_USMSG SFC 52 SFC 52 Write a User-Defined Diagnostic Event to the Diagnostic Buffer
+TIME_TCK SFC 64 SFC 64 Read the System Time
+RTM SFC 101 SFC 101 Handle Run-Time Meters
+T 0 T 0 TIMER Belegt vom System 840D
+T 1 T 1 TIMER Belegt vom System 840D
+T 2 T 2 TIMER Belegt vom System 840D
+T 3 T 3 TIMER Belegt vom System 840D
+T 4 T 4 TIMER Belegt vom System 840D
+T 5 T 5 TIMER Belegt vom System 840D
+T 6 T 6 TIMER Belegt vom System 840D
+T 7 T 7 TIMER Belegt vom System 840D
+T 8 T 8 TIMER Belegt vom System 840D
+T 9 T 9 TIMER Belegt vom System 840D
+T Del Loadvoltage = On T 10 TIMER Verzögert Lastspannung ist Ein
+T Verz Klimag Grp 1 Ein T 11 TIMER Klimageräte Gruppe 1 Ein nach Tür zu verzögert
+T Verz Klimag Grp 2 Ein T 12 TIMER Klimageräte Gruppe 2 Ein nach Tür zu verzögert
+T Verz Klimag Überw T 13 TIMER Klimageräte Überwachung
+T Del MainSwitch = ON T 14 TIMER Verzögert Hauptschalter ist EIN
+T NC ready del T 15 TIMER Verzögert NC Betriebsbereit
+T Del Loadvoltage = Off T 16 TIMER Verzögert Lastspannung AUS
+T Verl_Puls_First_run T 17 TIMER Verlängerter Impuls First run OB 1
+T Del all drive stop T 18 TIMER verzögert Antriebe stehen
+T Del Sinamics Off T 19 TIMER verzögert Sinamics Aus1
+T Spänef. Umschalt Zeit T 20 TIMER Umschaltzeit Späneförderer Hauptpendel <-> Späneförderer-Pendel
+T Mldg SpiEinOhneSpänefö T 21 TIMER Verz.Meldung, Spindel Ein ohne Späneförderer
+T CipConv off to clear T 22 TIMER Späneförderer verzögert aus zum leerräumen
+T 23 T 23 TIMER
+T 24 T 24 TIMER
+T 25 T 25 TIMER
+T 26 T 26 TIMER
+T 27 T 27 TIMER
+T 28 T 28 TIMER
+T Screensaver T 29 TIMER Bildschirm verzögert Aus (Bildschirmschoner)
+T M_T_H_S_ÄnderImpuls K1 T 30 TIMER Kanal 1 M_T_H_S_Änderungssignal Impuls
+T MasterUmsch_verz_C1 T 31 TIMER Masterumschaltung verzögert S1
+T 32 T 32 TIMER
+T 33 T 33 TIMER
+T 34 T 34 TIMER letzte Aktion nach Satzsuchlauf ausgegeben verz.
+T M_T_H_S_ÄnderImpuls K2 T 35 TIMER Kanal 2 M_T_H_S_Änderungssignal Impuls
+T MasterUmsch_verz_C2 T 36 TIMER Masterumschaltung verzögert S2
+T 37 T 37 TIMER
+T 38 T 38 TIMER
+T 39 T 39 TIMER
+T 40 T 40 TIMER
+T 41 T 41 TIMER
+T 42 T 42 TIMER
+T 43 T 43 TIMER
+T KeyLock from HT2 MCP1 T 44 TIMER Msg Tastensperre MSST1 von HT2
+T 45 T 45 TIMER
+T 46 T 46 TIMER
+T 47 T 47 TIMER
+T 48 T 48 TIMER
+T MiniHHUman.PulserOn C2 T 50 TIMER Delayed Mini HendHeldUnit manual Pulser On
+T DEL HW AuxPan swOverC2 T 51 TIMER Delayed switchover Handwheel after aux. panel is master
+T Del.Master Aux.Pan C2 T 52 TIMER Delayed left aux. panel is master and relais for Handwheel is switchover
+T Del.HWheelOff AuxP C2 T 53 TIMER Delayed left aux.panel and relais for Handwheel switchover is off
+T KeyLock from HT2 MCP2 T 54 TIMER Msg Tastensperre MSST2 von HT2
+T 55 T 55 TIMER
+T 56 T 56 TIMER
+T 57 T 57 TIMER
+T 58 T 58 TIMER
+T 59 T 59 TIMER
+T 60 T 60 TIMER letzte Aktion nach Satzsuchlauf ausgegeben verz.
+T Time Gear Neutral HS T 61 TIMER Impuls Richtung Neutral schalten
+T Time for Gearchange HS T 62 TIMER Zeit in der Getriebstufenwechsel erfolgt sein sollte
+T TurnWhile gearchang HS T 63 TIMER Zeit Drehen oder oszillieren
+T 64 T 64 TIMER verzögerte Freigabe eine Getriebestufe eingelegt
+T Verz.HydrAus T 65 TIMER Spindel verzögert Hydraulikpumpe GSW aus
+T Hilfszeit_Override_S2 T 66 TIMER Hilfszeit Override S2
+T 67 T 67 TIMER
+T 68 T 68 TIMER
+T Hilfszeit_Override_Spi T 69 TIMER Hilfszeit Override Spindel
+T SpiSt Öl Min Verzögert T 70 TIMER Spindelstock Ölstand Min verzögert
+T MonitorFlowSwCooler HS T 71 TIMER
+T SpiSt Ölküher Überwach T 72 TIMER Spindelstock Ölkühler Überwachung verzögert
+T SpiSt Schmierung DS 1 T 73 TIMER Spindelstock Getriebe- und Axiallagerschmierung verz. DS "1"
+T SpiSt Schmierung DS 0 T 74 TIMER Spindelstock Getriebe- und Axiallagerschmierung verz. DS "0"
+T SpiSt HptLg Schm Aus T 75 TIMER Spindelstock Hauptlager (Radial) Schmierpumpe verzögert aus
+T SpiSt HptLg Pmax Mon T 76 TIMER Spindelstock Hauptlager (Radial) Pmax Überwachungszeit
+T SpiSt HptLg Pmin Mon T 77 TIMER Spindelstock Hauptlager (Radial) Pmin Überwachungszeit
+T SpiSt HptLg min Pause T 78 TIMER Spindelstock Hauptlager (Radial) Intervallzeit
+T SpiSt HptLg beendet T 79 TIMER Spindelstock Hauptlager Impulsschmierung Zyklus beendet
+T Moitor GearChg 2->1 T 80 TIMER Überwachung Getriebestufenwechsel Zahn auf Zahn bei 1 GSW 2 auf
+T Moitor GearChg 1->2 T 81 TIMER Überwachung Getriebestufenwechsel Zahn auf Zahn bei 2 GSW 1 auf
+T Bwd GearChg 2->1 T 82 TIMER Rückbewegung wenn Zahn auf Zahn bei GSW 2 auf 1
+T Bwd GearChg 1->2 T 83 TIMER Rückbewegung wenn Zahn auf Zahn bei GSW 1 auf 2
+T GearChg done T 84 TIMER Nachlaufzeit nach erfolgreichem GSW
+T Impuls GSW Error T 85 TIMER Impuls Fehler Getriebestufenwechsel
+T verz GS raus T 86 TIMER verzögert Fehler GS rausgerutscht
+T GSW Überwachung T 87 TIMER Abruch nach Zeit
+T VentSpiStnach 48h Impu T 88 TIMER Ventile kurz ansteuern nach 48 h ohne Ansteuerung
+T FanMot off 89 T 89 TIMER Nachlauf Motorlüfter
+T Time for shift C10 T 90 TIMER Time for shift C10-Axis
+T Jog while shift C10 T 91 TIMER C10-Axis jog while shift C10-Axis
+T Delayed shifted C10 T 92 TIMER Delayed C10-Axis shift done
+T Monitor Shift Fct. C10 T 93 TIMER Monitoring shift C10 function
+T Del jog cmd shift C10 T 94 TIMER jog command delayed for engage
+T 95 T 95 TIMER
+T Del exactly at Pos.C10 T 96 TIMER C10-Axis EXACTLY AT Position,DELAYED
+T Clamped C10 T 97 TIMER DELAYED FACEPLATE IS clamped
+T Unlamped C10 T 98 TIMER DELAYED FACEPLATE IS unclamped
+T 99 T 99 TIMER
+T Spi Ovr Change HS T 100 TIMER Verlängert Spindel Override Änderung
+T Reset-Key to Spi. HS T 101 TIMER Reset-Taste an Spindel
+T MainContacOn CMD HS T 102 TIMER Spindel Hauptschütz nicht ein verzögert
+T Delayed Ia > Ix Spi.HS T 103 TIMER Spindel Überlast verzögert
+T Time for open Brake HS T 104 TIMER Überwachungszeit Spindel Bremse Öffnen
+T Spi Stoped del HS T 105 TIMER Spindel (PS) steht verzoegert
+T Off in 1min HS T 106 TIMER Spindel verzögert Aus 60 sec
+T Off in 10min HS T 107 TIMER Spindel verzögert Aus 10 min
+T Spi.max. freecut time T 108 TIMER Spindel Maximale Freischneidezeit
+T SPI DrivEnab Until n=0 T 109 TIMER
+T HptSpi. RSPinDruck T 110 TIMER Spindel verzögert Überwachung Reistock Pinole Anpressdruck
+T HptSpi. MotorAnwVerz T 111 TIMER Spindel Motoranwahl verzögert
+T Del up to speed MSpi T 112 TIMER Spindel Solldrehzahl erreicht verzoegert
+T HptSpi. Verz Ia G96 T 113 TIMER Spindel verzögert Überlast bei G96
+T Spi I=200% verz.aus T 114 TIMER Zeit für 200% Spindelstrom
+T Hilfszeit_SpiMaster T 115 TIMER
+T Del Brake in Jog MSpi T 116 TIMER Verzögert Spindel Bremse im Jog ohne Signal Spi.steht
+T Del Brake E-Stop MSpi T 117 TIMER
+T Del I-Limit HS T 118 TIMER Verzögert Spindel an Stromgrenze
+T Del Dina T 119 TIMER
+T Del. Feed Inhibit C10 T 120 TIMER C10-Axis Delayed Feed Inhibit
+T DelayServoEnableOf C10 T 121 TIMER C10-Axis Delayed servo enable off after feed Inhibit
+T DelServoEnableOfSh C10 T 122 TIMER C10-Axis Delayed servo enable off while shift C10
+T 123 T 123 TIMER
+T 124 T 124 TIMER
+T DelayMashineOn T 125 TIMER Steuerspannung Ein verzögert
+T Delay Contactor On T 126 TIMER Puls Netzschütz Ein
+T 127 T 127 TIMER
+T 128 T 128 TIMER
+T 129 T 129 TIMER
+T DP aktivieren T 130 TIMER Überwachung aktivieren/deaktivieren
+T 131 T 131 TIMER
+T 132 T 132 TIMER
+T 133 T 133 TIMER
+T 134 T 134 TIMER
+T 135 T 135 TIMER
+T 136 T 136 TIMER
+T 137 T 137 TIMER
+T 138 T 138 TIMER
+T Rückförd.Pumpe T 139 TIMER verzögert Rückförderpumpe EIN
+T 140 T 140 TIMER
+T 141 T 141 TIMER
+T 142 T 142 TIMER
+T 143 T 143 TIMER
+T 144 T 144 TIMER
+T 145 T 145 TIMER
+T 146 T 146 TIMER
+T 147 T 147 TIMER
+T 148 T 148 TIMER
+T 149 T 149 TIMER
+T 150 T 150 TIMER Füllzeit Zumeßventile 6 Sek. Z-Achse
+T 151 T 151 TIMER Füllzeit Zumeßventile 6 Sek. X-Achse
+T 152 T 152 TIMER Füllzeit Zumeßventile 2 Sek. Z-Achse
+T 153 T 153 TIMER Füllzeit Zumeßventile 2 Sek. X-Achse
+T 154 T 154 TIMER Supportschmierung beendet
+T 155 T 155 TIMER Überwachungszeit Supportgetriebeschmierung
+T 156 T 156 TIMER Mindestpausenzeit 15 Sek. X/Z-Schmierimpulse
+T 157 T 157 TIMER Füllzeit Zumeßventile X+Z 2 Sek.
+T 158 T 158 TIMER Überwachung Füllzeit Zumeßventile X+Z 6 Sek.
+T 159 T 159 TIMER Mindestpausenzeit 15 Sek. Z-Schmierimpulse
+T 160 T 160 TIMER Mindestpausenzeit 15 Sek. X-Schmierimpulse
+T 161 T 161 TIMER
+T 162 T 162 TIMER
+T 163 T 163 TIMER
+T 164 T 164 TIMER
+T 165 T 165 TIMER
+T 166 T 166 TIMER
+T 167 T 167 TIMER
+T 168 T 168 TIMER
+T 169 T 169 TIMER
+T 170 T 170 TIMER
+T 171 T 171 TIMER
+T 172 T 172 TIMER
+T 173 T 173 TIMER
+T 174 T 174 TIMER
+T 175 T 175 TIMER
+T 176 T 176 TIMER
+T 177 T 177 TIMER
+T 178 T 178 TIMER
+T 179 T 179 TIMER
+T 180 T 180 TIMER verz. Einlesefreigabe von Messtaster
+T 181 T 181 TIMER
+T 182 T 182 TIMER Fahranforderung XT 183 T 183 TIMER Fahranforderung C+
+T 184 T 184 TIMER Fahranforderung CT 185 T 185 TIMER Fahranforderung ZT 186 T 186 TIMER Fahranforderung Z+
+T 188 T 188 TIMER
+T 192 T 192 TIMER
+T 196 T 196 TIMER
+T 197 T 197 TIMER
+T 198 T 198 TIMER
+T 199 T 199 TIMER
+T Verz Öl Min Sup1 T 200 TIMER Überwachung Ölstand Min verzögert Support 1
+T 201 T 201 TIMER
+T Del all PSW=1 HydroC1 T 202 TIMER Hydrostatik Verzögert alle DS sind "1" nach Sup. ein Support 1
+T WaitForAll PSW HydroC1 T 203 TIMER Warte mit der Fehlermeldung bis alle DS "1" waren Support 1
+T Monitor PSW 1 HydroC1 T 204 TIMER Verz. Überwachung Support Hydrostatik Druck ok ("1" Signal) Support 1
+T Monitor PSW 0 HydroC1 T 205 TIMER Verz. Überwachung Support Hydrostatik Druck aus ("0" Signal) Support 1
+T Worm P>70 Bar HydroC1 T 206 TIMER Verzögert Schneckendruck Flanke 1/2 >= 70 Bar Support 1
+T Del PmpOff PSWmis HyC1 T 207 TIMER Verzögert Alle Hydrostatikpumpen aus, ein DS fehlt Support 1
+T 208 T 208 TIMER
+T 209 T 209 TIMER
+T Verz_Z1+_aus T 210 TIMER verzögert Z1+ aus
+T Verz_Z1-_aus T 211 TIMER verzögert Z1- aus
+T Verz DS1 Z1 T 212 TIMER verzögert Abfall Druckschalter 1 Schnecke Z1
+T Verz DS2 Z1 T 213 TIMER verzögert Abfall Druckschalter 2 Schnecke Z1
+T Vibration C1 T 214 TIMER Verzögert Vibrationsalarm Support 1
+T Del Axis stopped off T 215 TIMER Verzögert alle Achsen stehen Aus wegen flattern der Nahtstellensignale
+T del no def Pos TC-C1 T 216 TIMER verz. keine definierte Werkzeuträgerstellung eingelegt
+T FastRetr Key+Pulse X1 T 217 TIMER X1-Schnell-Rückzug Taste+ Impuls
+T Del.FastRetract X1 T 218 TIMER X1-Achse Schnell-Rückzug Verzögerung
+T 219 T 219 TIMER
+T Del. Feed-Inhibit X1 T 220 TIMER X1-Achse verzögert VS-Sperre
+T Del. Servo-Inhibit X1 T 221 TIMER X1-Achse verzögert Reglersperre
+T Del. Brake X1 T 222 TIMER X1-Achse verzögert Haltebremse
+T Del. Load Warn. X1 T 223 TIMER X-Achse verzögert Last über Warngrenze
+T Del. Overload X1 T 224 TIMER X-Achse verzögert Last über Abschaltgrenze
+T 225 T 225 TIMER
+T 226 T 226 TIMER
+T Del. Feed-Inhibit Z1 T 227 TIMER Z1-Achse verzögert VS-Sperre
+T Del. Servo-Inhibit Z1 T 228 TIMER Z1-Achse verzögert Reglersperre
+T Del. Brake Z1 T 229 TIMER Z1-Achse verzögert Haltebremse
+T Del. Load Warn. Z1 T 230 TIMER Z-Achse verzögert Last über Warngrenze
+T Del. Overload Z1 T 231 TIMER Z-Achse verzögert Last über Abschaltgrenze
+T 232 T 232 TIMER
+T 233 T 233 TIMER
+T 234 T 234 TIMER
+T 235 T 235 TIMER
+T 236 T 236 TIMER
+T 237 T 237 TIMER
+T 238 T 238 TIMER
+T 239 T 239 TIMER
+T 240 T 240 TIMER
+T 241 T 241 TIMER
+T 242 T 242 TIMER
+T 243 T 243 TIMER
+T 244 T 244 TIMER
+T 245 T 245 TIMER
+T 246 T 246 TIMER
+T 247 T 247 TIMER
+T 248 T 248 TIMER
+T 249 T 249 TIMER
+T Del OilLowPmpOff TC-C1 T 250 TIMER Werkzeugträger Hydraulik Support 1 Öl fehlt Pumpe aus
+T Del LowPresOff TC-C1 T 251 TIMER Werkzeugträger Hydraulik Support 1 Niederdruck verzögert aus
+T HydrPDelOf LowP TC-C1 T 252 TIMER Werkzeugträger Hydraulik Support 1 verzögert aus von Niederdruck
+T HydrP Runtime TC-C1 T 253 TIMER Werkzeugträger Hydraulik Support 1 Überwachung Laufzeit Pumpe
+T Unclamp Monitor TC-C1 T 254 TIMER Werkzeugträger Hydraulik Support 1 Überwachung Lösen
+T Clamp Monitor TC-C1 T 255 TIMER Werkzeugträger Hydraulik Support 1 Überwachung Klemmen
+T Mon.PSW PmpOff 0 TC-C1 T 256 TIMER Werkzeugträger Hydraulik Support 1 Überwachung DS P auf 0 umpe aus
+T Mon.PSW PmpOff 1 TC-C1 T 257 TIMER Werkzeugträger Hydraulik Support 1 Überwachung DS P auf 1
+T 258 T 258 TIMER
+T 259 T 259 TIMER
+T Del Unclamped LeTC-C1 T 260 TIMER Linker breiter WzTräger verzögert ist geöst Support 1
+T Del Clamped LeTC-C1 T 261 TIMER Linker breiter WzTräger verzögert ist geklemmt Support 1
+T Posi cyc. Del LeTC-C1 T 262 TIMER Linker breiter WzTräger Pos.-Zyklus Verzoegerungszeit Support 1
+T Posi cyc. End LeTC-C1 T 263 TIMER Linker breiter WzTräger Imp. Pos.-Zyklus Fertig Support 1
+T UnclmpCyc.End LeTC-C1 T 264 TIMER Linker breiter WzTräger Loes.-Zyklus Fertig Support 1
+T Del PosSelOff LeTC-C1 T 265 TIMER Linker breiter WzTräger Pos.-Zyklus Abwahl kein Start erfolgt na.Zeit Support 1
+T Del Unclamped RiTC-C1 T 266 TIMER Rechter WzTräger verzögert ist geöst Support 1
+T Del Clamped RiTC-C1 T 267 TIMER Rechter WzTräger verzögert ist geklemmt Support 1
+T Posi cyc. Del RiTC-C1 T 268 TIMER Rechter WzTräger Pos.-Zyklus Verzoegerungszeit Support 1
+T Posi cyc. End RiTC-C1 T 269 TIMER Rechter WzTräger Imp. Pos.-Zyklus Fertig Support 1
+T UnclmpCyc.End RiTC-C1 T 270 TIMER Rechter WzTräger Loes.-Zyklus Fertig Support 1
+T Del PosSelOff RiTC-C1 T 271 TIMER Rechter WzTräger Pos.-Zyklus Abwahl kein Start erfolgt na.Zeit Support 1
+T Del Unclamped LeITC-C1 T 272 TIMER Linker innerer WzTräger verzögert ist geöst Support 1
+T Del Clamped LeITC-C1 T 273 TIMER Linker innerer WzTräger verzögert ist geklemmt Support 1
+T Posi cyc. Del LeITC-C1 T 274 TIMER Linker innerer WzTräger Pos.-Zyklus Verzoegerungszeit Support 1
+T Posi cyc. End LeITC-C1 T 275 TIMER Linker innerer WzTräger Imp. Pos.-Zyklus Fertig Support 1
+T UnclmpCyc.End LeITC-C1 T 276 TIMER Linker innerer WzTräger Loes.-Zyklus Fertig Support 1
+T Del PosSelOff LeITC-C1 T 277 TIMER Linker inner WzTräger Pos.-Zyklus Abwahl kein Start erfolgt na.Zeit Support 1
+T PulsLub finish LeTC-C1 T 278 TIMER Pausenzeit Schmierung Meiselschieber 1
+T PulsLub finish ReTC-C1 T 279 TIMER Pausenzeit Schmierung Meiselschieber 2
+T Del LSW Clmp LeTH-C1 T 280 TIMER Delayed LSW Left-Tool-Holder clamped Carriage 1
+T Del not Clmp LeTH-C1 T 281 TIMER Delayed Left-Tool-Holder not Clamped
+T Del clmp Flt LeTH-C1 T 282 TIMER Delayed Left-Tool-Holder clamp Fault
+T Del clamped LeTo-C1 T 283 TIMER Delayed Tool clamped Left-Tool-Carrier
+T Del unclamped LeTo-C1 T 284 TIMER Delayed Tool unclamped Left-Tool-Carrier
+T Del LSW Clmp RiTH-C1 T 285 TIMER Delayed LSW Right-Tool-Holder clamped Carriage 1
+T Del not Clmp RiTH-C1 T 286 TIMER Delayed Right-Tool-Holder not Clamped
+T Del clmp Flt RiTH-C1 T 287 TIMER Delayed Right-Tool-Holder clamp Fault
+T Del clamped RiTo-C1 T 288 TIMER Delayed Tool clamped Right-Tool-Carrier
+T Del unclamped RiTo-C1 T 289 TIMER Delayed Tool unclamped Right-Tool-Carrier
+T Del LSW Clmp 3.TH-C1 T 290 TIMER Delayed LSW 3.-Tool-Holder clamped Carriage 1
+T Del not Clmp 3.TH-C1 T 291 TIMER Delayed 3.-Tool-Holder not Clamped
+T Del clmp Flt 3.TH-C1 T 292 TIMER Delayed 3.-Tool-Holder clamp Fault
+T Del clamped 3.To-C1 T 293 TIMER Delayed Tool clamped 3.-Tool-Carrier
+T Del unclamped 3.To-C1 T 294 TIMER Delayed Tool unclamped 3.-Tool-Carrier
+T 295 T 295 TIMER
+T 296 T 296 TIMER
+T Mldg Unterdr Sup1 Ein T 297 TIMER Meldungen unterdrücken für Support 1 Ein
+T 298 T 298 TIMER
+T 299 T 299 TIMER
+T Del OilLowPmpOff C2 T 300 TIMER Überwachung Ölstand Min verzögert Support 2
+T 301 T 301 TIMER
+T Del all PSW=1 HydroC2 T 302 TIMER Hydrostatik Verzögert alle DS sind "1" nach Sup. ein Support 2
+T WaitForAll PSW HydroC2 T 303 TIMER Warte mit der Fehlermeldung bis alle DS "1" waren Support 2
+T Monitor PSW 1 HydroC2 T 304 TIMER Verz. Überwachung Support Hydrostatik Druck ok ("1" Signal) Support 2
+T Monitor PSW 0 HydroC2 T 305 TIMER Verz. Überwachung Support Hydrostatik Druck aus ("0" Signal) Support 2
+T Worm P>70 Bar HydroC2 T 306 TIMER Verzögert Schneckendruck Flanke 1/2 >= 70 Bar Support 2
+T Del PmpOff PSWmis HyC2 T 307 TIMER Verzögert Alle Hydrostatikpumpen aus, ein DS fehlt Support 2
+T 308 T 308 TIMER
+T 309 T 309 TIMER
+T Verz_Z2+_aus T 310 TIMER verzögert Z2+ aus
+T Verz_Z2-_aus T 311 TIMER verzögert Z2- aus
+T Verz DS1 Z2 T 312 TIMER verzögert Abfall Druckschalter 1 Schnecke Z2
+T Verz DS2 Z2 T 313 TIMER verzögert Abfall Druckschalter 2 Schnecke Z2
+T 314 T 314 TIMER
+T Vibration C2 T 315 TIMER Verzögert Vibrationsalarm Support 2
+T 316 T 316 TIMER
+T FastRetr Key+Pulse X2 T 317 TIMER X2-Schnell-Rückzug Taste+ Impuls
+T Del.FastRetract X2 T 318 TIMER X2-Achse Schnell-Rückzug Verzögerung
+T 319 T 319 TIMER
+T Del. Feed-Inhibit X2 T 320 TIMER X2-Achse verzögert VS-Sperre
+T Del. Servo-Inhibit X2 T 321 TIMER X2-Achse verzögert Reglersperre
+T Del. Brake X2 T 322 TIMER X2-Achse verzögert Haltebremse
+T Del. Load Warn. X2 T 323 TIMER X2-Achse verzögert Last über Warngrenze
+T Del. Overload X2 T 324 TIMER X2-Achse verzögert Last über Abschaltgrenze
+T 325 T 325 TIMER
+T Verz.VS-Sperre Z1 T 326 TIMER Z1-Achse verzögert VS-Sperre
+T Del. Feed-Inhibit Z2 T 327 TIMER Z2-Achse verzögert VS-Sperre
+T Del. Servo-Inhibit Z2 T 328 TIMER Z2-Achse verzögert Reglersperre
+T Del. Brake Z2 T 329 TIMER Z2-Achse verzögert Haltebremse
+T Del. Load Warn. Z2 T 330 TIMER Z2-Achse verzögert Last über Warngrenze
+T Del. Overload Z2 T 331 TIMER Z2-Achse verzögert Last über Abschaltgrenze
+T 332 T 332 TIMER
+T 333 T 333 TIMER
+T 334 T 334 TIMER
+T 335 T 335 TIMER
+T 336 T 336 TIMER
+T 337 T 337 TIMER
+T 338 T 338 TIMER
+T 339 T 339 TIMER
+T 340 T 340 TIMER
+T 341 T 341 TIMER
+T 342 T 342 TIMER
+T 343 T 343 TIMER
+T 344 T 344 TIMER
+T 345 T 345 TIMER
+T 346 T 346 TIMER
+T 347 T 347 TIMER
+T 348 T 348 TIMER
+T 349 T 349 TIMER
+T Del OilLowPmpOff TC-C2 T 350 TIMER Werkzeugträger Hydraulik Support 2 Öl fehlt Pumpe aus
+T Del LowPresOff TC-C2 T 351 TIMER Werkzeugträger Hydraulik Support 2 Niederdruck verzögert aus
+T HydrPDelOf LowP TC-C2 T 352 TIMER Werkzeugträger Hydraulik Support 2 verzögert aus von Niederdruck
+T HydrP Runtime TC-C2 T 353 TIMER Werkzeugträger Hydraulik Support 2 Überwachung Laufzeit Pumpe
+T Unclamp Monitor TC-C2 T 354 TIMER Werkzeugträger Hydraulik Support 2 Überwachung Lösen
+T Clamp Monitor TC-C2 T 355 TIMER Werkzeugträger Hydraulik Support 2 Überwachung Klemmen
+T Mon.PSW PmpOff 0 TC-C2 T 356 TIMER Werkzeugträger Hydraulik Support 2 Überwachung DS P auf 0 umpe aus
+T Mon.PSW PmpOff 1 TC-C2 T 357 TIMER Werkzeugträger Hydraulik Support 2 Überwachung DS P auf 1 umpe aus
+T 358 T 358 TIMER
+T 359 T 359 TIMER
+T Del Unclamped LeTC-C2 T 360 TIMER Linker breiter WzTräger verzögert ist geöst Support 2
+T Del Clamped LeTC-C2 T 361 TIMER Linker breiter WzTräger verzögert ist geklemmt Support 2
+T Posi cyc. Del LeTC-C2 T 362 TIMER Linker breiter WzTräger Pos.-Zyklus Verzoegerungszeit Support 2
+T Posi cyc. End LeTC-C2 T 363 TIMER Linker breiter WzTräger Imp. Pos.-Zyklus Fertig Support 2
+T UnclmpCyc.End LeTC-C2 T 364 TIMER Linker breiter WzTräger Loes.-Zyklus Fertig Support 2
+T Del PosSelOff LeTC-C2 T 365 TIMER Linker breiter WzTräger Pos.-Zyklus Abwahl kein Start erfolgt na.Zeit Support 2
+T Del Unclamped RiTC-C2 T 366 TIMER Rechter WzTräger verzögert ist geöst Support 2
+T Del Clamped RiTC-C2 T 367 TIMER Rechter WzTräger verzögert ist geklemmt Support 2
+T Posi cyc. Del RiTC-C2 T 368 TIMER Rechter WzTräger Pos.-Zyklus Verzoegerungszeit Support 2
+T Posi cyc. End RiTC-C2 T 369 TIMER Rechter WzTräger Imp. Pos.-Zyklus Fertig Support 2
+T UnclmpCyc.End RiTC-C2 T 370 TIMER Rechter WzTräger Loes.-Zyklus Fertig Support 2
+T Del PosSelOff RiTC-C2 T 371 TIMER Rechter WzTräger Pos.-Zyklus Abwahl kein Start erfolgt na.Zeit Support 2
+T Del Unclamped LeITC-C2 T 372 TIMER Linker innerer WzTräger verzögert ist geöst Support 2
+T Del Clamped LeITC-C2 T 373 TIMER Linker innerer WzTräger verzögert ist geklemmt Support 2
+T Posi cyc. Del LeITC-C2 T 374 TIMER Linker innerer WzTräger Pos.-Zyklus Verzoegerungszeit Support 2
+T Posi cyc. End LeITC-C2 T 375 TIMER Linker innerer WzTräger Imp. Pos.-Zyklus Fertig Support 2
+T UnclmpCyc.End LeITC-C2 T 376 TIMER Linker innerer WzTräger Loes.-Zyklus Fertig Support 2
+T Del PosSelOff LeITC-C2 T 377 TIMER Linker inner WzTräger Pos.-Zyklus Abwahl kein Start erfolgt na.Zeit  Supp
+T 378 T 378 TIMER
+T 379 T 379 TIMER
+T Del LSW Clmp LeTH-C2 T 380 TIMER Delayed LSW Left-Tool-Holder clamped Carriage 2
+T Del not Clmp LeTH-C2 T 381 TIMER Delayed Left-Tool-Holder not Clamped
+T Del clmp Flt LeTH-C2 T 382 TIMER Delayed Left-Tool-Holder clamp Fault
+T Del clamped LeTo-C2 T 383 TIMER Delayed Tool clamped Left-Tool-Carrier
+T Del unclamped LeTo-C2 T 384 TIMER Delayed Tool unclamped Left-Tool-Carrier
+T Del LSW Clmp RiTH-C2 T 385 TIMER Delayed LSW Right-Tool-Holder clamped Carriage 2
+T Del not Clmp RiTH-C2 T 386 TIMER Delayed Right-Tool-Holder not Clamped
+T Del clmp Flt RiTH-C2 T 387 TIMER Delayed Right-Tool-Holder clamp Fault
+T Del clamped RiTo-C2 T 388 TIMER Delayed Tool clamped Right-Tool-Carrier
+T Del unclamped RiTo-C2 T 389 TIMER Delayed Tool unclamped Right-Tool-Carrier
+T Del LSW Clmp 3.TH-C2 T 390 TIMER Delayed LSW 3.-Tool-Holder clamped Carriage 2
+T Del not Clmp 3.TH-C2 T 391 TIMER Delayed 3.-Tool-Holder not Clamped
+T Del clmp Flt 3.TH-C2 T 392 TIMER Delayed 3.-Tool-Holder clamp Fault
+T Del clamped 3.To-C2 T 393 TIMER Delayed Tool clamped 3.-Tool-Carrier
+T Del unclamped 3.To-C2 T 394 TIMER Delayed Tool unclamped 3.-Tool-Carrier
+T 395 T 395 TIMER
+T 396 T 396 TIMER
+T Mldg Unterdr Sup2 Ein T 397 TIMER Meldungen unterdrücken für Support 2 Ein
+T 398 T 398 TIMER
+T 399 T 399 TIMER
+T Del Unclamp PS not1 TS T 400 TIMER Reitst. Überwachungszeit Lösen, DS nicht "1"
+T Del Clamp PS not0 TS T 401 TIMER Reitst. Überwachungszeit Klemmen, DS nicht "0"
+T Del Clamp LS not1 TS T 402 TIMER Reitst. Überwachungszeit Klemmen, Pumpe aus, ES nicht "1" %
+T LDel noMov TS T 403 TIMER Reitst. Überwachungszeit Lösen, 30min keine Bewegung
+T Del TouchRoll TS T 404 TIMER Reitst. Anfahrdruck an Walze erreicht verzoegert
+T CentralLub Pause TS T 405 TIMER Reitst, Zentralschmierung Reitstock beendet
+T DelOff BedLub TS T 406 TIMER Reitst. Bettbahnschmierung Aus verzögert
+T Contr BedLubPmax TS T 407 TIMER Reitst. Bettbahnschmierung Überwachungszeit Pmax
+T Contr BedLubPmin TS T 408 TIMER Reitst. Bettbahnschmierung Überwachungszeit Pmin
+T CirculLub Pause Q-TS T 409 TIMER Reitst, Umlaufschmierung.Intervallzeit %
+T DelOff BedLub Q-TS T 410 TIMER Reitst. Pinolenbahnschmierung Aus verzögert
+T Contr PathLubPmax Q-TS T 411 TIMER Reitst. Pinolenbahnschmierung Überwachungszeit Pmax
+T Contr PathLubPmin Q-TS T 412 TIMER Reitst. Pinolenbahnschmierung Überwachungszeit Pmin
+T CirculLub FS not0 Q-TS T 413 TIMER Reitst. Umlaufschmierung DFW nicht "0"
+T CirculLub FS not1 Q-TS T 414 TIMER Reitst. Umlaufschmierung DFW nicht "1"
+T Del QuilPress>> Q-TS T 415 TIMER Reitst. Verzögert Meldung Pinolendruck zu hoch
+T Flollow Unclamp TS T 416 TIMER Reitst. Nachlauf Lösen Bett
+T Flollow Unclamp Q-TS T 417 TIMER Reitst. Nachlauf Lösen Pinole
+T Del UnclampPS not1 QTS T 418 TIMER Reitst. Pinole Überwachungszeit Lösen, DS nicht "1"
+T Del Clamp PS not0 Q-TS T 419 TIMER Reitst. Pinole Überwachungszeit Lösen, DS nicht "0"
+T Del no QillMov Q-TS T 420 TIMER Reitst. Pinole Überwachungszeit Lösen, 30min keine Bewegung
+T Del SikoSt FaQMov Q-TS T 421 TIMER Reitst. Überwachungszeit Sanftstarter PinolenEilverstellung
+T Del SikoSt FastMov TS T 422 TIMER Reitst. Überwachungszeit Sanftstarter Bettverstellung
+T DirChang Bettv. TS T 423 TIMER Reitst. Pausenzeit Richtungswechsel Bettverstellung %
+T Del SikoSt SlQMov Q-TS T 424 TIMER Reitst. Überwachungszeit Sanftstarter PinolenSchleichverstellung
+T DirChang QuillMov Q-TS T 425 TIMER Reitst. Pausenzeit Richtungswechsel Pinolenverstellung %
+T DelOff Lock FP TS T 426 TIMER Reitst. Nachlauf Planscheibe arretieren
+T DelOff Unlock FP TS T 427 TIMER Reitst. Nachlauf Planscheibe entriegeln
+T DelMotEnable Q-TS T 428 TIMER Reitst. verzögert Pinolenverstellung Ein
+T Del BrakeQuillMov Q-TS T 429 TIMER Reitstock Pinolenbremse 2 sek. verzögert einfallen
+T DelMovimotBB TS T 430 TIMER Reitst. Überwachungszeit Movimot BB Bett
+T DelMovimotBB Q -TS T 431 TIMER Reitst. Überwachungszeit Movimot BB Pinole
+T HydrP Runtime TS T 432 TIMER Reitst. Hydraulik Überwachung Laufzeit Pumpe
+T UnclampTime>30s TS T 433 TIMER Reitstock Lösezeit >30sec
+T 434 T 434 TIMER
+T 435 T 435 TIMER
+T 436 T 436 TIMER
+T 437 T 437 TIMER
+T 438 T 438 TIMER
+T 439 T 439 TIMER
+T 440 T 440 TIMER
+T 441 T 441 TIMER
+T 442 T 442 TIMER
+T 443 T 443 TIMER
+T 444 T 444 TIMER
+T 445 T 445 TIMER
+T 446 T 446 TIMER
+T 447 T 447 TIMER
+T 448 T 448 TIMER
+T 449 T 449 TIMER
+T 450 T 450 TIMER
+T 451 T 451 TIMER
+T 452 T 452 TIMER
+T 453 T 453 TIMER
+T 454 T 454 TIMER
+T 455 T 455 TIMER
+T 456 T 456 TIMER
+T 457 T 457 TIMER
+T 458 T 458 TIMER
+T 459 T 459 TIMER
+T Del Renishaw fault C1 T 460 TIMER Verzögert Renishaw Fehler Support 1
+T 461 T 461 TIMER verz. Einlesefreigabe von Messtaster
+T 462 T 462 TIMER verz. Messeinrichtung nicht in Parkstellung
+T 468 T 463 TIMER verz. Messarm ist unten
+T 469 T 464 TIMER verz. Messarm ist oben
+T 463 T 465 TIMER Fahranforderung XT 464 T 466 TIMER Fahranforderung C+
+T 465 T 467 TIMER Fahranforderung CT 466 T 468 TIMER Fahranforderung ZT 467 T 469 TIMER Fahranforderung Z+
+T Del Renishaw fault C2 T 470 TIMER Verzögert Renishaw Fehler Support 2
+T 460 T 471 TIMER
+T 470 T 472 TIMER
+T 473 T 473 TIMER
+T 474 T 474 TIMER
+T 475 T 475 TIMER
+T 476 T 476 TIMER
+T 477 T 477 TIMER
+T 478 T 478 TIMER
+T 479 T 479 TIMER
+T Manual Turn T 480 TIMER Manual Turn
+T 481 T 481 TIMER
+T 482 T 482 TIMER
+T 483 T 483 TIMER
+T 484 T 484 TIMER
+T 485 T 485 TIMER
+T 486 T 486 TIMER
+T 487 T 487 TIMER
+T 488 T 488 TIMER
+T 489 T 489 TIMER
+T Imp UmschrVon Tür T 490 TIMER MD Umschreiben von Tür
+T SonBA WechselVerzögert T 491 TIMER Sonder Betriebsartenwechsel verzögert
+T Einrichten T 492 TIMER verzögert Einrichten aktiv
+T JogingSpindle 1 T 493 TIMER verzögert Einrichten Spindel aktiv
+T JogingAxis Car1 T 494 TIMER verzoegert Einrichten Achsen aktiv Support 1
+T JogingAxis Car2 T 495 TIMER verzoegert Einrichten Achsen aktiv Support 2
+T Verz Umschaltung T 496 TIMER T Verz Umschaltung
+T 497 T 497 TIMER
+T Verz AUTO->JOG T 498 TIMER Verzögert Wechsel AUTO -> JOG
+T Verz Reset 5Umin T 499 TIMER Verzögert Reset der 5U/min
+T Verlängert TestStop ak T 500 TIMER Verlängert Teststopp aktiv (Verhinderung Hauptschalter fallen)
+T Verz SPL Ende T 501 TIMER Verzögert SPL durchgelaufen
+T Verz NC-Sperre Ch1 T 502 TIMER Verzögert NC-Start-Sperre Kanal 1 durch Stop-C
+T Verz VS-Sperre X1 T 503 TIMER Verzögert VS-Sperre X1 durch Stop-C
+T Verz VS-Sperre Z1 T 504 TIMER Verzögert VS-Sperre Z1 durch Stop-C
+T 505 T 505 TIMER
+T 506 T 506 TIMER
+T Verz VS-Sperre X2 T 507 TIMER Verzögert VS-Sperre X2 durch Stop-C
+T Verz VS-Sperre Z2 T 508 TIMER Verzögert VS-Sperre Z2 durch Stop-C
+T 509 T 509 TIMER
+T Mldg UnterdrVTeststop T 510 TIMER Meldungen unterdrücken von Teststop
+T Mldg UnterdVMaschImp T 511 TIMER Meldungen unterdrücken von Maschine Ein Impuls
+T 512 T 512 TIMER Letzte S7 Zeit
+UDT 2 PLC-Flt/Msg UDT 2 UDT 2 Fehlertexte
+UDT 10 Signale <-> NC UDT 10 UDT 10 Nathstelle
+UDT 11 BAG UDT 11 UDT 11 Nathstelle
+UDT 18 SPL UDT 18 UDT 18 Nathstelle Safety
+UDT 19 PCU50 UDT 19 UDT 19 Nathstelle Interface PCU-Signals
+UDT UserValues UDT 20 UDT 20 User Maschinendaten
+UDT NC Channel UDT 21 UDT 21 Nathstelle NC Kanal
+UDT Axis UDT 31 UDT 31 Nathstelle
+UDT OEM UDT 90 UDT 90 OEM Oberfläche
+UDT Serviceanzeigen OEM UDT 125 UDT 125 Serviceanzeige OEM Oberfläche
+Werkzeugträger UDT 531 UDT 531 Werkzeugträger
+UDT BNPV UDT 532 UDT 532 Bild Basis Nullpunktverschieben
+UDT Revolver UDT 535 UDT 535 UDT Revolver MHM
+UDT MM440 UDT 601 UDT 601 Micromaster
+UDT Stdy_gen UDT 900 UDT 900 Lünetten übergeordnet
+UDT Steadies UDT 901 UDT 901 Lünetten
+FB2_NC_Read_Load UDT 1020 UDT 1020
+FB3_NC_write UDT 1021 UDT 1021 FB2 NC-Daten schreiben
+UDT Meassys M/S UDT 1100 UDT 1100 Anwahl Messystem / MasterSlave
+FB4_PI_select_compl UDT 1251 UDT 1251 Komplette FB4 Nahtstelle für PI Select, wie ASUP Daten, New Conf
+Klemmung_Schmier_MM440 UDT 1400 UDT 1400 Klemmung Schmierung MM440 Standard
+SETUFR UDT 1530 UDT 1530 BNPV wirksam setzen
+ASUP UDT 1531 UDT 1531 ASUP für BNPV
+NC_MD_Schreiben UDT 1805 UDT 1805
+ZTW_1_Nref_Mode_MM440 UDT 1891 UDT 1891 PZD1 from Micromaster 440 im n-Soll Betrieb = ZSW1 (fest)
+STW_1_Nref_Mode_MM440 UDT 1896 UDT 1896 PZD1 to Micromaster 440 im n-Soll Betrieb = STW1 (fest)
+Lub UDT 4002 UDT 4002 Schmierung
+Gear_Change UDT 4005 UDT 4005 Getriebestufenwechsel
+6RA70 Inputs UDT 4110 UDT 4110 6RA70 Input signals from Drive
+6RA70 Outputs UDT 4111 UDT 4111 6RA70 Output signals from Drive
+TCarManScreen UDT 5310 UDT 5310 WzT Service Mode über Bild
+Value UDT 5311 UDT 5311 Werte WzT Basisnullpunktverschiebung
+FB2_3_NC_Var_Read_Write UDT 8004 UDT 8004 NC-Variablen Lesen / Schreiben
+MM440 UDT 9001 UDT 9001 MM440 Drive
+ht2-string VAT 1
+LOAD VAT 2
+Sup 1 Hydraulik VAT 3
+Spindel Antrieb VAT 4
+WzT-2 S1 VAT 5
+BNPV_Bild VAT 6
+Reitst Klem VAT 7
+Reitst ImpSchm VAT 8
+Reitst Q Verst VAT 9
+WzT-3 S1 VAT 10
+WzT-1 S1 VAT 11
+Spindel Signale VAT 12
+Istwertlesen VAT 13
+KollSchutz VAT 14
+Anzeige HT2 VAT 15
+BNPV_Schreiben VAT 16
+Lünettensteckplatz VAT 17
+Teststop VAT 18
+Spi Intervall VAT 19
+NCK VAT 20
+Sup 1 Hydrostatik VAT 21
+DP akt/deakt VAT 22
+KollSchutzSup1 VAT 23
+Taktgenerator VAT 24
+Umschaltung S1 -> S2 VAT 25
+WZ Traeger Schmier Sup 2 VAT 26
+Ein-/Rückspeiseeinh VAT 27
+Safety Teststopp VAT 28
+Spi Antrieb VAT 29
+SPI_Intervall VAT 30
+Spi Drehzahlgrenzen VAT 31
+Vibration VAT 32
+LMS Umschaltung VAT 33
+VAT82 MT DB82 VAT 82 Diagnostic DB82
+Z One minute interval Z 2 COUNTER Minutentakt
+Z 4 ZaehlerFreischneiden Z 4 COUNTER Haupt-Spindel Freischneide-Zähler mit Umdrehungsimpulsen von NC
+Z 5 Freecuting with Bero Z 5 COUNTER Haupt-Spindel Freischneide-Zähler mit Bero
+Z Lube MainBear HS Z 6 COUNTER Pausenzeitzähler Hauptlager Spindelstock
+Z Minuten Zähler Z 15 COUNTER Maschine Ein Minutenzähler (Ventile Spindelstock)
+Z Stunden Zähler Z 16 COUNTER Maschine Ein Sundenzähler (Ventile Spindelstock)
+Z 30 C1 Z_Li.WzH_loesen Z 30 COUNTER C1 Zaehler für Li.Wz-Halter lösen
+Z 31 S2 Z_Li.WzH_loesen Z 31 COUNTER S2 Zaehler für Li.Wz-Halter lösen
+Z 32 C1 Z_Re.WzH_loesen Z 32 COUNTER C1 Zaehler für Re.Wz-Halter lösen
+Z 33 S2 Z_Re.WzH_loesen Z 33 COUNTER S2 Zaehler für Re.Wz-Halter lösen
+Z 40 Z 40 COUNTER
+Z45 Z 45 COUNTER
+Z46 Z 46 COUNTER
+Z47 Z 47 COUNTER
+Z48 Z 48 COUNTER
+Z 63 Z 63 COUNTER
+Z Lub Fast Bed TS Z 400 COUNTER Zähler Schmierabstand Bett Reitstock Eilgang
+Z Lub Slow Bed TS Z 401 COUNTER Zähler Schmierabstand Bett Reitstock Schleichgang
+Z Lub Fast Way Q-TS Z 402 COUNTER Zähler Schmierabstand Bahn Pinole Eilgang
+Z Lub Slow Way Q-TS Z 403 COUNTER Zähler Schmierabstand Bahn Pinole Schleichgang
